@@ -36,6 +36,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -54,6 +55,69 @@ from .unpaywall_client import UnpaywallClient
 DEFAULT_HASHTAG = "#zettelkasten"
 DEFAULT_STATE_FILE = "data/slack_state.json"
 DEFAULT_INBOX_BIB = "data/slack_inbox.bib"
+DEFAULT_FEED = "output/feed.json"
+
+
+# ---- Duplicate detection --------------------------------------------------
+# Normalizers are a deliberate copy of
+# fg-zettelkasten/mine-zettelkasten `src/state.py::normalize_doi/normalize_title`
+# (the two repos can't share code). Keep them identical so the in-Slack
+# "already in the archive" reply here and the downstream fg dedup net agree.
+
+_DOI_PREFIX_RE = re.compile(r"^(?:https?://)?(?:dx\.)?doi\.org/", re.IGNORECASE)
+_TITLE_STRIP_RE = re.compile(r"[^a-z0-9\s]")
+_WS_NORM_RE = re.compile(r"\s+")
+
+
+def _norm_doi(doi: Optional[str]) -> Optional[str]:
+    if not doi:
+        return None
+    d = _DOI_PREFIX_RE.sub("", doi.strip()).lower().rstrip(".")
+    return d or None
+
+
+def _norm_title(title: Optional[str]) -> Optional[str]:
+    if not title:
+        return None
+    folded = unicodedata.normalize("NFKD", title)
+    folded = folded.encode("ascii", "ignore").decode("ascii").lower()
+    folded = _WS_NORM_RE.sub(" ", _TITLE_STRIP_RE.sub(" ", folded)).strip()
+    return folded if len(folded) >= 8 else None
+
+
+def load_archive_index(feed_path: Path,
+                       inbox_path: Path) -> Tuple[set, set]:
+    """Normalized DOIs + titles already in the archive: the published
+    `output/feed.json` (Paperpile curation + earlier Slack adds) plus the
+    current `slack_inbox.bib` (entries from this/earlier ticks not yet folded
+    into the feed). Both reads are best-effort — a missing file yields empty
+    sets, never an error."""
+    dois: set = set()
+    titles: set = set()
+    try:
+        data = json.loads(Path(feed_path).read_text(encoding="utf-8"))
+        for it in data.get("items", []):
+            d = _norm_doi((it.get("_academic") or {}).get("doi"))
+            if d:
+                dois.add(d)
+            t = _norm_title(it.get("title"))
+            if t:
+                titles.add(t)
+    except Exception:
+        pass
+    try:
+        text = Path(inbox_path).read_text(encoding="utf-8")
+        for m in re.finditer(r"(?i)\bdoi\s*=\s*\{([^}]*)\}", text):
+            d = _norm_doi(m.group(1))
+            if d:
+                dois.add(d)
+        for m in re.finditer(r"(?i)\btitle\s*=\s*\{([^}]*)\}", text):
+            t = _norm_title(m.group(1))
+            if t:
+                titles.add(t)
+    except Exception:
+        pass
+    return dois, titles
 
 
 # ---- URL / DOI extraction --------------------------------------------------
@@ -435,6 +499,25 @@ class SlackAdapter:
             return None
         return resp.get("permalink")
 
+    def display_name(self, user_id: Optional[str]) -> Optional[str]:
+        """Resolve a Slack user-id to a human display name, or None.
+
+        Needs the `users:read` scope. Used to publish submitter attribution on
+        the team site — unlike upstream toread, which keeps identity private.
+        """
+        from slack_sdk.errors import SlackApiError
+        if not user_id:
+            return None
+        try:
+            resp = self.client.users_info(user=user_id)
+        except SlackApiError as e:
+            self.logger.warning("Slack users_info failed: %s", e)
+            return None
+        u = resp.get("user", {}) or {}
+        prof = u.get("profile", {}) or {}
+        return (prof.get("real_name") or u.get("real_name")
+                or prof.get("display_name") or u.get("name"))
+
 
 # ---- The orchestrator -----------------------------------------------------
 
@@ -445,6 +528,7 @@ class IngestConfig:
     hashtag: str = DEFAULT_HASHTAG
     state_file: Path = Path(DEFAULT_STATE_FILE)
     inbox_bib_file: Path = Path(DEFAULT_INBOX_BIB)
+    feed_file: Path = Path(DEFAULT_FEED)
     dry_run: bool = False
     confirm_on_success: bool = True
 
@@ -473,7 +557,13 @@ class SlackIngestor:
     def run(self) -> dict:
         """Process new + pending messages. Returns a small summary dict."""
         state = SlackIngestState.load(self.config.state_file)
-        summary = {"added": 0, "asked_for_pdf": 0, "skipped": 0, "errors": 0}
+        # Papers already in the archive (published feed + inbox) — used to tell
+        # a submitter their paper is a duplicate. Built once per run.
+        self._archive_dois, self._archive_titles = load_archive_index(
+            self.config.feed_file, self.config.inbox_bib_file
+        )
+        summary = {"added": 0, "asked_for_pdf": 0, "skipped": 0,
+                   "duplicate": 0, "errors": 0}
 
         # 1. Re-poll threads we're waiting on.
         for parent_ts in list(state.pending.keys()):
@@ -541,6 +631,22 @@ class SlackIngestor:
         # Resolve paper-level metadata first (best-effort) so we can name files
         # and mint a key.
         paper = self.resolver.resolve(text=text, urls=urls)
+
+        # Already in the archive? Tell the submitter and stop — no PDF fetch,
+        # no inbox append. Matches on normalized DOI or title.
+        nd, nt = _norm_doi(paper.doi), _norm_title(paper.title)
+        if (nd and nd in self._archive_dois) or (nt and nt in self._archive_titles):
+            self.logger.info(
+                "Duplicate suggestion %s (%s)", ts, paper.doi or paper.title
+            )
+            if not self.config.dry_run:
+                self.slack.post_thread_reply(
+                    channel, ts,
+                    "📚 This paper already looks like it's in the archive — "
+                    "skipping it. Thanks for the suggestion!",
+                )
+            state.processed[ts] = "(duplicate)"
+            return "duplicate"
 
         # Pick a PDF source.
         pdf_candidate: Optional[PDFCandidate] = None
@@ -705,6 +811,17 @@ class SlackIngestor:
         elif not self.config.dry_run:
             _append_bib(self.config.inbox_bib_file, bib_entry)
 
+        # Resolve the submitter's display name for site attribution. The
+        # original author is on the message; for the follow-up path it was
+        # captured in `pending[ts]["user"]` when we asked for the PDF.
+        user_id = msg.get("user") or state.pending.get(ts, {}).get("user")
+        submitted_by = (self.slack.display_name(user_id)
+                        if user_id and not self.config.dry_run else None)
+        # Only a real string is published; anything else (no name resolved)
+        # stays out of the JSON-serialized state.
+        if not isinstance(submitted_by, str):
+            submitted_by = None
+
         # Track for the feed-side _slack_suggestion extension; written
         # alongside the state file so the rss_generator can pick it up.
         state.processed[ts] = bibkey
@@ -715,6 +832,7 @@ class SlackIngestor:
             "ts": ts,
             "permalink": permalink,
             "pdf_source": pdf_source,
+            "submitted_by": submitted_by,
         }
 
         if not self.config.dry_run and self.config.confirm_on_success:
@@ -793,6 +911,7 @@ def _build_config_from_env(args) -> Optional[IngestConfig]:
         hashtag=hashtag,
         state_file=Path(args.state_file),
         inbox_bib_file=Path(args.inbox_bib),
+        feed_file=Path(args.feed_file),
         dry_run=args.dry_run,
         confirm_on_success=(os.environ.get(
             "SLACK_CONFIRM_ON_SUCCESS", "true") or "true").lower() != "false",
@@ -803,6 +922,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Ingest Slack #zettelkasten suggestions.")
     parser.add_argument("--state-file", default=DEFAULT_STATE_FILE)
     parser.add_argument("--inbox-bib", default=DEFAULT_INBOX_BIB)
+    parser.add_argument("--feed-file", default=DEFAULT_FEED,
+                        help="Published feed.json, read for duplicate detection.")
     parser.add_argument("--dry-run", action="store_true",
                         help="Do not write files, post replies, or upload PDFs.")
     parser.add_argument("-v", "--verbose", action="store_true")

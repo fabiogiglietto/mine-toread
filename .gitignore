@@ -172,3 +172,4 @@ temp/
 *.xml
 !output/feed.xml
 !output/feed.json
+.venv/
