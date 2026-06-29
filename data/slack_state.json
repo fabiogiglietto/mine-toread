@@ -1,6 +1,16 @@
 {
-  "last_ts": "1782727175.923539",
-  "pending": {},
+  "last_ts": "1782728446.616189",
+  "pending": {
+    "1782728446.616189": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "UR2TF61QF",
+      "text": "<https://doi.org/10.1080/1369118X.2026.2686320|doi.org/10.1080/…>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782728446616189",
+      "first_seen": "2026-06-29T10:22:11.340896+00:00",
+      "doi": "10.1080/1369118X.2026.2686320",
+      "arxiv_id": null
+    }
+  },
   "processed": {},
   "processed_meta": {}
 }
