@@ -257,20 +257,22 @@ jobs:
           sleep $wait_time
         done
 
-    # Pipeline orchestration (MINE team fork). Notify the team kasten
-    # (mine-zettelkasten:summarize) when the Paperpile library or the Slack
-    # inbox changed. Retargeted from fg-zettelkasten so a *team* feed change
-    # never kicks Fabio's personal pipeline. continue-on-error: the team
-    # kasten also runs on a daily cron, so a missing/invalid
-    # PIPELINE_DISPATCH_TOKEN must not fail the feed run.
-    - name: Trigger downstream pipeline (mine-zettelkasten summarize)
+    # Pipeline orchestration (MINE team fork). Notify the team kasten when the
+    # Paperpile library or the Slack inbox changed. `pipeline-finalize` runs
+    # mine-zettelkasten's `update` directly (build notes + site now) — the team
+    # kasten has no podcast leg, so we skip the summarize -> research-radio ->
+    # finalize chain (`update` summarizes internally). Retargeted from
+    # fg-zettelkasten so a *team* feed change never kicks Fabio's pipeline or
+    # research-radio. continue-on-error: the team kasten also runs on a daily
+    # cron, so a missing/invalid PIPELINE_DISPATCH_TOKEN must not fail the run.
+    - name: Trigger downstream pipeline (mine-zettelkasten update)
       if: steps.bib-check.outputs.changed == 'true' || steps.slack-ingest.outputs.slack_changed == 'true'
       continue-on-error: true
       uses: peter-evans/repository-dispatch@v4
       with:
         token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
         repository: fabiogiglietto/mine-zettelkasten
-        event-type: pipeline-summarize
+        event-type: pipeline-finalize
 
     - name: Upload feeds as artifacts
       uses: actions/upload-artifact@v7
