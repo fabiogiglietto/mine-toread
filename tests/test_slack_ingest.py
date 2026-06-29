@@ -535,3 +535,55 @@ def test_duplicate_matched_by_title_when_no_doi(tmp_path):
     }]
     summary = ingestor.run()
     assert summary.get("duplicate") == 1
+
+
+# ---- dedicated-channel mode (require_hashtag = False) -------------------
+
+
+def test_no_hashtag_mode_ingests_link_message(tmp_path):
+    """With require_hashtag off, a message carrying a paper link (no hashtag)
+    is ingested."""
+    resolver = MagicMock(spec=PaperResolver)
+    resolver.resolve.return_value = ResolvedPaper(
+        doi="10.5/nh", title="No Hashtag Needed Paper", authors=["Jane Smith"],
+        year="2026", source="crossref",
+    )
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path,
+                                                        resolver=resolver)
+    ingestor.config.require_hashtag = False
+    slack.fetch_history.return_value = [{
+        "ts": "100.0",
+        "text": "<https://doi.org/10.5/nh|doi.org/…>",   # link, NO hashtag
+        "user": "U1",
+        "files": [{"mimetype": "application/pdf",
+                   "url_private_download": "https://files.slack.com/x.pdf"}],
+    }]
+    summary = ingestor.run()
+    assert summary.get("added") == 1
+
+
+def test_no_hashtag_mode_skips_plain_chatter(tmp_path):
+    """A message with no link and no PDF is still ignored in dedicated-channel
+    mode — only links/PDFs are submissions."""
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path)
+    ingestor.config.require_hashtag = False
+    slack.fetch_history.return_value = [
+        {"ts": "100.0", "text": "what did everyone think of the talk?",
+         "user": "U1"},
+    ]
+    summary = ingestor.run()
+    assert summary.get("skipped") == 1
+    assert summary.get("added", 0) == 0
+
+
+def test_bot_messages_are_skipped_in_no_hashtag_mode(tmp_path):
+    """A link posted by a bot/app (bot_id present) — e.g. our own replies — is
+    never treated as a submission."""
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path)
+    ingestor.config.require_hashtag = False
+    slack.fetch_history.return_value = [
+        {"ts": "100.0", "text": "see https://doi.org/10.9/x", "bot_id": "B999"},
+    ]
+    summary = ingestor.run()
+    assert summary.get("skipped") == 1
+    assert summary.get("added", 0) == 0

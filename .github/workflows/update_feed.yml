@@ -61,6 +61,10 @@ jobs:
         GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         UNPAYWALL_EMAIL: ${{ secrets.UNPAYWALL_EMAIL }}
         SLACK_TRIGGER_HASHTAG: ${{ vars.SLACK_TRIGGER_HASHTAG || '#zettelkasten' }}
+        # false → dedicated-channel mode: any link/PDF in the channel is a
+        # submission (the channel is itself named #zettelkasten, so the hashtag
+        # would render as a channel link, not literal text).
+        SLACK_REQUIRE_HASHTAG: ${{ vars.SLACK_REQUIRE_HASHTAG || 'true' }}
       run: |
         python -m src.slack_ingest -v || true
         # `slack_changed` gates feed regeneration AND the downstream
