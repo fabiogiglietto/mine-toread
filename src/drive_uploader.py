@@ -146,10 +146,15 @@ class DriveUploader:
                 fileId=existing["id"],
                 media_body=media,
                 fields="id,name,webViewLink",
+                supportsAllDrives=True,
             ).execute()
             return updated
 
         self.logger.info("Drive: uploading %s (%d bytes)", filename, len(content))
+        # supportsAllDrives lets the upload target a Shared Drive folder, where
+        # the file is owned by the drive — a plain service account has no My
+        # Drive storage quota and cannot own files, so the inbox folder must
+        # live on a Shared Drive.
         created = self.service.files().create(
             body={
                 "name": filename,
@@ -157,6 +162,7 @@ class DriveUploader:
             },
             media_body=media,
             fields="id,name,webViewLink",
+            supportsAllDrives=True,
         ).execute()
         return created
 
@@ -169,7 +175,8 @@ class DriveUploader:
             f"name = '{safe}' and trashed = false"
         )
         results = self.service.files().list(
-            q=query, fields="files(id,name,webViewLink)", pageSize=2
+            q=query, fields="files(id,name,webViewLink)", pageSize=2,
+            supportsAllDrives=True, includeItemsFromAllDrives=True,
         ).execute()
         files = results.get("files", [])
         return files[0] if files else None
