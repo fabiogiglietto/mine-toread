@@ -5902,5 +5902,32 @@
       "source": "arxiv",
       "confidence_score": 0.7230769230769231
     }
+  },
+  "4aa80c342f5a3f46": {
+    "entry_key": "Katzenbach2026-sl2e",
+    "entry_title": "Fixing election interference, safeguarding election integrity? Developments and dynamics of election-related policies on social media platforms",
+    "cached_at": "2026-06-29T12:21:12.031668",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1369118x.2026.2686320",
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2686320",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-14",
+      "citation_count": 0,
+      "reference_count": 63,
+      "venue": "Information, Communication &amp; Society",
+      "authors": [
+        "Christian Katzenbach",
+        "Vasilisa Kuznetsova",
+        "Elizabeth Dubois"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
   }
 }
