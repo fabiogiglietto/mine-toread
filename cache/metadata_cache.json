@@ -5929,5 +5929,33 @@
       "source": "crossref",
       "confidence_score": null
     }
+  },
+  "768fb1a6ecdbb3da": {
+    "entry_key": "Jaidka2026-sl34",
+    "entry_title": "The Elite Effect: Blocking Political Leaders on X Decreases Misinformation Susceptibility and Low-credibility Content Sharing",
+    "cached_at": "2026-06-29T14:16:49.421960",
+    "metadata": {
+      "abstract": "Abstract We tested whether reducing the visibility of political elites in social media feeds can improve belief accuracy. In a preregistered field experiment, a custom mobile app directly manipulated participants' X (formerly Twitter) timelines, randomly assigning users to a control condition, Elite Blocking (hiding posts authored by political elites), or Elite Scrubbing (additionally removing posts mentioning elites). This design isolates elite-authored content from the broader stream of elite-referential discourse while preserving users' follow networks and ordinary scrolling experience. Both interventions decreased exposure to low-credibility and highly partisan material, with Elite Scrubbing producing larger reductions than Elite Blocking. Resharing of such content dropped substantially, indicating lower downstream diffusion. These feed-level shifts translated into significantly lower misinformation susceptibility and improved factual accuracy. Our findings illuminate how elite visibility is a consequential and actionable design lever for platform content moderation. Adjusting the prominence of elite-centered discourse can yield informational and epistemic benefits without broadly suppressing political content.",
+      "keywords": [],
+      "doi": "10.21203/rs.3.rs-9347980/v1",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-9347980/v1",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": null,
+      "citation_count": 0,
+      "reference_count": 0,
+      "venue": null,
+      "authors": [
+        "Kokil Jaidka",
+        "Yphtach Lelkes",
+        "Subhayan Mukerjee",
+        "Harshit Aneja"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
   }
 }
