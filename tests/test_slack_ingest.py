@@ -179,6 +179,7 @@ def _build_ingestor(tmp_path, *, downloader=None, unpaywall=None,
     slack.fetch_history.return_value = []
     slack.fetch_thread.return_value = []
     slack.get_permalink.return_value = "https://slack.example/p"
+    slack.display_name.return_value = "Test User"
     drive = MagicMock()
     drive.upload.return_value = {"id": "F", "name": "n.pdf",
                                  "webViewLink": "https://drive/x"}
@@ -448,3 +449,89 @@ def test_reprocessing_after_state_loss_does_not_duplicate(tmp_path):
     assert bib_after_first == bib_after_second
     # Only one entry total.
     assert bib_after_second.count("@article{") == 1
+
+
+# ---- team fork: attribution + cross-archive dedup -----------------------
+
+
+def test_submitter_recorded_for_attribution(tmp_path):
+    """A successful ingest records the resolved submitter display name in
+    processed_meta, so the feed/RSS can publish `submitted_by`."""
+    resolver = MagicMock(spec=PaperResolver)
+    resolver.resolve.return_value = ResolvedPaper(
+        doi="10.1/x", title="A Distinct New Paper", authors=["Jane Smith"],
+        year="2026", source="crossref",
+    )
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path,
+                                                        resolver=resolver)
+    slack.display_name.return_value = "Jane Smith"
+    slack.fetch_history.return_value = [{
+        "ts": "100.0",
+        "text": "#zettelkasten please add 10.1/x",
+        "user": "U1",
+        "files": [{"mimetype": "application/pdf",
+                   "url_private_download": "https://files.slack.com/x.pdf"}],
+    }]
+    summary = ingestor.run()
+    assert summary.get("added") == 1
+    slack.display_name.assert_called_with("U1")
+    state = SlackIngestState.load(ingestor.config.state_file)
+    meta = next(iter(state.processed_meta.values()))
+    assert meta["submitted_by"] == "Jane Smith"
+
+
+def test_duplicate_in_archive_replies_and_skips(tmp_path):
+    """A submission whose DOI is already in the published feed is not ingested:
+    the bot replies in-thread and the message is counted as a duplicate."""
+    import json
+    resolver = MagicMock(spec=PaperResolver)
+    resolver.resolve.return_value = ResolvedPaper(
+        doi="10.1/known", title="A Paper Already In The Archive",
+        authors=["Jane Smith"], year="2026", source="crossref",
+    )
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path,
+                                                        resolver=resolver)
+    feed_path = tmp_path / "feed.json"
+    feed_path.write_text(json.dumps({"items": [
+        {"title": "A Paper Already In The Archive",
+         "_academic": {"doi": "10.1/known"}},
+    ]}), encoding="utf-8")
+    ingestor.config.feed_file = feed_path
+    slack.fetch_history.return_value = [{
+        "ts": "100.0", "text": "#zettelkasten 10.1/known", "user": "U1",
+        "files": [{"mimetype": "application/pdf",
+                   "url_private_download": "https://files.slack.com/x.pdf"}],
+    }]
+    summary = ingestor.run()
+    assert summary.get("duplicate") == 1
+    assert summary.get("added", 0) == 0
+    drive.upload.assert_not_called()
+    # Replied in-thread and did not append to the inbox bib.
+    slack.post_thread_reply.assert_called()
+    reply = slack.post_thread_reply.call_args.args[2]
+    assert "archive" in reply.lower()
+    assert not ingestor.config.inbox_bib_file.exists() or \
+        "@article{" not in ingestor.config.inbox_bib_file.read_text()
+
+
+def test_duplicate_matched_by_title_when_no_doi(tmp_path):
+    """Title match alone (no DOI) is enough to flag a duplicate."""
+    import json
+    resolver = MagicMock(spec=PaperResolver)
+    resolver.resolve.return_value = ResolvedPaper(
+        title="A Paper Already In The Archive", authors=["Jane Smith"],
+        source="minimal",
+    )
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path,
+                                                        resolver=resolver)
+    feed_path = tmp_path / "feed.json"
+    feed_path.write_text(json.dumps({"items": [
+        {"title": "A Paper Already in the Archive!", "_academic": {}},
+    ]}), encoding="utf-8")
+    ingestor.config.feed_file = feed_path
+    slack.fetch_history.return_value = [{
+        "ts": "100.0", "text": "#zettelkasten a paper already in the archive",
+        "user": "U1",
+    }]
+    summary = ingestor.run()
+    assert summary.get("duplicate") == 1
