@@ -59,6 +59,12 @@ jobs:
         SLACK_TOREAD_CHANNEL_ID: ${{ secrets.SLACK_TOREAD_CHANNEL_ID }}
         SLACK_INBOX_DRIVE_FOLDER_ID: ${{ secrets.SLACK_INBOX_DRIVE_FOLDER_ID }}
         GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+        # OAuth user credentials (uploads as a real account with Drive quota,
+        # e.g. fgmcpdev). Preferred by the uploader over the service account,
+        # which can't own uploads in a My-Drive folder.
+        GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+        GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+        GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
         UNPAYWALL_EMAIL: ${{ secrets.UNPAYWALL_EMAIL }}
         SLACK_TRIGGER_HASHTAG: ${{ vars.SLACK_TRIGGER_HASHTAG || '#zettelkasten' }}
         # false → dedicated-channel mode: any link/PDF in the channel is a
