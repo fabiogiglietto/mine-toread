@@ -531,6 +531,11 @@ class IngestConfig:
     feed_file: Path = Path(DEFAULT_FEED)
     dry_run: bool = False
     confirm_on_success: bool = True
+    # When False, the trigger hashtag is not required: in a dedicated
+    # submissions channel any message carrying a paper link or a PDF is treated
+    # as a suggestion. (The MINE team channel is itself named #zettelkasten, so
+    # the hashtag would render as a channel link, never the literal text.)
+    require_hashtag: bool = True
 
 
 class SlackIngestor:
@@ -616,8 +621,20 @@ class SlackIngestor:
         }:
             return "skipped"
 
-        if not has_trigger_hashtag(text, self.config.hashtag):
+        # Never react to messages posted by a bot/app (including our own ✅ /
+        # ask-for-PDF / duplicate replies). The `bot_message` subtype misses
+        # chat.postMessage bot posts, which carry a `bot_id` instead.
+        if msg.get("bot_id"):
             return "skipped"
+
+        if self.config.require_hashtag:
+            if not has_trigger_hashtag(text, self.config.hashtag):
+                return "skipped"
+        else:
+            # Dedicated-channel mode: a message is a submission when it carries
+            # a paper link or an attached PDF; plain chatter is ignored.
+            if not extract_urls(text) and _first_pdf_file(msg) is None:
+                return "skipped"
 
         return self._ingest(state, msg, text)
 
@@ -906,6 +923,10 @@ def _build_config_from_env(args) -> Optional[IngestConfig]:
         )
         return None
     hashtag = os.environ.get("SLACK_TRIGGER_HASHTAG", DEFAULT_HASHTAG)
+    # SLACK_REQUIRE_HASHTAG=false → dedicated-channel mode (any link/PDF is a
+    # submission). Defaults to true, preserving upstream toread behavior.
+    require_hashtag = (os.environ.get(
+        "SLACK_REQUIRE_HASHTAG", "true") or "true").lower() != "false"
     return IngestConfig(
         channel_id=channel,
         hashtag=hashtag,
@@ -915,6 +936,7 @@ def _build_config_from_env(args) -> Optional[IngestConfig]:
         dry_run=args.dry_run,
         confirm_on_success=(os.environ.get(
             "SLACK_CONFIRM_ON_SUCCESS", "true") or "true").lower() != "false",
+        require_hashtag=require_hashtag,
     )
 
 
