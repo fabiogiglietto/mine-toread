@@ -5957,5 +5957,57 @@
       "source": "crossref",
       "confidence_score": null
     }
+  },
+  "0411950f9af06aac": {
+    "entry_key": "Unknown2026-sl3d",
+    "entry_title": "‘Us’ not ‘them’: scientists must use their skills to help stop polarization and division",
+    "cached_at": "2026-06-29T16:39:38.400741",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1038/d41586-026-01952-4",
+      "doi_url": "https://doi.org/10.1038/d41586-026-01952-4",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-25",
+      "citation_count": 0,
+      "reference_count": 5,
+      "venue": "Nature",
+      "authors": [],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "868cf4a3b5c015ed": {
+    "entry_key": "Dahlke2026-sl34",
+    "entry_title": "Multi-Platform Referrers of Misinformation: A Comparative Analysis of Misinformation Visits Referred by Facebook, Twitter, Instagram, Reddit, YouTube, Snapchat, and TikTok",
+    "cached_at": "2026-06-29T16:39:41.324409",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/10584609.2026.2679492",
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2679492",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-09",
+      "citation_count": 0,
+      "reference_count": 132,
+      "venue": "Political Communication",
+      "authors": [
+        "Ross Dahlke",
+        "Ryan C. Moore",
+        "Danya Adib-Azpeitia",
+        "Johan Ugander",
+        "Jeffrey T. Hancock"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
   }
 }

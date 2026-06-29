@@ -1,5 +1,5 @@
 {
-  "last_ts": "1782741616.256159",
+  "last_ts": "1782746495.489399",
   "pending": {
     "1782739206.289299": {
       "channel_id": "C0BDU82EBHQ",
@@ -9,30 +9,14 @@
       "first_seen": "2026-06-29T14:16:38.402213+00:00",
       "doi": null,
       "arxiv_id": null
-    },
-    "1782741381.233179": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "UR2TF61QF",
-      "text": "<https://www.nature.com/articles/d41586-026-01952-4?WT.ec_id=NATURE-20260625&amp;utm_source=nature_etoc&amp;utm_medium=email&amp;utm_campaign=CONR_41586_AWA1_GL_DTEC_054CI_TOC-260625|nature.com/articles/d41586-026-01952-4?WT.ec_id=NATURE-20260625&amp;…>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782741381233179",
-      "first_seen": "2026-06-29T14:16:40.873855+00:00",
-      "doi": "10.1038/d41586-026-01952-4",
-      "arxiv_id": null
-    },
-    "1782741554.133369": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "UR3895TML",
-      "text": "<https://www.tandfonline.com/doi/abs/10.1080/10584609.2026.2679492|tandfonline.com/doi/abs/10.1080/10584609.2026.2679492>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782741554133369",
-      "first_seen": "2026-06-29T14:16:41.759228+00:00",
-      "doi": "10.1080/10584609.2026.2679492",
-      "arxiv_id": null
     }
   },
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
-    "1782741616.256159": "Jaidka2026-sl34"
+    "1782741616.256159": "Jaidka2026-sl34",
+    "1782741381.233179": "Unknown2026-sl3d",
+    "1782741554.133369": "Dahlke2026-sl34"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -54,6 +38,20 @@
       "ts": "1782741616.256159",
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782741616256159",
       "pdf_source": "unpaywall",
+      "submitted_by": "GiadaM. / Uniurb"
+    },
+    "Unknown2026-sl3d": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1782741381.233179",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782741381233179",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "Fabio Giglietto"
+    },
+    "Dahlke2026-sl34": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1782741554.133369",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782741554133369",
+      "pdf_source": "slack_attachment_followup",
       "submitted_by": "GiadaM. / Uniurb"
     }
   }
