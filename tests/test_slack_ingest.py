@@ -587,3 +587,34 @@ def test_bot_messages_are_skipped_in_no_hashtag_mode(tmp_path):
     summary = ingestor.run()
     assert summary.get("skipped") == 1
     assert summary.get("added", 0) == 0
+
+
+def test_from_arxiv_uses_client_results(monkeypatch):
+    """_from_arxiv must use arxiv.Client().results() — Search.results() was
+    removed in arxiv>=3, which silently broke arxiv metadata resolution."""
+    import sys, types
+    from src import slack_ingest
+
+    paper = types.SimpleNamespace(
+        title="A Paper", authors=[types.SimpleNamespace(name="Jane Doe")],
+        published=types.SimpleNamespace(year=2026),
+        entry_id="http://arxiv.org/abs/2606.04431", summary="abstract", doi=None,
+    )
+
+    class FakeClient:
+        def results(self, search):
+            return iter([paper])
+
+    fake_arxiv = types.SimpleNamespace(
+        Search=lambda **kw: object(), Client=FakeClient
+    )
+    monkeypatch.setitem(sys.modules, "arxiv", fake_arxiv)
+
+    resolved = slack_ingest.PaperResolver(
+        enable_crossref=False, enable_arxiv=True
+    )._from_arxiv("2606.04431")
+    assert resolved is not None
+    assert resolved.title == "A Paper"
+    assert resolved.authors == ["Jane Doe"]
+    assert resolved.year == "2026"
+    assert resolved.source == "arxiv"

@@ -413,9 +413,11 @@ class PaperResolver:
         try:
             # The ArxivClient in metadata_enricher takes a title-based query
             # so we use the `arxiv` package directly for an id lookup.
+            # arxiv>=3 removed Search.results(); fetch via Client().results().
             import arxiv
             search = arxiv.Search(id_list=[arxiv_id], max_results=1)
-            paper = next(search.results(), None)
+            results = arxiv.Client().results(search)
+            paper = next(results, None)
         except Exception as e:
             self.logger.warning("ArXiv lookup failed for %s: %s", arxiv_id, e)
             return None
