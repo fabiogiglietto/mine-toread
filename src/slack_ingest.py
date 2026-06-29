@@ -171,6 +171,62 @@ def extract_doi(text: str, urls: Sequence[str] = ()) -> Optional[str]:
     return None
 
 
+# Standard DOI-bearing <meta> names: Highwire (citation_doi), Dublin Core
+# (dc.identifier), PRISM (prism.doi) — used by essentially every academic
+# publisher. We only trust these tags, not a body-text scan, to avoid picking
+# up a cited reference's DOI.
+_META_TAG_RE = re.compile(r"<meta\b[^>]*>", re.IGNORECASE)
+_META_ATTR_RE = re.compile(
+    r"""(name|property|content)\s*=\s*["']([^"']*)["']""", re.IGNORECASE
+)
+_DOI_META_NAMES = frozenset((
+    "citation_doi", "dc.identifier", "dc.identifier.doi", "prism.doi",
+    "bepress_citation_doi", "doi",
+))
+
+
+def extract_doi_from_html(html: str) -> Optional[str]:
+    """Pull a DOI from a landing page's `<meta>` tags, or None.
+
+    Handles attribute order variants and `doi:`-prefixed Dublin Core values.
+    """
+    for tag in _META_TAG_RE.findall(html or ""):
+        attrs = {k.lower(): v for k, v in _META_ATTR_RE.findall(tag)}
+        label = (attrs.get("name") or attrs.get("property") or "").strip().lower()
+        if label in _DOI_META_NAMES and attrs.get("content"):
+            m = _DOI_RE.search(attrs["content"])
+            if m:
+                return m.group(1).rstrip(".,;)")
+    return None
+
+
+def _fetch_html(url: str, *, timeout: int = 15,
+                max_bytes: int = 2_000_000) -> Optional[str]:
+    """Fetch a landing page's HTML, best-effort and size-capped.
+
+    DOIs live in <head> meta tags near the top, so we cap the read rather than
+    pull a whole large page. Returns None for non-HTML responses.
+    """
+    import requests
+
+    resp = requests.get(
+        url,
+        headers={"User-Agent": "ToRead/1.0 (slack-ingest; DOI discovery)"},
+        timeout=timeout, stream=True,
+    )
+    resp.raise_for_status()
+    ctype = (resp.headers.get("content-type") or "").lower()
+    if "html" not in ctype and "xml" not in ctype:
+        return None
+    data = b""
+    for chunk in resp.iter_content(chunk_size=65536):
+        if chunk:
+            data += chunk
+            if len(data) >= max_bytes:
+                break
+    return data.decode(resp.encoding or "utf-8", errors="replace")
+
+
 def extract_arxiv_id(urls: Sequence[str]) -> Optional[str]:
     """Return the ArXiv id (`2605.07069`) if any URL looks like ArXiv."""
     for url in urls:
@@ -332,9 +388,15 @@ class PaperResolver:
     """
 
     def __init__(self, enable_crossref: bool = True,
-                 enable_arxiv: bool = True):
+                 enable_arxiv: bool = True,
+                 enable_doi_scrape: bool = True,
+                 html_fetcher=None):
         self.enable_crossref = enable_crossref
         self.enable_arxiv = enable_arxiv
+        # When no DOI is in the message/URL, fetch the landing page and read
+        # its DOI <meta> tags. `html_fetcher` is injectable for tests.
+        self.enable_doi_scrape = enable_doi_scrape
+        self._html_fetcher = html_fetcher or _fetch_html
         self.logger = logging.getLogger(__name__)
 
     def resolve(self, *, text: str, urls: Sequence[str]) -> ResolvedPaper:
@@ -345,6 +407,10 @@ class PaperResolver:
                 return paper
 
         doi = extract_doi(text, urls)
+        # No DOI in the text/URL — try the landing page's meta tags. Covers
+        # publisher links that don't embed the DOI in their path.
+        if not doi and self.enable_doi_scrape:
+            doi = self._doi_from_landing(urls, arxiv_id)
         if doi and self.enable_crossref:
             paper = self._from_crossref(doi)
             if paper:
@@ -357,6 +423,23 @@ class PaperResolver:
             arxiv_id=arxiv_id,
             source="minimal",
         )
+
+    def _doi_from_landing(self, urls: Sequence[str],
+                          arxiv_id: Optional[str]) -> Optional[str]:
+        """Fetch each non-arXiv URL and read a DOI from its <meta> tags."""
+        for url in urls:
+            if arxiv_id and "arxiv.org" in url.lower():
+                continue
+            try:
+                html = self._html_fetcher(url)
+            except Exception as e:  # network/parse issues must never break ingest
+                self.logger.warning("Landing-page fetch failed for %s: %s", url, e)
+                continue
+            doi = extract_doi_from_html(html or "")
+            if doi:
+                self.logger.info("Resolved DOI %s from landing page %s", doi, url)
+                return doi
+        return None
 
     def _from_crossref(self, doi: str) -> Optional[ResolvedPaper]:
         # We need `title` for the Drive filename, but the existing

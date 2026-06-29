@@ -618,3 +618,59 @@ def test_from_arxiv_uses_client_results(monkeypatch):
     assert resolved.authors == ["Jane Doe"]
     assert resolved.year == "2026"
     assert resolved.source == "arxiv"
+
+
+# ---- landing-page DOI discovery -----------------------------------------
+
+
+def test_extract_doi_from_html_meta_tags():
+    from src.slack_ingest import extract_doi_from_html
+    # Highwire
+    assert extract_doi_from_html(
+        '<meta name="citation_doi" content="10.1080/abc.123">'
+    ) == "10.1080/abc.123"
+    # Dublin Core with doi: prefix, attribute order reversed
+    assert extract_doi_from_html(
+        '<meta content="doi:10.1177/xyz789" name="DC.Identifier">'
+    ) == "10.1177/xyz789"
+    # PRISM
+    assert extract_doi_from_html(
+        '<meta name="prism.doi" content="10.1016/j.foo.2026.01"/>'
+    ) == "10.1016/j.foo.2026.01"
+    # No DOI meta -> None (don't scrape body / cited refs)
+    assert extract_doi_from_html(
+        '<meta name="description" content="see 10.9/cited in refs">'
+    ) is None
+
+
+def test_resolve_scrapes_doi_from_landing_page():
+    """A link with no DOI in the URL still resolves via the landing page's
+    citation_doi meta tag (Crossref disabled here, so we just check the DOI)."""
+    from src.slack_ingest import PaperResolver
+    html = '<html><head><meta name="citation_doi" content="10.5555/landing.42">' \
+           '</head></html>'
+    resolver = PaperResolver(
+        enable_crossref=False, enable_arxiv=False,
+        html_fetcher=lambda url: html,
+    )
+    resolved = resolver.resolve(
+        text="<https://example.com/articles/some-slug|some paper>",
+        urls=["https://example.com/articles/some-slug"],
+    )
+    assert resolved.doi == "10.5555/landing.42"
+
+
+def test_resolve_landing_fetch_failure_is_safe():
+    """A landing-page fetch error must not break resolution."""
+    from src.slack_ingest import PaperResolver
+
+    def boom(url):
+        raise RuntimeError("network down")
+
+    resolver = PaperResolver(
+        enable_crossref=False, enable_arxiv=False, html_fetcher=boom,
+    )
+    resolved = resolver.resolve(text="no doi here",
+                                urls=["https://example.com/x"])
+    assert resolved.doi is None
+    assert resolved.source == "minimal"
