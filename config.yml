@@ -17,7 +17,9 @@ sources:
 #               SLACK_INBOX_DRIVE_FOLDER_ID, GOOGLE_CREDENTIALS_JSON
 # Optional env: UNPAYWALL_EMAIL (enables OA fallback),
 #               SLACK_TRIGGER_HASHTAG (default `#zettelkasten`),
-#               SLACK_CONFIRM_ON_SUCCESS (default `true`)
+#               SLACK_CONFIRM_ON_SUCCESS (default `true`),
+#               SLACK_NOTE_BASE_URL (note permalink base in the success reply;
+#                 default the mine-zettelkasten Papers URL)
 slack:
   trigger_hashtag: "#zettelkasten"
 
