@@ -9,15 +9,6 @@
       "first_seen": "2026-06-29T14:16:38.402213+00:00",
       "doi": null,
       "arxiv_id": null
-    },
-    "1782804784.643529": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "U01ETGW2ZS9",
-      "text": "<https://doi.org/10.1080/1369118X.2026.2691775|doi.org/10.1080/…>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782804784643529",
-      "first_seen": "2026-06-30T07:46:30.337480+00:00",
-      "doi": "10.1080/1369118X.2026.2691775",
-      "arxiv_id": null
     }
   },
   "processed": {
@@ -25,7 +16,8 @@
     "1782736288.665349": "Slack1782736288-sl09",
     "1782741616.256159": "Jaidka2026-sl34",
     "1782741381.233179": "Unknown2026-sl3d",
-    "1782741554.133369": "Dahlke2026-sl34"
+    "1782741554.133369": "Dahlke2026-sl34",
+    "1782804784.643529": "Mota2026-sl59"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -62,6 +54,14 @@
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782741554133369",
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "GiadaM. / Uniurb"
+    },
+    "Mota2026-sl59": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1782804784.643529",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782804784643529",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "Massimo Terenzi",
+      "submitted_by_id": "U01ETGW2ZS9"
     }
   }
 }

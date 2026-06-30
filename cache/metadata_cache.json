@@ -6018,5 +6018,30 @@
     "failed": true,
     "failure_reason": "Could not enrich entry: Gottfried2026-ww | No DOI available | Title length: 66 chars | Authors: Gottfried, Jeffrey, Bishop, William... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
     "last_failure_at": "2026-06-30T07:46:38.345058"
+  },
+  "d11390a8658f4bc8": {
+    "entry_key": "Mota2026-sl59",
+    "entry_title": "Weapon, wonder or both? Political framings of AI in global north and south media",
+    "cached_at": "2026-06-30T08:32:39.373811",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1369118x.2026.2691775",
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2691775",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-26",
+      "citation_count": 0,
+      "reference_count": 69,
+      "venue": "Information, Communication &amp; Society",
+      "authors": [
+        "Bárbara Maria Farias Mota"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
   }
 }
