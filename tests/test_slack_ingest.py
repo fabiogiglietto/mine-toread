@@ -237,8 +237,11 @@ def test_attached_pdf_path_ingests(tmp_path):
     bib = ingestor.config.inbox_bib_file.read_text(encoding="utf-8")
     assert "Smith2026-sl" in bib
     assert "10.1/x" in bib
-    # Confirmation reply posted
+    # Confirmation reply posted, linking the submitter to their note permalink.
     slack.post_thread_reply.assert_called()
+    reply = slack.post_thread_reply.call_args.args[2]
+    assert "Smith2026-sl" in reply
+    assert "mine-zettelkasten/Papers" in reply
     # Slack token threaded through to download (via auth_header)
 
 
