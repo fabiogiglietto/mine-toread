@@ -38,5 +38,15 @@
       "license": "cc-by",
       "host_type": "repository"
     }
+  },
+  "10.1080/1369118x.2026.2691775": {
+    "cached_at": "2026-06-30T07:46:30.224367",
+    "result": {
+      "doi": "10.1080/1369118x.2026.2691775",
+      "is_oa": true,
+      "best_oa_pdf_url": null,
+      "license": "cc-by",
+      "host_type": "publisher"
+    }
   }
 }
