@@ -935,6 +935,11 @@ class SlackIngestor:
             "permalink": permalink,
             "pdf_source": pdf_source,
             "submitted_by": submitted_by,
+            # Opaque Slack user-id, kept alongside the display name so the
+            # downstream team-kasten digest can render a real `<@id>` mention
+            # that actually pings the submitter (a display name alone cannot).
+            # Only a real string is stored; None when no user-id was resolved.
+            "submitted_by_id": user_id if isinstance(user_id, str) else None,
         }
 
         if not self.config.dry_run and self.config.confirm_on_success:
