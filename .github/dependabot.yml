@@ -1,0 +1,12 @@
+# github-actions only: Python deps are managed upstream (config-diff fork —
+# see PIPELINE.md fork policy) and arrive via `git merge upstream/main`.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ["*"]
