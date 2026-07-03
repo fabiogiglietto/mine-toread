@@ -6203,5 +6203,31 @@
     "failed": true,
     "failure_reason": "Could not enrich entry: Hinck2026-yj | No DOI available | Title length: 71 chars | Authors: Hinck, Musashi, King, Gary... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
     "last_failure_at": "2026-07-03T07:47:12.095811"
+  },
+  "752080092ec40ee2": {
+    "entry_key": "Ptz2024-sl20",
+    "entry_title": "Performance without understanding: How ChatGPT relies on humans to repair conversational trouble",
+    "cached_at": "2026-07-03T12:17:09.491765",
+    "metadata": {
+      "abstract": "LLM-based chatbots’ ability to generate contextually appropriate and informative texts can be taken as an indication that they are also able to understand text. We argue instead that the separation of the two competences to generate and to understand text is the key to their performance in dialog with human users. This argument requires a shift in perspective from a concern with machine intelligence to a concern with communicative competence. We illustrate our argument with empirical examples of what conversation analysis calls ‘repair’, showing that the management of trouble by chatbots is not based on an underlying understanding of what is going on but rather on their use of the feedback by human conversational partners. In the conclusion we suggest that strategies for the interaction between chatbots and users should not aim to improve computational skills but to develop a new communicative competence.",
+      "keywords": [],
+      "doi": "10.1177/17504813241271492",
+      "doi_url": "https://doi.org/10.1177/17504813241271492",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2024",
+      "citation_count": 22,
+      "reference_count": 22,
+      "venue": "Discourse &amp; Communication",
+      "authors": [
+        "Ole Pütz",
+        "Elena Esposito"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
   }
 }
