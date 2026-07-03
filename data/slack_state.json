@@ -1,5 +1,5 @@
 {
-  "last_ts": "1782984077.356849",
+  "last_ts": "1783073332.441329",
   "pending": {
     "1782739206.289299": {
       "channel_id": "C0BDU82EBHQ",
@@ -8,6 +8,33 @@
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1782739206289299",
       "first_seen": "2026-06-29T14:16:38.402213+00:00",
       "doi": null,
+      "arxiv_id": null
+    },
+    "1783073271.195329": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "U01ETGW2ZS9",
+      "text": "<https://academic.oup.com/ct/article/36/2/86/8466454|academic.oup.com/ct/article/…/8466454>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783073271195329",
+      "first_seen": "2026-07-03T10:40:13.448812+00:00",
+      "doi": null,
+      "arxiv_id": null
+    },
+    "1783073294.791859": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "U01ETGW2ZS9",
+      "text": "<https://journals.ub.uni-koeln.de/index.php/phidi/article/view/11657/11865|journals.ub.uni-koeln.de/index.php/…/11865>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783073294791859",
+      "first_seen": "2026-07-03T10:40:15.384476+00:00",
+      "doi": null,
+      "arxiv_id": null
+    },
+    "1783073332.441329": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "U01ETGW2ZS9",
+      "text": "<https://journals.sagepub.com/doi/full/10.1177/17504813241271492|journals.sagepub.com/doi/full/10.1177/17504813241271492>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783073332441329",
+      "first_seen": "2026-07-03T10:40:16.801603+00:00",
+      "doi": "10.1177/17504813241271492",
       "arxiv_id": null
     }
   },

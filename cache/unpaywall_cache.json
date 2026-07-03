@@ -48,5 +48,15 @@
       "license": "cc-by",
       "host_type": "publisher"
     }
+  },
+  "10.1177/17504813241271492": {
+    "cached_at": "2026-07-03T10:40:16.354381",
+    "result": {
+      "doi": "10.1177/17504813241271492",
+      "is_oa": true,
+      "best_oa_pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/17504813241271492",
+      "license": "cc-by-nc",
+      "host_type": "publisher"
+    }
   }
 }
