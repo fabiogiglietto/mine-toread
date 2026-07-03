@@ -146,16 +146,17 @@ class FeedGenerator:
             item["_academic"] = extensions
 
         # Slack-origin extension — only when this entry came from a
-        # `#zettelkasten` suggestion. `submitted_by` is published here (unlike
-        # upstream toread, which strips identity) so the team kasten can show
-        # who suggested each paper.
+        # `#zettelkasten` suggestion. `submitted_by` (display name) and
+        # `submitted_by_id` (opaque Slack user-id, for @-mentioning) are
+        # published here (unlike upstream toread, which strips identity) so the
+        # team kasten can show / mention who suggested each paper.
         if entry.source == "slack":
             sm = self.slack_meta.get(entry.key)
             if sm:
                 item["_slack_suggestion"] = {
                     k: v for k, v in sm.items()
                     if k in ("channel_id", "ts", "permalink", "pdf_source",
-                             "submitted_by")
+                             "submitted_by", "submitted_by_id")
                     and v is not None
                 }
 

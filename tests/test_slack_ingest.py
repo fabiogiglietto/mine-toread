@@ -478,6 +478,8 @@ def test_submitter_recorded_for_attribution(tmp_path):
     state = SlackIngestState.load(ingestor.config.state_file)
     meta = next(iter(state.processed_meta.values()))
     assert meta["submitted_by"] == "Jane Smith"
+    # The opaque user-id is recorded too, so the team kasten can @-mention.
+    assert meta["submitted_by_id"] == "U1"
 
 
 def test_duplicate_in_archive_replies_and_skips(tmp_path):

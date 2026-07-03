@@ -555,9 +555,11 @@ the trigger hashtag (default `#zettelkasten`).
   from Paperpile-minted `-xx` keys.
 - The bot ignores its own outbound digest and any message without the
   trigger hashtag.
-- No Slack identities (user IDs, names) end up in the published `feed.json`.
-  The item carries `_slack_suggestion = {channel_id, ts, permalink,
-  pdf_source}` — see [SCHEMA.md](SCHEMA.md).
+- This team fork publishes the suggester's display name and opaque Slack
+  user-id (for attribution / @-mentioning in the team kasten's #toread digest);
+  no other identity (e.g. email) reaches `feed.json`. The item carries
+  `_slack_suggestion = {channel_id, ts, permalink, pdf_source, submitted_by,
+  submitted_by_id}` — see [SCHEMA.md](SCHEMA.md).
 - If the same paper is later added to Paperpile, the Paperpile entry wins
   at merge time. Because Paperpile mints a different key, downstream
   stages will re-summarize / re-podcast that paper once under the new key

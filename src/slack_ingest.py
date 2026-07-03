@@ -935,6 +935,10 @@ class SlackIngestor:
             "permalink": permalink,
             "pdf_source": pdf_source,
             "submitted_by": submitted_by,
+            # Opaque Slack user-id, published downstream so the team kasten can
+            # @-mention the submitter in its #toread digest. Strictly less
+            # sensitive than the display name already published above.
+            "submitted_by_id": user_id if isinstance(user_id, str) else None,
         }
 
         if not self.config.dry_run and self.config.confirm_on_success:

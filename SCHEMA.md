@@ -87,19 +87,22 @@ Consumers must tolerate any subset.
 ### `_slack_suggestion` object
 
 Emitted only for items whose BibTeX source is the Slack inbox
-(`data/slack_inbox.bib`, populated by `src/slack_ingest.py`). The object
-deliberately omits any suggester identity — that stays in
-`data/slack_state.json` and never reaches the published feed.
+(`data/slack_inbox.bib`, populated by `src/slack_ingest.py`). This team fork
+publishes the suggester's display name and opaque Slack user-id (for
+attribution / @-mentioning); no other identity (e.g. email) ever reaches the
+feed. (Upstream `toread` omits identity entirely.)
 
-| Field        | Type   | Notes                                                  |
-|--------------|--------|--------------------------------------------------------|
-| `channel_id` | string | Slack channel ID (typically `#zettelkasten` / `#toread`) |
-| `ts`         | string | Slack message timestamp (`seconds.microseconds`)        |
-| `permalink`  | string | Slack message permalink (may be absent on dry-runs)     |
-| `pdf_source` | string | `slack_attachment` \| `arxiv` \| `unpaywall` \| `slack_attachment_followup` |
+| Field             | Type   | Notes                                                  |
+|-------------------|--------|--------------------------------------------------------|
+| `channel_id`      | string | Slack channel ID (typically `#zettelkasten` / `#toread`) |
+| `ts`              | string | Slack message timestamp (`seconds.microseconds`)        |
+| `permalink`       | string | Slack message permalink (may be absent on dry-runs)     |
+| `pdf_source`      | string | `slack_attachment` \| `arxiv` \| `unpaywall` \| `slack_attachment_followup` |
+| `submitted_by`    | string | Suggester's resolved Slack display name (may be absent) |
+| `submitted_by_id` | string | Suggester's opaque Slack user-id, for `<@id>` mentions (may be absent) |
 
-Consumers can use this to render a "Suggested via Slack" badge or to link
-back to the original message.
+Consumers can use this to render a "Suggested via Slack" badge, attribute /
+@-mention the suggester, or link back to the original message.
 
 ## Consumer expectations
 
