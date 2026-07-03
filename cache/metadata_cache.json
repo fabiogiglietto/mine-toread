@@ -6194,5 +6194,14 @@
       "source": "crossref",
       "confidence_score": null
     }
+  },
+  "06e15083ae69cfa5": {
+    "entry_key": "Hinck2026-yj",
+    "entry_title": "Where's the Evidence that Respondents Understand Your Survey Questions?",
+    "cached_at": "2026-07-03T07:47:12.095805",
+    "metadata": null,
+    "failed": true,
+    "failure_reason": "Could not enrich entry: Hinck2026-yj | No DOI available | Title length: 71 chars | Authors: Hinck, Musashi, King, Gary... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
+    "last_failure_at": "2026-07-03T07:47:12.095811"
   }
 }
