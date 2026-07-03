@@ -56,11 +56,6 @@ DEFAULT_HASHTAG = "#zettelkasten"
 DEFAULT_STATE_FILE = "data/slack_state.json"
 DEFAULT_INBOX_BIB = "data/slack_inbox.bib"
 DEFAULT_FEED = "output/feed.json"
-# Base URL of the downstream zettelkasten's per-paper notes. The note filename
-# is the bibkey, so `<base>/<bibkey>` is the note's permalink — known already at
-# ingest time, even though the page goes live a few minutes later (after the
-# downstream `update` + site deploy). Overridable via SLACK_NOTE_BASE_URL.
-DEFAULT_NOTE_BASE_URL = "https://fabiogiglietto.github.io/mine-zettelkasten/Papers"
 
 
 # ---- Duplicate detection --------------------------------------------------
@@ -621,13 +616,16 @@ class IngestConfig:
     feed_file: Path = Path(DEFAULT_FEED)
     dry_run: bool = False
     confirm_on_success: bool = True
-    # Base URL for the downstream note permalink included in the success reply.
-    note_base_url: str = DEFAULT_NOTE_BASE_URL
     # When False, the trigger hashtag is not required: in a dedicated
     # submissions channel any message carrying a paper link or a PDF is treated
     # as a suggestion. (The MINE team channel is itself named #zettelkasten, so
     # the hashtag would render as a channel link, never the literal text.)
     require_hashtag: bool = True
+    # When True, resolve and publish the suggester's Slack display name and
+    # opaque user-id in the feed (`_slack_suggestion.submitted_by*`). Off by
+    # default: upstream toread keeps suggester identity private; the MINE team
+    # fork turns this on for site attribution and @-mentions.
+    attribute_suggesters: bool = False
 
 
 class SlackIngestor:
@@ -920,44 +918,39 @@ class SlackIngestor:
         elif not self.config.dry_run:
             _append_bib(self.config.inbox_bib_file, bib_entry)
 
-        # Resolve the submitter's display name for site attribution. The
-        # original author is on the message; for the follow-up path it was
-        # captured in `pending[ts]["user"]` when we asked for the PDF.
-        user_id = msg.get("user") or state.pending.get(ts, {}).get("user")
-        submitted_by = (self.slack.display_name(user_id)
-                        if user_id and not self.config.dry_run else None)
-        # Only a real string is published; anything else (no name resolved)
-        # stays out of the JSON-serialized state.
-        if not isinstance(submitted_by, str):
-            submitted_by = None
-
         # Track for the feed-side _slack_suggestion extension; written
         # alongside the state file so the rss_generator can pick it up.
         state.processed[ts] = bibkey
         if remove_from_pending:
             state.pending.pop(ts, None)
-        state.processed_meta[bibkey] = {
+        meta = {
             "channel_id": channel,
             "ts": ts,
             "permalink": permalink,
             "pdf_source": pdf_source,
-            "submitted_by": submitted_by,
-            # Opaque Slack user-id, kept alongside the display name so the
-            # downstream team-kasten digest can render a real `<@id>` mention
-            # that actually pings the submitter (a display name alone cannot).
-            # Only a real string is stored; None when no user-id was resolved.
-            "submitted_by_id": user_id if isinstance(user_id, str) else None,
         }
+        if self.config.attribute_suggesters:
+            # Resolve the submitter's display name for site attribution. The
+            # original author is on the message; for the follow-up path it was
+            # captured in `pending[ts]["user"]` when we asked for the PDF.
+            user_id = msg.get("user") or state.pending.get(ts, {}).get("user")
+            submitted_by = (self.slack.display_name(user_id)
+                            if user_id and not self.config.dry_run else None)
+            # Only a real string is published; anything else (no name
+            # resolved) stays out of the JSON-serialized state.
+            meta["submitted_by"] = (submitted_by
+                                    if isinstance(submitted_by, str) else None)
+            # Opaque Slack user-id, published downstream so the team kasten
+            # can @-mention the submitter in its #toread digest. Strictly less
+            # sensitive than the display name already published above.
+            meta["submitted_by_id"] = (user_id
+                                       if isinstance(user_id, str) else None)
+        state.processed_meta[bibkey] = meta
 
         if not self.config.dry_run and self.config.confirm_on_success:
-            # Link the submitter straight to their note. The URL is the note's
-            # permalink (filename = bibkey); it goes live a few minutes later,
-            # once the downstream `update` builds the note and the site deploys.
-            note_url = f"{self.config.note_base_url.rstrip('/')}/{bibkey}"
             self.slack.post_thread_reply(
                 channel, ts,
-                f"✅ Added as `{bibkey}`. Your note will be ready in a few "
-                f"minutes: {note_url}",
+                f"✅ Added as `{bibkey}`. It'll appear after the next pipeline tick.",
             )
 
         return "added"
@@ -1029,6 +1022,10 @@ def _build_config_from_env(args) -> Optional[IngestConfig]:
     # submission). Defaults to true, preserving upstream toread behavior.
     require_hashtag = (os.environ.get(
         "SLACK_REQUIRE_HASHTAG", "true") or "true").lower() != "false"
+    # SLACK_ATTRIBUTE_SUGGESTERS=true → publish submitter identity in the feed
+    # (team fork). Defaults to false, preserving upstream privacy behavior.
+    attribute_suggesters = (os.environ.get(
+        "SLACK_ATTRIBUTE_SUGGESTERS", "false") or "false").lower() == "true"
     return IngestConfig(
         channel_id=channel,
         hashtag=hashtag,
@@ -1038,9 +1035,8 @@ def _build_config_from_env(args) -> Optional[IngestConfig]:
         dry_run=args.dry_run,
         confirm_on_success=(os.environ.get(
             "SLACK_CONFIRM_ON_SUCCESS", "true") or "true").lower() != "false",
-        note_base_url=(os.environ.get("SLACK_NOTE_BASE_URL")
-                       or DEFAULT_NOTE_BASE_URL),
         require_hashtag=require_hashtag,
+        attribute_suggesters=attribute_suggesters,
     )
 
 

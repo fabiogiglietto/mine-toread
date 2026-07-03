@@ -35,8 +35,10 @@ jobs:
         cache: 'pip'
     
     - name: Install dependencies
+      # requirements.lock is compiled from requirements.txt (uv pip compile);
+      # regenerate it when requirements.txt changes.
       run: |
-        pip install -r requirements.txt
+        pip install -r requirements.lock
     
     - name: Create directories
       run: |
@@ -59,18 +61,18 @@ jobs:
         SLACK_TOREAD_CHANNEL_ID: ${{ secrets.SLACK_TOREAD_CHANNEL_ID }}
         SLACK_INBOX_DRIVE_FOLDER_ID: ${{ secrets.SLACK_INBOX_DRIVE_FOLDER_ID }}
         GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
-        # OAuth user credentials (uploads as a real account with Drive quota,
-        # e.g. fgmcpdev). Preferred by the uploader over the service account,
-        # which can't own uploads in a My-Drive folder.
+        UNPAYWALL_EMAIL: ${{ secrets.UNPAYWALL_EMAIL }}
+        SLACK_TRIGGER_HASHTAG: ${{ vars.SLACK_TRIGGER_HASHTAG || '#zettelkasten' }}
+        # Team-fork knobs (repo Actions variables; defaults = fg behavior).
+        # SLACK_REQUIRE_HASHTAG=false -> dedicated-channel mode;
+        # SLACK_ATTRIBUTE_SUGGESTERS=true -> publish submitter identity.
+        SLACK_REQUIRE_HASHTAG: ${{ vars.SLACK_REQUIRE_HASHTAG || 'true' }}
+        SLACK_ATTRIBUTE_SUGGESTERS: ${{ vars.SLACK_ATTRIBUTE_SUGGESTERS || 'false' }}
+        # OAuth user creds for a My-Drive inbox folder (team fork); empty here,
+        # so the service account above is used.
         GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
         GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
         GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
-        UNPAYWALL_EMAIL: ${{ secrets.UNPAYWALL_EMAIL }}
-        SLACK_TRIGGER_HASHTAG: ${{ vars.SLACK_TRIGGER_HASHTAG || '#zettelkasten' }}
-        # false → dedicated-channel mode: any link/PDF in the channel is a
-        # submission (the channel is itself named #zettelkasten, so the hashtag
-        # would render as a channel link, not literal text).
-        SLACK_REQUIRE_HASHTAG: ${{ vars.SLACK_REQUIRE_HASHTAG || 'true' }}
       run: |
         python -m src.slack_ingest -v || true
         # `slack_changed` gates feed regeneration AND the downstream
@@ -174,6 +176,13 @@ jobs:
           sleep 60
         done
 
+    # Contract enforcement — an invalid feed must never be committed or
+    # cascade downstream. schema/feed.schema.json is the normative contract
+    # (SCHEMA.md is commentary). Hard fail -> the failure alert fires.
+    - name: Validate feed against schema
+      if: steps.bib-check.outputs.changed == 'true' || steps.slack-ingest.outputs.slack_changed == 'true'
+      run: check-jsonschema --schemafile schema/feed.schema.json output/feed.json
+
     - name: Skip feed generation (no changes)
       if: steps.bib-check.outputs.changed != 'true' && steps.slack-ingest.outputs.slack_changed != 'true'
       run: |
@@ -267,22 +276,26 @@ jobs:
           sleep $wait_time
         done
 
-    # Pipeline orchestration (MINE team fork). Notify the team kasten when the
-    # Paperpile library or the Slack inbox changed. `pipeline-finalize` runs
-    # mine-zettelkasten's `update` directly (build notes + site now) — the team
-    # kasten has no podcast leg, so we skip the summarize -> research-radio ->
-    # finalize chain (`update` summarizes internally). Retargeted from
-    # fg-zettelkasten so a *team* feed change never kicks Fabio's pipeline or
-    # research-radio. continue-on-error: the team kasten also runs on a daily
-    # cron, so a missing/invalid PIPELINE_DISPATCH_TOKEN must not fail the run.
-    - name: Trigger downstream pipeline (mine-zettelkasten update)
+    # Pipeline orchestration — see PIPELINE.md. Fire the downstream chain
+    # (fg-zettelkasten:summarize -> research-radio -> github.io ->
+    # fg-zettelkasten:update) only when the Paperpile library itself changed —
+    # i.e. new or edited papers. bib-check is false for cache-only metadata
+    # refreshes (e.g. citation-count updates), so those no longer cascade.
+    # Target/event and soft-fail come from repo Actions variables so this
+    # workflow file is byte-identical in the team fork (see PIPELINE.md,
+    # "The MINE team chain"). Defaults = the fg chain. mine-toread sets
+    # PIPELINE_DISPATCH_REPO=fabiogiglietto/mine-zettelkasten,
+    # PIPELINE_DISPATCH_EVENT=pipeline-finalize,
+    # PIPELINE_DISPATCH_SOFT_FAIL=true (its kasten has a daily self-healing
+    # cron, so a missing dispatch token must not fail the feed run).
+    - name: Trigger downstream pipeline
       if: steps.bib-check.outputs.changed == 'true' || steps.slack-ingest.outputs.slack_changed == 'true'
-      continue-on-error: true
+      continue-on-error: ${{ vars.PIPELINE_DISPATCH_SOFT_FAIL == 'true' }}
       uses: peter-evans/repository-dispatch@v4
       with:
         token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
-        repository: fabiogiglietto/mine-zettelkasten
-        event-type: pipeline-finalize
+        repository: ${{ vars.PIPELINE_DISPATCH_REPO || 'fabiogiglietto/fg-zettelkasten' }}
+        event-type: ${{ vars.PIPELINE_DISPATCH_EVENT || 'pipeline-summarize' }}
 
     - name: Upload feeds as artifacts
       uses: actions/upload-artifact@v7

@@ -237,11 +237,8 @@ def test_attached_pdf_path_ingests(tmp_path):
     bib = ingestor.config.inbox_bib_file.read_text(encoding="utf-8")
     assert "Smith2026-sl" in bib
     assert "10.1/x" in bib
-    # Confirmation reply posted, linking the submitter to their note permalink.
+    # Confirmation reply posted
     slack.post_thread_reply.assert_called()
-    reply = slack.post_thread_reply.call_args.args[2]
-    assert "Smith2026-sl" in reply
-    assert "mine-zettelkasten/Papers" in reply
     # Slack token threaded through to download (via auth_header)
 
 
@@ -457,32 +454,6 @@ def test_reprocessing_after_state_loss_does_not_duplicate(tmp_path):
 # ---- team fork: attribution + cross-archive dedup -----------------------
 
 
-def test_submitter_recorded_for_attribution(tmp_path):
-    """A successful ingest records the resolved submitter display name in
-    processed_meta, so the feed/RSS can publish `submitted_by`."""
-    resolver = MagicMock(spec=PaperResolver)
-    resolver.resolve.return_value = ResolvedPaper(
-        doi="10.1/x", title="A Distinct New Paper", authors=["Jane Smith"],
-        year="2026", source="crossref",
-    )
-    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path,
-                                                        resolver=resolver)
-    slack.display_name.return_value = "Jane Smith"
-    slack.fetch_history.return_value = [{
-        "ts": "100.0",
-        "text": "#zettelkasten please add 10.1/x",
-        "user": "U1",
-        "files": [{"mimetype": "application/pdf",
-                   "url_private_download": "https://files.slack.com/x.pdf"}],
-    }]
-    summary = ingestor.run()
-    assert summary.get("added") == 1
-    slack.display_name.assert_called_with("U1")
-    state = SlackIngestState.load(ingestor.config.state_file)
-    meta = next(iter(state.processed_meta.values()))
-    assert meta["submitted_by"] == "Jane Smith"
-
-
 def test_duplicate_in_archive_replies_and_skips(tmp_path):
     """A submission whose DOI is already in the published feed is not ingested:
     the bot replies in-thread and the message is counted as a duplicate."""
@@ -540,6 +511,80 @@ def test_duplicate_matched_by_title_when_no_doi(tmp_path):
     assert summary.get("duplicate") == 1
 
 
+def test_bot_messages_are_skipped(tmp_path):
+    """A hashtag message posted by a bot/app (bot_id present) — e.g. our own
+    ✅ / ask-for-PDF / duplicate replies — is never treated as a submission.
+    The `bot_message` subtype misses chat.postMessage bot posts, which carry
+    a `bot_id` instead."""
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path)
+    slack.fetch_history.return_value = [
+        {"ts": "100.0", "text": "#zettelkasten see https://doi.org/10.9/x",
+         "bot_id": "B999"},
+    ]
+    summary = ingestor.run()
+    assert summary.get("skipped") == 1
+    assert summary.get("added", 0) == 0
+
+
+# ---- attribution flag (attribute_suggesters) ----------------------------
+
+
+def test_attribution_off_keeps_identity_out_of_state(tmp_path):
+    """Default (upstream) behavior: no submitter identity in processed_meta,
+    byte-compatible with the pre-flag state shape."""
+    resolver = MagicMock(spec=PaperResolver)
+    resolver.resolve.return_value = ResolvedPaper(
+        doi="10.1/x", title="A Distinct New Paper", authors=["Jane Smith"],
+        year="2026", source="crossref",
+    )
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path,
+                                                        resolver=resolver)
+    slack.fetch_history.return_value = [{
+        "ts": "100.0",
+        "text": "#zettelkasten please add 10.1/x",
+        "user": "U1",
+        "files": [{"mimetype": "application/pdf",
+                   "url_private_download": "https://files.slack.com/x.pdf"}],
+    }]
+    summary = ingestor.run()
+    assert summary.get("added") == 1
+    slack.display_name.assert_not_called()
+    state = SlackIngestState.load(ingestor.config.state_file)
+    meta = next(iter(state.processed_meta.values()))
+    assert "submitted_by" not in meta
+    assert "submitted_by_id" not in meta
+
+
+def test_submitter_recorded_when_attribution_on(tmp_path):
+    """With attribute_suggesters on (team fork), a successful ingest records
+    the resolved submitter display name + opaque user-id in processed_meta,
+    so the feed/RSS can publish `submitted_by*`."""
+    resolver = MagicMock(spec=PaperResolver)
+    resolver.resolve.return_value = ResolvedPaper(
+        doi="10.1/x", title="A Distinct New Paper", authors=["Jane Smith"],
+        year="2026", source="crossref",
+    )
+    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path,
+                                                        resolver=resolver)
+    ingestor.config.attribute_suggesters = True
+    slack.display_name.return_value = "Jane Smith"
+    slack.fetch_history.return_value = [{
+        "ts": "100.0",
+        "text": "#zettelkasten please add 10.1/x",
+        "user": "U1",
+        "files": [{"mimetype": "application/pdf",
+                   "url_private_download": "https://files.slack.com/x.pdf"}],
+    }]
+    summary = ingestor.run()
+    assert summary.get("added") == 1
+    slack.display_name.assert_called_with("U1")
+    state = SlackIngestState.load(ingestor.config.state_file)
+    meta = next(iter(state.processed_meta.values()))
+    assert meta["submitted_by"] == "Jane Smith"
+    # The opaque user-id is recorded too, so the team kasten can @-mention.
+    assert meta["submitted_by_id"] == "U1"
+
+
 # ---- dedicated-channel mode (require_hashtag = False) -------------------
 
 
@@ -573,19 +618,6 @@ def test_no_hashtag_mode_skips_plain_chatter(tmp_path):
     slack.fetch_history.return_value = [
         {"ts": "100.0", "text": "what did everyone think of the talk?",
          "user": "U1"},
-    ]
-    summary = ingestor.run()
-    assert summary.get("skipped") == 1
-    assert summary.get("added", 0) == 0
-
-
-def test_bot_messages_are_skipped_in_no_hashtag_mode(tmp_path):
-    """A link posted by a bot/app (bot_id present) — e.g. our own replies — is
-    never treated as a submission."""
-    ingestor, slack, drive, unpaywall = _build_ingestor(tmp_path)
-    ingestor.config.require_hashtag = False
-    slack.fetch_history.return_value = [
-        {"ts": "100.0", "text": "see https://doi.org/10.9/x", "bot_id": "B999"},
     ]
     summary = ingestor.run()
     assert summary.get("skipped") == 1
