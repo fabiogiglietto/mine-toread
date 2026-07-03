@@ -1,0 +1,7 @@
+# Generated data/state belong to THIS repo; upstream merges must never touch
+# them. Requires the one-time local setup documented in
+# scripts/sync-upstream.sh (merge.ours driver).
+data/** merge=ours
+output/** merge=ours
+cache/** merge=ours
+config.yml merge=ours
