@@ -6316,5 +6316,62 @@
       "source": "openalex",
       "confidence_score": null
     }
+  },
+  "5498019bf6b30b0c": {
+    "entry_key": "Mosca2026-yh",
+    "entry_title": "Fake news as a rhetorical weapon: Strategic delegitimization and selective amplification in Italian newspapers",
+    "cached_at": "2026-07-04T07:23:41.404804",
+    "metadata": {
+      "abstract": "Accusations of fake news have become a prominent feature of contemporary political conflict, yet most research continues to treat fake news primarily as a problem of misinformation rather than as a strategic communicative practice. This article advances a novel theoretical framework—the Strategic Delegitimization and Selective Amplification (SDSA) model—to conceptualise fake news accusations as rhetorical weapons in negative campaigning. The model explains how political actors employ this strategic label to delegitimize opponents and how news media selectively amplify these accusations in line with editorial tendencies. This article tests the implications of the SDSA model using a novel dataset of 2778 newspaper articles containing fake news accusations between Italian political parties from 2020 to 2024. The analysis maps patterns of accusations, examines the dual role of populist actors as both accusers and targets, and demonstrates how media partisanship conditions coverage. The findings show how fake news accusations politicize epistemic legitimacy, and contribute to research on misinformation, populism, and media–politics relations.",
+      "keywords": [],
+      "doi": "10.1177/02673231261458935",
+      "doi_url": "https://doi.org/10.1177/02673231261458935",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-30",
+      "citation_count": 0,
+      "reference_count": 33,
+      "venue": "European Journal of Communication",
+      "authors": [
+        "Lorenzo Mosca",
+        "Fred Paxton"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.86
+    }
+  },
+  "6a0b3b049b53b3a7": {
+    "entry_key": "Slack1783075716-sl1c",
+    "entry_title": "Beyond Artificial Intelligence: How Algorithms Communicate without Understanding",
+    "cached_at": "2026-07-04T07:23:41.932872",
+    "metadata": {
+      "abstract": "The remarkable performance of recent algorithms grounded in machine learning and Big Data is often portrayed as a milestone in Artificial Intelligence (AI), suggesting a replication of human cognitive processes by machines. This article challenges such interpretations, arguing that systems like ChatGPT excel not by achieving intelligence akin to humans, but by generating outputs that can be used by human users to create their own relevant information. Without understanding content, algorithms have learned to participate in communication. The evolving interaction between humans and such technologies is likely to significantly influence the future of intelligence. However, understanding these effects requires shifting focus away from direct comparisons and competitions between human and machine cognitive abilities, toward exploring their complementary roles in communication.",
+      "keywords": [],
+      "doi": "10.18716/pd.v2i1.11657",
+      "doi_url": "https://doi.org/10.18716/pd.v2i1.11657",
+      "url": "https://hdl.handle.net/11585/1039790",
+      "arxiv_url": null,
+      "pdf_url": "https://doi.org/10.18716/pd.v2i1.11657",
+      "publication_date": "2025-07-07",
+      "citation_count": 0,
+      "reference_count": null,
+      "venue": "Archivio istituzionale della ricerca (Alma Mater Studiorum Università di Bologna)",
+      "authors": [
+        "Esposito, Elena"
+      ],
+      "subjects": [
+        "Computer science",
+        "Milestone",
+        "Human intelligence",
+        "Artificial intelligence",
+        "Focus (optics)"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": null
+    }
   }
 }
