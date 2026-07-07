@@ -1,5 +1,5 @@
 {
-  "last_ts": "1783323314.307509",
+  "last_ts": "1783437956.970489",
   "pending": {
     "1782739206.289299": {
       "channel_id": "C0BDU82EBHQ",
@@ -30,7 +30,8 @@
     "1782984077.356849": "Cerulli2026-sl75",
     "1783073271.195329": "Slack1783073271-slbb",
     "1783073332.441329": "Ptz2024-sl20",
-    "1783075716.920229": "Slack1783075716-sl1c"
+    "1783075716.920229": "Slack1783075716-sl1c",
+    "1783437956.970489": "Slack1783437956-sld1"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -107,6 +108,14 @@
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "Fabio Giglietto",
       "submitted_by_id": "UR2TF61QF"
+    },
+    "Slack1783437956-sld1": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1783437956.970489",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783437956970489",
+      "pdf_source": "slack_attachment",
+      "submitted_by": "GiadaM. / Uniurb",
+      "submitted_by_id": "UR3895TML"
     }
   }
 }
