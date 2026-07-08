@@ -68,5 +68,75 @@
       "license": null,
       "host_type": null
     }
+  },
+  "10.1177/29768624251369784": {
+    "cached_at": "2026-07-08T11:24:59.673133",
+    "result": {
+      "doi": "10.1177/29768624251369784",
+      "is_oa": true,
+      "best_oa_pdf_url": null,
+      "license": "cc-by",
+      "host_type": "publisher"
+    }
+  },
+  "10.5117/ccr2025.1.7.righ": {
+    "cached_at": "2026-07-08T11:25:00.899984",
+    "result": {
+      "doi": "10.5117/ccr2025.1.7.righ",
+      "is_oa": true,
+      "best_oa_pdf_url": null,
+      "license": "cc-by",
+      "host_type": "publisher"
+    }
+  },
+  "10.1080/1369118x.2025.2470229": {
+    "cached_at": "2026-07-08T11:25:01.899841",
+    "result": {
+      "doi": "10.1080/1369118x.2025.2470229",
+      "is_oa": false,
+      "best_oa_pdf_url": null,
+      "license": null,
+      "host_type": null
+    }
+  },
+  "10.1177/14614448241254126": {
+    "cached_at": "2026-07-08T11:25:05.037311",
+    "result": {
+      "doi": "10.1177/14614448241254126",
+      "is_oa": true,
+      "best_oa_pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/14614448241254126",
+      "license": "cc-by-nc",
+      "host_type": "publisher"
+    }
+  },
+  "10.3270/101610": {
+    "cached_at": "2026-07-08T11:25:10.849647",
+    "result": {
+      "doi": "10.3270/101610",
+      "is_oa": false,
+      "best_oa_pdf_url": null,
+      "license": null,
+      "host_type": null
+    }
+  },
+  "10.1177/1461444809342738": {
+    "cached_at": "2026-07-08T11:25:12.627141",
+    "result": {
+      "doi": "10.1177/1461444809342738",
+      "is_oa": false,
+      "best_oa_pdf_url": null,
+      "license": null,
+      "host_type": null
+    }
+  },
+  "10.1177/1461444810365313": {
+    "cached_at": "2026-07-08T11:25:14.221649",
+    "result": {
+      "doi": "10.1177/1461444810365313",
+      "is_oa": false,
+      "best_oa_pdf_url": null,
+      "license": null,
+      "host_type": null
+    }
   }
 }
