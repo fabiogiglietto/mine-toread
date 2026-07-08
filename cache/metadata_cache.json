@@ -6717,5 +6717,36 @@
       "source": "crossref",
       "confidence_score": null
     }
+  },
+  "3be559dd1c696e53": {
+    "entry_key": "Slack1783507463-sl24",
+    "entry_title": "The Multiple Nuances of Online Firestorms: The Case of a Pro-Vietnam Attack on the Facebook Digital Embassy of China in Italy Amidst the Pandemic",
+    "cached_at": "2026-07-08T14:41:00.004872",
+    "metadata": {
+      "abstract": "The paper illustrates the intricacies of online collective behaviors by delving into the multifaceted nature of online firestorms. Behind seemingly similar expressions, collective online behaviors can be driven by different underlying sociological and techno-communicative processes. Using the case of online firestorms, the paper expands on the more common perspective of these events as marketing-related reputational crises by examining them as coordinated political digital protests. A firestorm orchestrated by pro-Vietnam activists targeting the Facebook page of the Chinese embassy in Italy, which is analyzed using digital and computational methods, exemplifies this viewpoint, illustrating how the event results from strategic mobilization within a networked environment. More broadly, the paper advocates for a nuanced analysis of online collective behaviors, digging beyond seemingly similar digital traces.",
+      "keywords": [],
+      "doi": "10.13136/isr.v15i1.850",
+      "doi_url": "https://doi.org/10.13136/isr.v15i1.850",
+      "url": "https://hdl.handle.net/11576/2753031",
+      "arxiv_url": null,
+      "pdf_url": "https://ora.uniurb.it/bitstream/11576/2753031/1/The%20Multiple%20Nuances%20of%20Online%20Firestorms.pdf",
+      "publication_date": "2024-07-24",
+      "citation_count": 5,
+      "reference_count": null,
+      "venue": "CINECA IRIS Institutional Research information system (University of Urbino)",
+      "authors": [
+        "Nicola Righetti"
+      ],
+      "subjects": [
+        "China",
+        "Perspective (graphical)",
+        "Politics",
+        "Sociology",
+        "Political science"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": null
+    }
   }
 }
