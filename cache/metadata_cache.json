@@ -3185,11 +3185,35 @@
   "c6869c5da4414521": {
     "entry_key": "Ober2026-vd",
     "entry_title": "Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts",
-    "cached_at": "2026-07-01T09:03:17.792334",
-    "metadata": null,
-    "failed": true,
-    "failure_reason": "Could not enrich entry: Ober2026-vd | No DOI available | Title length: 115 chars | Authors: Ober, Teresa M, Courey, Karyssa A... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-01T09:03:17.792344"
+    "cached_at": "2026-07-08T13:08:04.740912",
+    "metadata": {
+      "abstract": "Topic modeling has become a widely used unsupervised machine learning method for extracting latent themes from large textual datasets. However, the interpretability of these themes often relies heavily on human judgment, which can limit transparency and reproducibility. Recent advances in large language models (LLMs) and prompt engineering offer new opportunities to enhance the interpretability and scalability of topic modeling outputs. This study presents a hybrid, human-in-the-loop methodological framework that integrates topic modeling, LLM prompting, and human-derived codes to support rigorous qualitative analysis. We apply this framework to focus group interviews with 13 U.S. teachers discussing the conceptualization and assessment of communication and digital literacy skills within competency-based education (CBE) contexts. The multi-stage process includes semantic clustering, LLM-assisted topic labeling, and iterative codebook refinement, enabling both scale and interpretive depth. Our findings demonstrate that this approach supports construct alignment, thematic stability, and methodological transparency, while preserving the contextual richness of qualitative data. We also highlight the importance of human oversight in guiding LLM outputs and ensuring theoretical coherence. This work contributes to emerging best practices for integrating AI tools into qualitative educational research by offering a replicable approach for analyzing complex, open-ended data that maintains both scalability and interpretability. The framework demonstrates how computational tools can augment human interpretive expertise while maintaining the epistemological integrity essential to qualitative inquiry. Supplemental materials are available at: https://doi.org/10.17605/osf.io/4q6w8.",
+      "keywords": [],
+      "doi": "10.5281/zenodo.18733520",
+      "doi_url": "https://doi.org/10.5281/zenodo.18733520",
+      "url": "https://doi.org/10.5281/zenodo.18733520",
+      "arxiv_url": null,
+      "pdf_url": "https://doi.org/10.5281/zenodo.18733520",
+      "publication_date": "2026-02-22",
+      "citation_count": 0,
+      "reference_count": null,
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "authors": [
+        "Teresa Ober",
+        "Karyssa A. Courey",
+        "Michael Flor"
+      ],
+      "subjects": [
+        "Interpretability",
+        "Computer science",
+        "Construct (python library)",
+        "Topic model",
+        "Conceptualization"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": 0.7333333333333333
+    }
   },
   "78746bd39354b6fa": {
     "entry_key": "Karo2026-dn",
@@ -6407,6 +6431,189 @@
       "is_open_access": null,
       "source": "crossref",
       "confidence_score": 0.86
+    }
+  },
+  "183b92440389a6ff": {
+    "entry_key": "Rogers2025-sl8f",
+    "entry_title": "Coordinated inauthentic behaviour on Facebook? A typology of manufactured attention",
+    "cached_at": "2026-07-08T13:08:07.245976",
+    "metadata": {
+      "abstract": "This paper advances the discourse on coordinated inauthentic behaviour (CIB) on Facebook by extending its study beyond deceptive influence operations. Using techniques developed for its technical analysis, we undertake an empirical study of CIB that surfaces not only such operations but predominantly others, particularly media groups sharing news stories, political activists sharing memes, advertising networks promoting gambling and cyber scams as well as large public groups hijacked to spread ads. Based on these findings, we develop a typology of manufactured attention and make a series of observations concerning the analytical ambiguity of measuring CIB through (timed) link-sharing. The first is the question of when coordinating actors and coordination behaviours cross the line into inauthenticity, which is of methodological interest for platform policies and platform policy observers. The second aspect concerns the evolution of Facebook's (later Meta's) policies with respect to CIB, especially how the platform has defined and described it. We conclude with the observation that Meta's narrowing definition allows for once-erstwhile CIB activities to remain on-platform.",
+      "keywords": [],
+      "doi": "10.1177/29768624251369784",
+      "doi_url": "https://doi.org/10.1177/29768624251369784",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025",
+      "citation_count": 2,
+      "reference_count": 65,
+      "venue": "Platforms &amp; Society",
+      "authors": [
+        "Richard Rogers",
+        "Nicola Righetti"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "ab0ba1050260711a": {
+    "entry_key": "Righetti2025-sl2a",
+    "entry_title": "CooRTweet: A Generalized R Software for Coordinated Network Detection",
+    "cached_at": "2026-07-08T13:08:10.314343",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.5117/ccr2025.1.7.righ",
+      "doi_url": "https://doi.org/10.5117/ccr2025.1.7.righ",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025-10-31",
+      "citation_count": 3,
+      "reference_count": 0,
+      "venue": "Computational Communication Research",
+      "authors": [
+        "Nicola Righetti",
+        "Paul Balluff"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "3cc66b52e2faaecc": {
+    "entry_key": "Righetti2025-slf9",
+    "entry_title": "Mainstreaming and transnationalization of anti-gender ideas through social media: the case of CitizenGO",
+    "cached_at": "2026-07-08T13:08:13.326315",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1369118x.2025.2470229",
+      "doi_url": "https://doi.org/10.1080/1369118x.2025.2470229",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025-11-18",
+      "citation_count": 5,
+      "reference_count": 54,
+      "venue": "Information, Communication &amp; Society",
+      "authors": [
+        "Nicola Righetti",
+        "Aytalina Kulichkina",
+        "Bruna Almeida Paroni",
+        "Zsofia Fanni Cseri",
+        "Sofia Iriarte Aguirre",
+        "Kateryna Maikovska"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "53e5c9dee7d7163b": {
+    "entry_key": "Kulichkina2025-sl09",
+    "entry_title": "Protest and repression on social media: Pro-Navalny and pro-government mobilization dynamics and coordination patterns on Russian Twitter",
+    "cached_at": "2026-07-08T13:08:16.398418",
+    "metadata": {
+      "abstract": "In this study, we examine connective protest mobilization and suppression during the 2021 protests in Russia. We use time series analysis to study the dynamic interplay between the pro-Navalny movement and pro-government countermovement on Twitter, complemented by network analyses of co-retweeting networks to assess the movements’ coordination patterns. Findings show that pro-Navalny accounts were more active and coordinated within more centralized Twitter networks than pro-government accounts. Contrarily, the pro-government camp employed preventive communication tactics and coordinated in more clustered networks. Granger causality tests reveal that pro-Navalny tweeting activity triggered increased pro-regime reaction during the largest protests on 23 January and 21 April, whereas pro-government tweeting activity caused the escalation of pro-Navalny reaction during the 14 February protests. Both sides’ tweeting activity decreased after the February protests, presumably due to external repression. These findings contribute to a deeper understanding of online mobilization and coordination strategies via social media in authoritarian contexts.",
+      "keywords": [],
+      "doi": "10.1177/14614448241254126",
+      "doi_url": "https://doi.org/10.1177/14614448241254126",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025",
+      "citation_count": 6,
+      "reference_count": 62,
+      "venue": "New Media &amp; Society",
+      "authors": [
+        "Aytalina Kulichkina",
+        "Nicola Righetti",
+        "Annie Waldherr"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "56ae271c5f1ac65f": {
+    "entry_key": "Slack1783507648-sl94",
+    "entry_title": null,
+    "cached_at": "2026-07-08T13:08:19.656193",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": null,
+      "doi_url": null,
+      "url": "https://www.rivisteweb.it/doi/10.3270/101610",
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": null,
+      "citation_count": null,
+      "reference_count": null,
+      "venue": null,
+      "authors": [],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "url",
+      "confidence_score": null
+    }
+  },
+  "605a8841a6e7dc74": {
+    "entry_key": "Gillespie2010-sla2",
+    "entry_title": "The politics of ‘platforms’",
+    "cached_at": "2026-07-08T13:08:22.443429",
+    "metadata": {
+      "abstract": "Online content providers such as YouTube are carefully positioning themselves to users, clients, advertisers and policymakers, making strategic claims for what they do and do not do, and how their place in the information landscape should be understood. One term in particular, ‘platform’, reveals the contours of this discursive work. The term has been deployed in both their populist appeals and their marketing pitches, sometimes as technical ‘platforms’, sometimes as ‘platforms’ from which to speak, sometimes as ‘platforms’ of opportunity. Whatever tensions exist in serving all of these constituencies are carefully elided. The term also fits their efforts to shape information policy, where they seek protection for facilitating user expression, yet also seek limited liability for what those users say. As these providers become the curators of public discourse, we must examine the roles they aim to play, and the terms by which they hope to be judged.",
+      "keywords": [],
+      "doi": "10.1177/1461444809342738",
+      "doi_url": "https://doi.org/10.1177/1461444809342738",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2010",
+      "citation_count": 1894,
+      "reference_count": 71,
+      "venue": "New Media &amp; Society",
+      "authors": [
+        "Tarleton Gillespie"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "5b1a654aa66db208": {
+    "entry_key": "Marwick2011-sl02",
+    "entry_title": "I tweet honestly, I tweet passionately: Twitter users, context collapse, and the imagined audience",
+    "cached_at": "2026-07-08T13:08:25.509176",
+    "metadata": {
+      "abstract": "Social media technologies collapse multiple audiences into single contexts, making it difficult for people to use the same techniques online that they do to handle multiplicity in face-to-face conversation. This article investigates how content producers navigate ‘imagined audiences’ on Twitter. We talked with participants who have different types of followings to understand their techniques, including targeting different audiences, concealing subjects, and maintaining authenticity. Some techniques of audience management resemble the practices of ‘micro-celebrity’ and personal branding, both strategic self-commodification. Our model of the networked audience assumes a many-to-many communication through which individuals conceptualize an imagined audience evoked through their tweets.",
+      "keywords": [],
+      "doi": "10.1177/1461444810365313",
+      "doi_url": "https://doi.org/10.1177/1461444810365313",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2011",
+      "citation_count": 2853,
+      "reference_count": 51,
+      "venue": "New Media &amp; Society",
+      "authors": [
+        "Alice E. Marwick",
+        "danah boyd"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
     }
   }
 }
