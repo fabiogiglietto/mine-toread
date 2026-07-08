@@ -36,15 +36,6 @@
       "first_seen": "2026-07-08T11:25:10.036339+00:00",
       "doi": null,
       "arxiv_id": null
-    },
-    "1783516940.679799": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "UR3895TML",
-      "text": "<https://onlinelibrary.wiley.com/doi/book/10.1002/9781444319514|onlinelibrary.wiley.com/doi/book/10.1002/9781444319514>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783516940679799?thread_ts=1783516940.679799&cid=C0BDU82EBHQ",
-      "first_seen": "2026-07-08T14:08:00.181360+00:00",
-      "doi": "10.1002/9781444319514",
-      "arxiv_id": null
     }
   },
   "processed": {
@@ -71,7 +62,8 @@
     "1783507893.641149": "Gillespie2010-sla2",
     "1783508042.130899": "Slack1783508042-sl69",
     "1783508088.702279": "Marwick2011-sl02",
-    "1783508184.552549": "Slack1783508184-sld3"
+    "1783508184.552549": "Slack1783508184-sld3",
+    "1783516940.679799": "Castells2009-sle8"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -249,6 +241,14 @@
       "channel_id": "C0BDU82EBHQ",
       "ts": "1783508184.552549",
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783508184552549",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "GiadaM. / Uniurb",
+      "submitted_by_id": "UR3895TML"
+    },
+    "Castells2009-sle8": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1783516940.679799",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783516940679799?thread_ts=1783516940.679799&cid=C0BDU82EBHQ",
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "GiadaM. / Uniurb",
       "submitted_by_id": "UR3895TML"
