@@ -1,5 +1,5 @@
 {
-  "last_ts": "1783508184.552549",
+  "last_ts": "1783516940.679799",
   "pending": {
     "1782739206.289299": {
       "channel_id": "C0BDU82EBHQ",
@@ -35,6 +35,15 @@
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783507539154889",
       "first_seen": "2026-07-08T11:25:10.036339+00:00",
       "doi": null,
+      "arxiv_id": null
+    },
+    "1783516940.679799": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "UR3895TML",
+      "text": "<https://onlinelibrary.wiley.com/doi/book/10.1002/9781444319514|onlinelibrary.wiley.com/doi/book/10.1002/9781444319514>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783516940679799?thread_ts=1783516940.679799&cid=C0BDU82EBHQ",
+      "first_seen": "2026-07-08T14:08:00.181360+00:00",
+      "doi": "10.1002/9781444319514",
       "arxiv_id": null
     }
   },
