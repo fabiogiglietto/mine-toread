@@ -1,5 +1,5 @@
 {
-  "last_ts": "1783526195.619319",
+  "last_ts": "1783592991.086239",
   "pending": {
     "1782739206.289299": {
       "channel_id": "C0BDU82EBHQ",
@@ -37,13 +37,13 @@
       "doi": null,
       "arxiv_id": null
     },
-    "1783526195.619319": {
+    "1783592991.086239": {
       "channel_id": "C0BDU82EBHQ",
       "user": "UR3895TML",
-      "text": "<https://doi.org/10.1080/1369118X.2026.2696929|doi.org/10.1080/…>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783526195619319",
-      "first_seen": "2026-07-08T17:40:38.330974+00:00",
-      "doi": "10.1080/1369118X.2026.2696929",
+      "text": "<https://ojs.weizenbaum-institut.de/index.php/wjds/article/view/4_2_4|ojs.weizenbaum-institut.de/index.php/…/4_2_4>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783592991086239",
+      "first_seen": "2026-07-09T12:08:31.852980+00:00",
+      "doi": "10.34669/wi.wjds/4.2.4",
       "arxiv_id": null
     }
   },
@@ -72,7 +72,8 @@
     "1783508042.130899": "Slack1783508042-sl69",
     "1783508088.702279": "Marwick2011-sl02",
     "1783508184.552549": "Slack1783508184-sld3",
-    "1783516940.679799": "Castells2009-sle8"
+    "1783516940.679799": "Castells2009-sle8",
+    "1783526195.619319": "Marino2026-slef"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -258,6 +259,14 @@
       "channel_id": "C0BDU82EBHQ",
       "ts": "1783516940.679799",
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783516940679799?thread_ts=1783516940.679799&cid=C0BDU82EBHQ",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "GiadaM. / Uniurb",
+      "submitted_by_id": "UR3895TML"
+    },
+    "Marino2026-slef": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1783526195.619319",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783526195619319",
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "GiadaM. / Uniurb",
       "submitted_by_id": "UR3895TML"
