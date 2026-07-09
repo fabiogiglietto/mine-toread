@@ -6775,5 +6775,36 @@
       "source": "crossref",
       "confidence_score": null
     }
+  },
+  "517cec44deb6fa7b": {
+    "entry_key": "Trilling2024-slc8",
+    "entry_title": "Communicative Feedback Loops in the Digital Society",
+    "cached_at": "2026-07-09T15:42:15.594419",
+    "metadata": {
+      "abstract": "Contemporary communication is often characterized using metaphors as “echo chambers” or “filter bubbles.” Despite the popularity of these terms, however, growing concerns about vague definitions are complemented by empirical evidence that contests their widespread existence. Nonetheless, today’s media environment offers ample opportunities for human and/or algorithmic selection processes with undesirable outcomes. To reconcile these two observations, I propose taking a feedback-loop perspective. Such a perspective explains how processes can reinforce themselves without producing catastrophic consequences. This can solve the paradox that while extrapolating from typical filter bubble and/or echo chamber models results in full radicalization within a short period, this outcome has not, despite the long-standing presence of the relevant technologies, become omnipresent. After mapping different types of feedback loops in communication research, I review various empirical approaches, discuss how they can improve research on feedback-loop phenomena, and consider how this can enable us to build better theories of communication in the digital society.",
+      "keywords": [],
+      "doi": "10.34669/wi.wjds/4.2.4",
+      "doi_url": "https://doi.org/10.34669/wi.wjds/4.2.4",
+      "url": "https://research.vu.nl/en/publications/f28e1b52-8691-489d-b142-066068178179",
+      "arxiv_url": null,
+      "pdf_url": "https://research.vu.nl/en/publications/f28e1b52-8691-489d-b142-066068178179",
+      "publication_date": "2024-05-27",
+      "citation_count": 3,
+      "reference_count": null,
+      "venue": "VU Research Portal",
+      "authors": [
+        "Damian Trilling"
+      ],
+      "subjects": [
+        "Perspective (graphical)",
+        "Popularity",
+        "Computer science",
+        "Selection (genetic algorithm)",
+        "Empirical research"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": null
+    }
   }
 }
