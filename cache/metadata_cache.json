@@ -2,74 +2,74 @@
   "c5a7d0326e1f61c6": {
     "entry_key": "Kristensen2025-ni",
     "entry_title": "Platform polarization. Do alternative platforms drive discursive polarization?",
-    "cached_at": "2026-07-07T07:53:22.964334",
+    "cached_at": "2026-07-14T09:07:02.717893",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Kristensen2025-ni | No DOI available | Title length: 78 chars | Authors: Kristensen, Jakob Bæk, Kristensen, Jakob Bæk | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:53:22.964344"
+    "last_failure_at": "2026-07-14T09:07:02.717903"
   },
   "65d46046ae1c898f": {
     "entry_key": "Gaw2025-ru",
     "entry_title": "Influence operations as brokerage: Political-economic infrastructures of manipulation in the 2022 Philippine elections",
-    "cached_at": "2026-07-07T07:54:11.440343",
+    "cached_at": "2026-07-14T09:07:08.741696",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Gaw2025-ru | No DOI available | Title length: 118 chars | Authors: Gaw, Fatima, Agonos, Mariam Jayne... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:54:11.440353"
+    "last_failure_at": "2026-07-14T09:07:08.741706"
   },
   "b41f425da41887a0": {
     "entry_key": "Marwick2025-vx",
     "entry_title": "True costs of misinformation| mountains of evidence: Processual “redpilling” as a Socio-technical effect of disinformation",
-    "cached_at": "2026-07-07T07:54:00.583928",
+    "cached_at": "2026-07-14T09:07:05.723170",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Marwick2025-vx | No DOI available | Title length: 122 chars | Authors: Marwick, Alice E, Furl, Katherine | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:54:00.583937"
+    "last_failure_at": "2026-07-14T09:07:05.723185"
   },
   "e3b0c44298fc1c14": {
     "entry_key": "noauthor_undated-bz",
     "entry_title": null,
-    "cached_at": "2026-07-07T07:55:20.156589",
+    "cached_at": "2026-07-14T09:07:21.039377",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: noauthor_undated-bz | No DOI available | No title available | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:55:20.156592"
+    "last_failure_at": "2026-07-14T09:07:21.039379"
   },
   "657c6670d7b624b8": {
     "entry_key": "noauthor_undated-fm",
     "entry_title": "Volume 7 issue 2 article 4",
-    "cached_at": "2026-07-07T07:55:20.156490",
+    "cached_at": "2026-07-14T09:07:21.039309",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: noauthor_undated-fm | No DOI available | Title length: 26 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:55:20.156498"
+    "last_failure_at": "2026-07-14T09:07:21.039318"
   },
   "b909c3af063ea494": {
     "entry_key": "noauthor_undated-bm",
     "entry_title": "cib.pdf",
-    "cached_at": "2026-07-07T07:42:58.197167",
+    "cached_at": "2026-07-14T09:06:52.643404",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: noauthor_undated-bm | No DOI available | Title length: 7 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:42:58.197171"
+    "last_failure_at": "2026-07-14T09:06:52.643410"
   },
   "9195fcc80574052b": {
     "entry_key": "Vincent_undated-re",
     "entry_title": "What our second measurement says about misinformation on major platforms in Europe",
-    "cached_at": "2026-07-07T07:54:18.588581",
+    "cached_at": "2026-07-14T09:07:11.799198",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Vincent_undated-re | No DOI available | Title length: 82 chars | Authors: Vincent, Emmanuel, Crisan, Daiana | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:54:18.588590"
+    "last_failure_at": "2026-07-14T09:07:11.799208"
   },
   "fac502d9bb5bbba8": {
     "entry_key": "UnknownUnknown-db",
     "entry_title": "What 81,000 people told us about the economics of AI",
-    "cached_at": "2026-07-07T07:55:13.199028",
+    "cached_at": "2026-07-14T09:07:17.994499",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: UnknownUnknown-db | No DOI available | Title length: 52 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:55:13.199038"
+    "last_failure_at": "2026-07-14T09:07:17.994508"
   },
   "dcf3557bf613f9b9": {
     "entry_key": "Alizadeh2026-es",
@@ -4826,11 +4826,30 @@
   "2710b7bf9a796be7": {
     "entry_key": "Hurcombe2025-cs",
     "entry_title": "The discursive function of Meta’s Newsroom: How Meta frames the problem of problematic online content",
-    "cached_at": "2026-07-07T07:49:56.823394",
-    "metadata": null,
-    "failed": true,
-    "failure_reason": "Could not enrich entry: Hurcombe2025-cs | No DOI available | Title length: 101 chars | Authors: Hurcombe, Edward, Dehghan, Ehsan... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:49:56.823402"
+    "cached_at": "2026-07-14T09:06:52.941337",
+    "metadata": {
+      "abstract": "This article examines the social technology company Meta’s public communication on problematic content, via their official ‘Meta Newsroom’, within the context of growing regulatory scrutiny. For nearly a decade, the Meta Newsroom has been a major outlet for Meta company announcements, and since 2016, the Newsroom has increasingly become a key source for company responses to concerns regarding mis/disinformation and other kinds of problematic content on Meta’s platforms. Using a mixed-methods approach informed by discourse analysis, this article critically examines Newsrooms posts from 2016 to early 2021. It asks: how is Meta framing ‘problems’ on its platforms? How is Meta identifying ‘solutions’ to those problems? And is Meta ‘nudging’ policymakers in specific conceptual directions? Overall, we find that Meta is framing content moderation issues through four key frames – ‘authenticity’, ‘political advertising’, ‘technological solutions’, and ‘enforcement’ – that benefit Meta, as they shift responsibility while also demonstrating that Meta is an active and capable problem-solver.",
+      "keywords": [],
+      "doi": "10.1177/13548565251315521",
+      "doi_url": "https://doi.org/10.1177/13548565251315521",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025",
+      "citation_count": 2,
+      "reference_count": 81,
+      "venue": "Convergence: The International Journal of Research into New Media Technologies",
+      "authors": [
+        "Edward Hurcombe",
+        "Ehsan Dehghan",
+        "Laura Vodden",
+        "Daniel Angus"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8333333333333333
+    }
   },
   "c5f99daa09035063": {
     "entry_key": "Cabbuag2024-me",
@@ -5311,11 +5330,30 @@
   "75eaa50c0205964b": {
     "entry_key": "Kansaon2025-id",
     "entry_title": "From fake news to real protests: WhatsApp’s role in Brazilian political coordination",
-    "cached_at": "2026-07-07T07:52:07.432172",
-    "metadata": null,
-    "failed": true,
-    "failure_reason": "Could not enrich entry: Kansaon2025-id | No DOI available | Title length: 84 chars | Authors: Kansaon, Daniel, Melo, Philipe de Freitas... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:52:07.432181"
+    "cached_at": "2026-07-14T09:06:59.006030",
+    "metadata": {
+      "abstract": "The growth of social networks has raised concerns about the misuse of these platforms by disinformation campaigns, social bots, and coordinated activities. Among these platforms, WhatsApp has become a focal point for this abuse, particularly in Brazil, one of the countries with the highest use of the platform. Despite acknowledging the presence of coordinated campaigns and implementing restrictions on the number of messages forwarded per user, the platform continues to be abused. Due to its private nature and the difficulty of collecting information, little is known about these campaigns and the messages they disseminate. Given this context, our study investigates the presence of coordinated activities on WhatsApp in Brazil, identifying their content and purpose, especially how these messages relate to recent Brazilian political events. To answer these questions, we analyzed 13 million messages from 1,444 political groups over seven months from July 2022 to January 2023. Using network analysis, our findings suggest a significant prevalence of coordinated activity in the propagation of news messages, 26% of which originate from misinformation sites. Furthermore, we found that images play a key role in coordinated activity, accounting for 15% of messages, which are also used to mislead. Finally, coordinated accounts were used to organize collective actions, including attacks and protests against election results.",
+      "keywords": [],
+      "doi": "10.1609/icwsm.v19i1.35857",
+      "doi_url": "https://doi.org/10.1609/icwsm.v19i1.35857",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025-06-07",
+      "citation_count": 2,
+      "reference_count": 0,
+      "venue": "Proceedings of the International AAAI Conference on Web and Social Media",
+      "authors": [
+        "Daniel Kansaon",
+        "Philipe de Freitas Melo",
+        "Savvas Zannettou",
+        "Fabricio Benevenuto"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.85
+    }
   },
   "010f9ca356342032": {
     "entry_key": "Oprea2025-lf",
@@ -5654,11 +5692,29 @@
   "46b641d1a6f0ab14": {
     "entry_key": "Makeev2026-ma",
     "entry_title": "Selling war at home and abroad: The dual objective of state media propaganda in the Russo-Ukrainian war",
-    "cached_at": "2026-07-07T07:54:45.773368",
-    "metadata": null,
-    "failed": true,
-    "failure_reason": "Could not enrich entry: Makeev2026-ma | No DOI available | Title length: 103 chars | Authors: Makeev, M, Alley, J... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-07-07T07:54:45.773377"
+    "cached_at": "2026-07-14T09:07:14.364426",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1461670x.2026.2700614",
+      "doi_url": "https://doi.org/10.1080/1461670x.2026.2700614",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-07-13",
+      "citation_count": 0,
+      "reference_count": 60,
+      "venue": "Journalism Studies",
+      "authors": [
+        "Matvei Makeev",
+        "Joshua Alley",
+        "Marco Bastos"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.7999999999999999
+    }
   },
   "7951fbc98a21d44a": {
     "entry_key": "Karlsson2026-hd",
@@ -6916,6 +6972,33 @@
       "is_open_access": null,
       "source": "crossref",
       "confidence_score": 0.81875
+    }
+  },
+  "b77cac77e2cfc3c6": {
+    "entry_key": "Cullen2026-cb",
+    "entry_title": "Seeing like an API: Platform-mediated research and the politics of access",
+    "cached_at": "2026-07-14T09:06:55.917768",
+    "metadata": {
+      "abstract": "This study examines the challenges that researchers faced while accessing, interpreting, and assessing data accessed via Meta's now-sunset CrowdTangle (CT) application programming interface (API). Drawing on interviews with 20 academic users, we introduce the framework of Seeing like an API to illustrate how CT's technical design, governance rules, and platform-mediated knowledge networks shaped what researchers could see, ask, and conclude about platform activity. Participants adapted to limitations such as follower-count thresholds, the exclusion of comment data, and opaque content removal through three recurring strategies: optimizing the API's capabilities, extending data visibility with supplementary methods, and verifying outputs against external sources. These adaptations were developed in response to ongoing uncertainty about data completeness and provenance, which constrained both the scope of feasible research questions and the reliability of resulting analyses. Our findings show how platform-controlled data infrastructures shape research design, collaboration, and epistemic norms, and they inform emerging models for independent, third-party-regulated data access, such as those envisioned in the European Union's Digital Services Act.",
+      "keywords": [],
+      "doi": "10.1177/20539517261461463",
+      "doi_url": "https://doi.org/10.1177/20539517261461463",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026",
+      "citation_count": 0,
+      "reference_count": 40,
+      "venue": "Big Data &amp; Society",
+      "authors": [
+        "Zoë Natalia Cullen",
+        "Nicole B Ellison",
+        "Irene V Pasquetto"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.86
     }
   }
 }
