@@ -80,39 +80,6 @@
     "failure_reason": "Could not enrich entry: Gottfried2026-ww | No DOI available | Title length: 66 chars | Authors: Gottfried, Jeffrey, Bishop, William... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
     "last_failure_at": "2026-08-07T09:33:57.059123"
   },
-  "c6869c5da4414521": {
-    "entry_key": "Ober2026-vd",
-    "entry_title": "Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts",
-    "cached_at": "2026-07-08T13:08:04.740912",
-    "metadata": {
-      "abstract": "Topic modeling has become a widely used unsupervised machine learning method for extracting latent themes from large textual datasets. However, the interpretability of these themes often relies heavily on human judgment, which can limit transparency and reproducibility. Recent advances in large language models (LLMs) and prompt engineering offer new opportunities to enhance the interpretability and scalability of topic modeling outputs. This study presents a hybrid, human-in-the-loop methodological framework that integrates topic modeling, LLM prompting, and human-derived codes to support rigorous qualitative analysis. We apply this framework to focus group interviews with 13 U.S. teachers discussing the conceptualization and assessment of communication and digital literacy skills within competency-based education (CBE) contexts. The multi-stage process includes semantic clustering, LLM-assisted topic labeling, and iterative codebook refinement, enabling both scale and interpretive depth. Our findings demonstrate that this approach supports construct alignment, thematic stability, and methodological transparency, while preserving the contextual richness of qualitative data. We also highlight the importance of human oversight in guiding LLM outputs and ensuring theoretical coherence. This work contributes to emerging best practices for integrating AI tools into qualitative educational research by offering a replicable approach for analyzing complex, open-ended data that maintains both scalability and interpretability. The framework demonstrates how computational tools can augment human interpretive expertise while maintaining the epistemological integrity essential to qualitative inquiry. Supplemental materials are available at: https://doi.org/10.17605/osf.io/4q6w8.",
-      "keywords": [],
-      "doi": "10.5281/zenodo.18733520",
-      "doi_url": "https://doi.org/10.5281/zenodo.18733520",
-      "url": "https://doi.org/10.5281/zenodo.18733520",
-      "arxiv_url": null,
-      "pdf_url": "https://doi.org/10.5281/zenodo.18733520",
-      "publication_date": "2026-02-22",
-      "citation_count": 0,
-      "reference_count": null,
-      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
-      "authors": [
-        "Teresa Ober",
-        "Karyssa A. Courey",
-        "Michael Flor"
-      ],
-      "subjects": [
-        "Interpretability",
-        "Computer science",
-        "Construct (python library)",
-        "Topic model",
-        "Conceptualization"
-      ],
-      "is_open_access": true,
-      "source": "openalex",
-      "confidence_score": 0.7333333333333333
-    }
-  },
   "06e15083ae69cfa5": {
     "entry_key": "Hinck2026-yj",
     "entry_title": "Where's the Evidence that Respondents Understand Your Survey Questions?",
@@ -203,438 +170,6 @@
       "is_open_access": null,
       "source": "crossref",
       "confidence_score": 0.7999999999999999
-    }
-  },
-  "183b92440389a6ff": {
-    "entry_key": "Rogers2025-sl8f",
-    "entry_title": "Coordinated inauthentic behaviour on Facebook? A typology of manufactured attention",
-    "cached_at": "2026-07-08T13:08:07.245976",
-    "metadata": {
-      "abstract": "This paper advances the discourse on coordinated inauthentic behaviour (CIB) on Facebook by extending its study beyond deceptive influence operations. Using techniques developed for its technical analysis, we undertake an empirical study of CIB that surfaces not only such operations but predominantly others, particularly media groups sharing news stories, political activists sharing memes, advertising networks promoting gambling and cyber scams as well as large public groups hijacked to spread ads. Based on these findings, we develop a typology of manufactured attention and make a series of observations concerning the analytical ambiguity of measuring CIB through (timed) link-sharing. The first is the question of when coordinating actors and coordination behaviours cross the line into inauthenticity, which is of methodological interest for platform policies and platform policy observers. The second aspect concerns the evolution of Facebook's (later Meta's) policies with respect to CIB, especially how the platform has defined and described it. We conclude with the observation that Meta's narrowing definition allows for once-erstwhile CIB activities to remain on-platform.",
-      "keywords": [],
-      "doi": "10.1177/29768624251369784",
-      "doi_url": "https://doi.org/10.1177/29768624251369784",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2025",
-      "citation_count": 2,
-      "reference_count": 65,
-      "venue": "Platforms &amp; Society",
-      "authors": [
-        "Richard Rogers",
-        "Nicola Righetti"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "ab0ba1050260711a": {
-    "entry_key": "Righetti2025-sl2a",
-    "entry_title": "CooRTweet: A Generalized R Software for Coordinated Network Detection",
-    "cached_at": "2026-07-08T13:08:10.314343",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.5117/ccr2025.1.7.righ",
-      "doi_url": "https://doi.org/10.5117/ccr2025.1.7.righ",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2025-10-31",
-      "citation_count": 3,
-      "reference_count": 0,
-      "venue": "Computational Communication Research",
-      "authors": [
-        "Nicola Righetti",
-        "Paul Balluff"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "3cc66b52e2faaecc": {
-    "entry_key": "Righetti2025-slf9",
-    "entry_title": "Mainstreaming and transnationalization of anti-gender ideas through social media: the case of CitizenGO",
-    "cached_at": "2026-07-08T13:08:13.326315",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/1369118x.2025.2470229",
-      "doi_url": "https://doi.org/10.1080/1369118x.2025.2470229",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2025-11-18",
-      "citation_count": 5,
-      "reference_count": 54,
-      "venue": "Information, Communication &amp; Society",
-      "authors": [
-        "Nicola Righetti",
-        "Aytalina Kulichkina",
-        "Bruna Almeida Paroni",
-        "Zsofia Fanni Cseri",
-        "Sofia Iriarte Aguirre",
-        "Kateryna Maikovska"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "53e5c9dee7d7163b": {
-    "entry_key": "Kulichkina2025-sl09",
-    "entry_title": "Protest and repression on social media: Pro-Navalny and pro-government mobilization dynamics and coordination patterns on Russian Twitter",
-    "cached_at": "2026-07-08T13:08:16.398418",
-    "metadata": {
-      "abstract": "In this study, we examine connective protest mobilization and suppression during the 2021 protests in Russia. We use time series analysis to study the dynamic interplay between the pro-Navalny movement and pro-government countermovement on Twitter, complemented by network analyses of co-retweeting networks to assess the movements’ coordination patterns. Findings show that pro-Navalny accounts were more active and coordinated within more centralized Twitter networks than pro-government accounts. Contrarily, the pro-government camp employed preventive communication tactics and coordinated in more clustered networks. Granger causality tests reveal that pro-Navalny tweeting activity triggered increased pro-regime reaction during the largest protests on 23 January and 21 April, whereas pro-government tweeting activity caused the escalation of pro-Navalny reaction during the 14 February protests. Both sides’ tweeting activity decreased after the February protests, presumably due to external repression. These findings contribute to a deeper understanding of online mobilization and coordination strategies via social media in authoritarian contexts.",
-      "keywords": [],
-      "doi": "10.1177/14614448241254126",
-      "doi_url": "https://doi.org/10.1177/14614448241254126",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2025",
-      "citation_count": 6,
-      "reference_count": 62,
-      "venue": "New Media &amp; Society",
-      "authors": [
-        "Aytalina Kulichkina",
-        "Nicola Righetti",
-        "Annie Waldherr"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "56ae271c5f1ac65f": {
-    "entry_key": "Slack1783507648-sl94",
-    "entry_title": null,
-    "cached_at": "2026-07-08T13:08:19.656193",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": null,
-      "doi_url": null,
-      "url": "https://www.rivisteweb.it/doi/10.3270/101610",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": null,
-      "reference_count": null,
-      "venue": null,
-      "authors": [],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "url",
-      "confidence_score": null
-    }
-  },
-  "605a8841a6e7dc74": {
-    "entry_key": "Gillespie2010-sla2",
-    "entry_title": "The politics of ‘platforms’",
-    "cached_at": "2026-07-08T13:08:22.443429",
-    "metadata": {
-      "abstract": "Online content providers such as YouTube are carefully positioning themselves to users, clients, advertisers and policymakers, making strategic claims for what they do and do not do, and how their place in the information landscape should be understood. One term in particular, ‘platform’, reveals the contours of this discursive work. The term has been deployed in both their populist appeals and their marketing pitches, sometimes as technical ‘platforms’, sometimes as ‘platforms’ from which to speak, sometimes as ‘platforms’ of opportunity. Whatever tensions exist in serving all of these constituencies are carefully elided. The term also fits their efforts to shape information policy, where they seek protection for facilitating user expression, yet also seek limited liability for what those users say. As these providers become the curators of public discourse, we must examine the roles they aim to play, and the terms by which they hope to be judged.",
-      "keywords": [],
-      "doi": "10.1177/1461444809342738",
-      "doi_url": "https://doi.org/10.1177/1461444809342738",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2010",
-      "citation_count": 1894,
-      "reference_count": 71,
-      "venue": "New Media &amp; Society",
-      "authors": [
-        "Tarleton Gillespie"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "5b1a654aa66db208": {
-    "entry_key": "Marwick2011-sl02",
-    "entry_title": "I tweet honestly, I tweet passionately: Twitter users, context collapse, and the imagined audience",
-    "cached_at": "2026-07-08T13:08:25.509176",
-    "metadata": {
-      "abstract": "Social media technologies collapse multiple audiences into single contexts, making it difficult for people to use the same techniques online that they do to handle multiplicity in face-to-face conversation. This article investigates how content producers navigate ‘imagined audiences’ on Twitter. We talked with participants who have different types of followings to understand their techniques, including targeting different audiences, concealing subjects, and maintaining authenticity. Some techniques of audience management resemble the practices of ‘micro-celebrity’ and personal branding, both strategic self-commodification. Our model of the networked audience assumes a many-to-many communication through which individuals conceptualize an imagined audience evoked through their tweets.",
-      "keywords": [],
-      "doi": "10.1177/1461444810365313",
-      "doi_url": "https://doi.org/10.1177/1461444810365313",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2011",
-      "citation_count": 2853,
-      "reference_count": 51,
-      "venue": "New Media &amp; Society",
-      "authors": [
-        "Alice E. Marwick",
-        "danah boyd"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "a1832a17d71a6b23": {
-    "entry_key": "Slack1783507532-sl10",
-    "entry_title": "Political Advertisement and Coordinated Behavior on Social Media in the Lead-Up to the 2021 German Federal Elections",
-    "cached_at": "2026-07-08T14:17:19.267849",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.17605/osf.io/yqkfz",
-      "doi_url": "https://doi.org/10.17605/osf.io/yqkfz",
-      "url": "https://osf.io/yqkfz",
-      "arxiv_url": null,
-      "pdf_url": "https://doi.org/10.17605/osf.io/yqkfz",
-      "publication_date": "2026-01-01",
-      "citation_count": 0,
-      "reference_count": null,
-      "venue": "Open MIND",
-      "authors": [
-        "Nicola Righetti"
-      ],
-      "subjects": [
-        "Politics",
-        "German",
-        "Political science",
-        "Advertising",
-        "Social media"
-      ],
-      "is_open_access": true,
-      "source": "openalex",
-      "confidence_score": 0.7814285714285714
-    }
-  },
-  "e2dcf8550c66c5fd": {
-    "entry_key": "Slack1783508042-sl69",
-    "entry_title": "A Networked Self: Identity, Community, and Culture on Social Network Sites",
-    "cached_at": "2026-07-08T14:17:23.385983",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": null,
-      "doi_url": null,
-      "url": "http://viralmedia.pbworks.com/w/file/fetch/45052678/A%20Networked%20Self-Identity,%20Community%20and%20Culture%20on%20Social%20Network%20Sites%202011.pdf",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": null,
-      "reference_count": null,
-      "venue": null,
-      "authors": [],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "url",
-      "confidence_score": null
-    }
-  },
-  "285e84e2d785a157": {
-    "entry_key": "Slack1783508184-sld3",
-    "entry_title": "Social Network Sites as Networked Publics: Affordances, Dynamics, and Implications",
-    "cached_at": "2026-07-08T14:17:25.540541",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": null,
-      "doi_url": null,
-      "url": "https://www.danah.org/papers/2010/SNSasNetworkedPublics.pdf",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": null,
-      "reference_count": null,
-      "venue": null,
-      "authors": [],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "url",
-      "confidence_score": null
-    }
-  },
-  "aa0e695c5bbd5a2f": {
-    "entry_key": "Castells2009-sle8",
-    "entry_title": "The Rise of the Network Society",
-    "cached_at": "2026-07-08T14:17:27.037937",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1002/9781444319514",
-      "doi_url": "https://doi.org/10.1002/9781444319514",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2009-08-10",
-      "citation_count": 1716,
-      "reference_count": 0,
-      "venue": null,
-      "authors": [
-        "Manuel Castells"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "3be559dd1c696e53": {
-    "entry_key": "Slack1783507463-sl24",
-    "entry_title": "The Multiple Nuances of Online Firestorms: The Case of a Pro-Vietnam Attack on the Facebook Digital Embassy of China in Italy Amidst the Pandemic",
-    "cached_at": "2026-07-08T14:41:00.004872",
-    "metadata": {
-      "abstract": "The paper illustrates the intricacies of online collective behaviors by delving into the multifaceted nature of online firestorms. Behind seemingly similar expressions, collective online behaviors can be driven by different underlying sociological and techno-communicative processes. Using the case of online firestorms, the paper expands on the more common perspective of these events as marketing-related reputational crises by examining them as coordinated political digital protests. A firestorm orchestrated by pro-Vietnam activists targeting the Facebook page of the Chinese embassy in Italy, which is analyzed using digital and computational methods, exemplifies this viewpoint, illustrating how the event results from strategic mobilization within a networked environment. More broadly, the paper advocates for a nuanced analysis of online collective behaviors, digging beyond seemingly similar digital traces.",
-      "keywords": [],
-      "doi": "10.13136/isr.v15i1.850",
-      "doi_url": "https://doi.org/10.13136/isr.v15i1.850",
-      "url": "https://hdl.handle.net/11576/2753031",
-      "arxiv_url": null,
-      "pdf_url": "https://ora.uniurb.it/bitstream/11576/2753031/1/The%20Multiple%20Nuances%20of%20Online%20Firestorms.pdf",
-      "publication_date": "2024-07-24",
-      "citation_count": 5,
-      "reference_count": null,
-      "venue": "CINECA IRIS Institutional Research information system (University of Urbino)",
-      "authors": [
-        "Nicola Righetti"
-      ],
-      "subjects": [
-        "China",
-        "Perspective (graphical)",
-        "Politics",
-        "Sociology",
-        "Political science"
-      ],
-      "is_open_access": true,
-      "source": "openalex",
-      "confidence_score": null
-    }
-  },
-  "c0327cfc521e7c3f": {
-    "entry_key": "Marino2026-slef",
-    "entry_title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
-    "cached_at": "2026-07-09T12:08:33.493894",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/1369118x.2026.2696929",
-      "doi_url": "https://doi.org/10.1080/1369118x.2026.2696929",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-07-08",
-      "citation_count": 0,
-      "reference_count": 68,
-      "venue": "Information, Communication &amp; Society",
-      "authors": [
-        "Giada Marino",
-        "Bruna Paroni",
-        "Fabio Giglietto"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "517cec44deb6fa7b": {
-    "entry_key": "Trilling2024-slc8",
-    "entry_title": "Communicative Feedback Loops in the Digital Society",
-    "cached_at": "2026-07-09T15:42:15.594419",
-    "metadata": {
-      "abstract": "Contemporary communication is often characterized using metaphors as “echo chambers” or “filter bubbles.” Despite the popularity of these terms, however, growing concerns about vague definitions are complemented by empirical evidence that contests their widespread existence. Nonetheless, today’s media environment offers ample opportunities for human and/or algorithmic selection processes with undesirable outcomes. To reconcile these two observations, I propose taking a feedback-loop perspective. Such a perspective explains how processes can reinforce themselves without producing catastrophic consequences. This can solve the paradox that while extrapolating from typical filter bubble and/or echo chamber models results in full radicalization within a short period, this outcome has not, despite the long-standing presence of the relevant technologies, become omnipresent. After mapping different types of feedback loops in communication research, I review various empirical approaches, discuss how they can improve research on feedback-loop phenomena, and consider how this can enable us to build better theories of communication in the digital society.",
-      "keywords": [],
-      "doi": "10.34669/wi.wjds/4.2.4",
-      "doi_url": "https://doi.org/10.34669/wi.wjds/4.2.4",
-      "url": "https://research.vu.nl/en/publications/f28e1b52-8691-489d-b142-066068178179",
-      "arxiv_url": null,
-      "pdf_url": "https://research.vu.nl/en/publications/f28e1b52-8691-489d-b142-066068178179",
-      "publication_date": "2024-05-27",
-      "citation_count": 3,
-      "reference_count": null,
-      "venue": "VU Research Portal",
-      "authors": [
-        "Damian Trilling"
-      ],
-      "subjects": [
-        "Perspective (graphical)",
-        "Popularity",
-        "Computer science",
-        "Selection (genetic algorithm)",
-        "Empirical research"
-      ],
-      "is_open_access": true,
-      "source": "openalex",
-      "confidence_score": null
-    }
-  },
-  "41d44e37653aec97": {
-    "entry_key": "Schemer2026-mh",
-    "entry_title": "Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States",
-    "cached_at": "2026-07-12T06:36:30.116665",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/10584609.2026.2699105",
-      "doi_url": "https://doi.org/10.1080/10584609.2026.2699105",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-07-05",
-      "citation_count": 0,
-      "reference_count": 59,
-      "venue": "Political Communication",
-      "authors": [
-        "Christian Schemer",
-        "Klara Langmann",
-        "Ariel Hasell",
-        "Brian Weeks"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.8333333333333333
-    }
-  },
-  "6f56bea8a24eed0b": {
-    "entry_key": "Kotz2026-lk",
-    "entry_title": "Conversational AI shifts beliefs and policy support among skeptics across contested societal issues",
-    "cached_at": "2026-07-12T06:36:33.020603",
-    "metadata": {
-      "abstract": "Public beliefs and policy attitudes on contested societal issues frequently diverge from empirical evidence and scientific consensus. In a preregistered experiment with 6,558 American participants, we tested the generalizability of evidence-based AI dialogue as a tool to shift beliefs and policy support across three structurally distinct societal issues (climate change, vaccination, and economic inequality), and examined for whom effects are strongest. Participants engaged in interactive dialogues with GPT-5 targeting beliefs, policies, or both. Compared to a neutral control conversation, AI dialogues shifted beliefs across all three domains, suggesting generalizable persuasive potential, and increased support for politically contested policies, especially carbon and estate taxes. Estimated effects were strongest among initially skeptical participants, who are typically hardest to reach, and those with higher trust in science. Text analyses revealed that GPT-5 adapted its approach to skeptical participants. Brief AI dialogues may thus function as a scalable, generalizable tool for evidence-based public communication.",
-      "keywords": [],
-      "doi": "10.31234/osf.io/7szrn_v1",
-      "doi_url": "https://doi.org/10.31234/osf.io/7szrn_v1",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": 0,
-      "reference_count": 0,
-      "venue": null,
-      "authors": [
-        "Johannes Kotz",
-        "Kevin E. Tiede",
-        "Jelena Meyer",
-        "Maj-Britt Sterba",
-        "Christian Breunig",
-        "Wolfgang Gaissmaier"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.8214285714285714
     }
   },
   "df48b78c330b92b4": {
@@ -7325,6 +6860,498 @@
         "Human intelligence",
         "Artificial intelligence",
         "Focus (optics)"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": null
+    }
+  },
+  "c6869c5da4414521": {
+    "entry_key": "Ober2026-vd",
+    "entry_title": "Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts",
+    "cached_at": "2026-08-11T07:48:17.715277",
+    "metadata": {
+      "abstract": "Topic modeling has become a widely used unsupervised machine learning method for extracting latent themes from large textual datasets. However, the interpretability of these themes often relies heavily on human judgment, which can limit transparency and reproducibility. Recent advances in large language models (LLMs) and prompt engineering offer new opportunities to enhance the interpretability and scalability of topic modeling outputs. This study presents a hybrid, human-in-the-loop methodological framework that integrates topic modeling, LLM prompting, and human-derived codes to support rigorous qualitative analysis. We apply this framework to focus group interviews with 13 U.S. teachers discussing the conceptualization and assessment of communication and digital literacy skills within competency-based education (CBE) contexts. The multi-stage process includes semantic clustering, LLM-assisted topic labeling, and iterative codebook refinement, enabling both scale and interpretive depth. Our findings demonstrate that this approach supports construct alignment, thematic stability, and methodological transparency, while preserving the contextual richness of qualitative data. We also highlight the importance of human oversight in guiding LLM outputs and ensuring theoretical coherence. This work contributes to emerging best practices for integrating AI tools into qualitative educational research by offering a replicable approach for analyzing complex, open-ended data that maintains both scalability and interpretability. The framework demonstrates how computational tools can augment human interpretive expertise while maintaining the epistemological integrity essential to qualitative inquiry. Supplemental materials are available at: https://doi.org/10.17605/osf.io/4q6w8.",
+      "keywords": [],
+      "doi": "10.5281/zenodo.18733520",
+      "doi_url": "https://doi.org/10.5281/zenodo.18733520",
+      "url": "https://doi.org/10.5281/zenodo.18733520",
+      "arxiv_url": null,
+      "pdf_url": "https://doi.org/10.5281/zenodo.18733520",
+      "publication_date": "2026-02-22",
+      "citation_count": 0,
+      "reference_count": null,
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "authors": [
+        "Teresa Ober",
+        "Karyssa A. Courey",
+        "Michael Flor"
+      ],
+      "subjects": [
+        "Interpretability",
+        "Computer science",
+        "Construct (python library)",
+        "Topic model",
+        "Conceptualization"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": 0.7333333333333333
+    }
+  },
+  "6f56bea8a24eed0b": {
+    "entry_key": "Kotz2026-lk",
+    "entry_title": "Conversational AI shifts beliefs and policy support among skeptics across contested societal issues",
+    "cached_at": "2026-08-11T07:48:20.233656",
+    "metadata": {
+      "abstract": "Public beliefs and policy attitudes on contested societal issues frequently diverge from empirical evidence and scientific consensus. In a preregistered experiment with 6,558 American participants, we tested the generalizability of evidence-based AI dialogue as a tool to shift beliefs and policy support across three structurally distinct societal issues (climate change, vaccination, and economic inequality), and examined for whom effects are strongest. Participants engaged in interactive dialogues with GPT-5 targeting beliefs, policies, or both. Compared to a neutral control conversation, AI dialogues shifted beliefs across all three domains, suggesting generalizable persuasive potential, and increased support for politically contested policies, especially carbon and estate taxes. Estimated effects were strongest among initially skeptical participants, who are typically hardest to reach, and those with higher trust in science. Text analyses revealed that GPT-5 adapted its approach to skeptical participants. Brief AI dialogues may thus function as a scalable, generalizable tool for evidence-based public communication.",
+      "keywords": [],
+      "doi": "10.31234/osf.io/7szrn_v1",
+      "doi_url": "https://doi.org/10.31234/osf.io/7szrn_v1",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": null,
+      "citation_count": 0,
+      "reference_count": 0,
+      "venue": null,
+      "authors": [
+        "Johannes Kotz",
+        "Kevin E. Tiede",
+        "Jelena Meyer",
+        "Maj-Britt Sterba",
+        "Christian Breunig",
+        "Wolfgang Gaissmaier"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8214285714285714
+    }
+  },
+  "41d44e37653aec97": {
+    "entry_key": "Schemer2026-mh",
+    "entry_title": "Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States",
+    "cached_at": "2026-08-11T07:48:24.380075",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/10584609.2026.2699105",
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2699105",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-07-05",
+      "citation_count": 0,
+      "reference_count": 59,
+      "venue": "Political Communication",
+      "authors": [
+        "Christian Schemer",
+        "Klara Langmann",
+        "Ariel Hasell",
+        "Brian Weeks"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8333333333333333
+    }
+  },
+  "b21e19e80614338f": {
+    "entry_key": "Kakavand2026-kt",
+    "entry_title": "Multi-platform research in the light of technology affordances: networks of the far right in Germany",
+    "cached_at": "2026-08-11T07:48:27.858068",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/19331681.2026.2697186",
+      "doi_url": "https://doi.org/10.1080/19331681.2026.2697186",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-08-10",
+      "citation_count": 0,
+      "reference_count": 59,
+      "venue": "Journal of Information Technology &amp; Politics",
+      "authors": [
+        "Azade E. Kakavand",
+        "Nicola Righetti",
+        "Annie Waldherr"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8374999999999999
+    }
+  },
+  "183b92440389a6ff": {
+    "entry_key": "Rogers2025-sl8f",
+    "entry_title": "Coordinated inauthentic behaviour on Facebook? A typology of manufactured attention",
+    "cached_at": "2026-08-11T07:48:29.457736",
+    "metadata": {
+      "abstract": "This paper advances the discourse on coordinated inauthentic behaviour (CIB) on Facebook by extending its study beyond deceptive influence operations. Using techniques developed for its technical analysis, we undertake an empirical study of CIB that surfaces not only such operations but predominantly others, particularly media groups sharing news stories, political activists sharing memes, advertising networks promoting gambling and cyber scams as well as large public groups hijacked to spread ads. Based on these findings, we develop a typology of manufactured attention and make a series of observations concerning the analytical ambiguity of measuring CIB through (timed) link-sharing. The first is the question of when coordinating actors and coordination behaviours cross the line into inauthenticity, which is of methodological interest for platform policies and platform policy observers. The second aspect concerns the evolution of Facebook's (later Meta's) policies with respect to CIB, especially how the platform has defined and described it. We conclude with the observation that Meta's narrowing definition allows for once-erstwhile CIB activities to remain on-platform.",
+      "keywords": [],
+      "doi": "10.1177/29768624251369784",
+      "doi_url": "https://doi.org/10.1177/29768624251369784",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025",
+      "citation_count": 2,
+      "reference_count": 65,
+      "venue": "Platforms &amp; Society",
+      "authors": [
+        "Richard Rogers",
+        "Nicola Righetti"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "ab0ba1050260711a": {
+    "entry_key": "Righetti2025-sl2a",
+    "entry_title": "CooRTweet: A Generalized R Software for Coordinated Network Detection",
+    "cached_at": "2026-08-11T07:48:32.538604",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.5117/ccr2025.1.7.righ",
+      "doi_url": "https://doi.org/10.5117/ccr2025.1.7.righ",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025-10-31",
+      "citation_count": 3,
+      "reference_count": 0,
+      "venue": "Computational Communication Research",
+      "authors": [
+        "Nicola Righetti",
+        "Paul Balluff"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "3cc66b52e2faaecc": {
+    "entry_key": "Righetti2025-slf9",
+    "entry_title": "Mainstreaming and transnationalization of anti-gender ideas through social media: the case of CitizenGO",
+    "cached_at": "2026-08-11T07:48:35.560599",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1369118x.2025.2470229",
+      "doi_url": "https://doi.org/10.1080/1369118x.2025.2470229",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025-11-18",
+      "citation_count": 5,
+      "reference_count": 54,
+      "venue": "Information, Communication &amp; Society",
+      "authors": [
+        "Nicola Righetti",
+        "Aytalina Kulichkina",
+        "Bruna Almeida Paroni",
+        "Zsofia Fanni Cseri",
+        "Sofia Iriarte Aguirre",
+        "Kateryna Maikovska"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "3be559dd1c696e53": {
+    "entry_key": "Slack1783507463-sl24",
+    "entry_title": "The Multiple Nuances of Online Firestorms: The Case of a Pro-Vietnam Attack on the Facebook Digital Embassy of China in Italy Amidst the Pandemic",
+    "cached_at": "2026-08-11T07:48:38.730740",
+    "metadata": {
+      "abstract": "The paper illustrates the intricacies of online collective behaviors by delving into the multifaceted nature of online firestorms. Behind seemingly similar expressions, collective online behaviors can be driven by different underlying sociological and techno-communicative processes. Using the case of online firestorms, the paper expands on the more common perspective of these events as marketing-related reputational crises by examining them as coordinated political digital protests. A firestorm orchestrated by pro-Vietnam activists targeting the Facebook page of the Chinese embassy in Italy, which is analyzed using digital and computational methods, exemplifies this viewpoint, illustrating how the event results from strategic mobilization within a networked environment. More broadly, the paper advocates for a nuanced analysis of online collective behaviors, digging beyond seemingly similar digital traces.",
+      "keywords": [],
+      "doi": "10.13136/isr.v15i1.850",
+      "doi_url": "https://doi.org/10.13136/isr.v15i1.850",
+      "url": "https://hdl.handle.net/11576/2753031",
+      "arxiv_url": null,
+      "pdf_url": "https://ora.uniurb.it/bitstream/11576/2753031/1/The%20Multiple%20Nuances%20of%20Online%20Firestorms.pdf",
+      "publication_date": "2024-07-24",
+      "citation_count": 5,
+      "reference_count": null,
+      "venue": "CINECA IRIS Institutional Research information system (University of Urbino)",
+      "authors": [
+        "Nicola Righetti"
+      ],
+      "subjects": [
+        "China",
+        "Perspective (graphical)",
+        "Politics",
+        "Sociology",
+        "Political science"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": null
+    }
+  },
+  "53e5c9dee7d7163b": {
+    "entry_key": "Kulichkina2025-sl09",
+    "entry_title": "Protest and repression on social media: Pro-Navalny and pro-government mobilization dynamics and coordination patterns on Russian Twitter",
+    "cached_at": "2026-08-11T07:48:41.671413",
+    "metadata": {
+      "abstract": "In this study, we examine connective protest mobilization and suppression during the 2021 protests in Russia. We use time series analysis to study the dynamic interplay between the pro-Navalny movement and pro-government countermovement on Twitter, complemented by network analyses of co-retweeting networks to assess the movements’ coordination patterns. Findings show that pro-Navalny accounts were more active and coordinated within more centralized Twitter networks than pro-government accounts. Contrarily, the pro-government camp employed preventive communication tactics and coordinated in more clustered networks. Granger causality tests reveal that pro-Navalny tweeting activity triggered increased pro-regime reaction during the largest protests on 23 January and 21 April, whereas pro-government tweeting activity caused the escalation of pro-Navalny reaction during the 14 February protests. Both sides’ tweeting activity decreased after the February protests, presumably due to external repression. These findings contribute to a deeper understanding of online mobilization and coordination strategies via social media in authoritarian contexts.",
+      "keywords": [],
+      "doi": "10.1177/14614448241254126",
+      "doi_url": "https://doi.org/10.1177/14614448241254126",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025",
+      "citation_count": 6,
+      "reference_count": 62,
+      "venue": "New Media &amp; Society",
+      "authors": [
+        "Aytalina Kulichkina",
+        "Nicola Righetti",
+        "Annie Waldherr"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "a1832a17d71a6b23": {
+    "entry_key": "Slack1783507532-sl10",
+    "entry_title": "Political Advertisement and Coordinated Behavior on Social Media in the Lead-Up to the 2021 German Federal Elections",
+    "cached_at": "2026-08-11T07:48:45.840606",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.17605/osf.io/yqkfz",
+      "doi_url": "https://doi.org/10.17605/osf.io/yqkfz",
+      "url": "https://osf.io/yqkfz",
+      "arxiv_url": null,
+      "pdf_url": "https://doi.org/10.17605/osf.io/yqkfz",
+      "publication_date": "2026-01-01",
+      "citation_count": 0,
+      "reference_count": null,
+      "venue": "Open MIND",
+      "authors": [
+        "Nicola Righetti"
+      ],
+      "subjects": [
+        "Politics",
+        "German",
+        "Political science",
+        "Advertising",
+        "Social media"
+      ],
+      "is_open_access": true,
+      "source": "openalex",
+      "confidence_score": 0.7814285714285714
+    }
+  },
+  "56ae271c5f1ac65f": {
+    "entry_key": "Slack1783507648-sl94",
+    "entry_title": null,
+    "cached_at": "2026-08-11T07:48:49.104200",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": null,
+      "doi_url": null,
+      "url": "https://www.rivisteweb.it/doi/10.3270/101610",
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": null,
+      "citation_count": null,
+      "reference_count": null,
+      "venue": null,
+      "authors": [],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "url",
+      "confidence_score": null
+    }
+  },
+  "605a8841a6e7dc74": {
+    "entry_key": "Gillespie2010-sla2",
+    "entry_title": "The politics of ‘platforms’",
+    "cached_at": "2026-08-11T07:48:50.738539",
+    "metadata": {
+      "abstract": "Online content providers such as YouTube are carefully positioning themselves to users, clients, advertisers and policymakers, making strategic claims for what they do and do not do, and how their place in the information landscape should be understood. One term in particular, ‘platform’, reveals the contours of this discursive work. The term has been deployed in both their populist appeals and their marketing pitches, sometimes as technical ‘platforms’, sometimes as ‘platforms’ from which to speak, sometimes as ‘platforms’ of opportunity. Whatever tensions exist in serving all of these constituencies are carefully elided. The term also fits their efforts to shape information policy, where they seek protection for facilitating user expression, yet also seek limited liability for what those users say. As these providers become the curators of public discourse, we must examine the roles they aim to play, and the terms by which they hope to be judged.",
+      "keywords": [],
+      "doi": "10.1177/1461444809342738",
+      "doi_url": "https://doi.org/10.1177/1461444809342738",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2010",
+      "citation_count": 1920,
+      "reference_count": 71,
+      "venue": "New Media &amp; Society",
+      "authors": [
+        "Tarleton Gillespie"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "e2dcf8550c66c5fd": {
+    "entry_key": "Slack1783508042-sl69",
+    "entry_title": "A Networked Self: Identity, Community, and Culture on Social Network Sites",
+    "cached_at": "2026-08-11T07:48:58.185466",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": null,
+      "doi_url": null,
+      "url": "http://viralmedia.pbworks.com/w/file/fetch/45052678/A%20Networked%20Self-Identity,%20Community%20and%20Culture%20on%20Social%20Network%20Sites%202011.pdf",
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": null,
+      "citation_count": null,
+      "reference_count": null,
+      "venue": null,
+      "authors": [],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "url",
+      "confidence_score": null
+    }
+  },
+  "5b1a654aa66db208": {
+    "entry_key": "Marwick2011-sl02",
+    "entry_title": "I tweet honestly, I tweet passionately: Twitter users, context collapse, and the imagined audience",
+    "cached_at": "2026-08-11T07:48:59.871624",
+    "metadata": {
+      "abstract": "Social media technologies collapse multiple audiences into single contexts, making it difficult for people to use the same techniques online that they do to handle multiplicity in face-to-face conversation. This article investigates how content producers navigate ‘imagined audiences’ on Twitter. We talked with participants who have different types of followings to understand their techniques, including targeting different audiences, concealing subjects, and maintaining authenticity. Some techniques of audience management resemble the practices of ‘micro-celebrity’ and personal branding, both strategic self-commodification. Our model of the networked audience assumes a many-to-many communication through which individuals conceptualize an imagined audience evoked through their tweets.",
+      "keywords": [],
+      "doi": "10.1177/1461444810365313",
+      "doi_url": "https://doi.org/10.1177/1461444810365313",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2011",
+      "citation_count": 2882,
+      "reference_count": 51,
+      "venue": "New Media &amp; Society",
+      "authors": [
+        "Alice E. Marwick",
+        "danah boyd"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "285e84e2d785a157": {
+    "entry_key": "Slack1783508184-sld3",
+    "entry_title": "Social Network Sites as Networked Publics: Affordances, Dynamics, and Implications",
+    "cached_at": "2026-08-11T07:49:04.198536",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": null,
+      "doi_url": null,
+      "url": "https://www.danah.org/papers/2010/SNSasNetworkedPublics.pdf",
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": null,
+      "citation_count": null,
+      "reference_count": null,
+      "venue": null,
+      "authors": [],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "url",
+      "confidence_score": null
+    }
+  },
+  "aa0e695c5bbd5a2f": {
+    "entry_key": "Castells2009-sle8",
+    "entry_title": "The Rise of the Network Society",
+    "cached_at": "2026-08-11T07:49:05.904117",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1002/9781444319514",
+      "doi_url": "https://doi.org/10.1002/9781444319514",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2009-08-10",
+      "citation_count": 1746,
+      "reference_count": 0,
+      "venue": null,
+      "authors": [
+        "Manuel Castells"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "c0327cfc521e7c3f": {
+    "entry_key": "Marino2026-slef",
+    "entry_title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
+    "cached_at": "2026-08-11T07:49:09.001236",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1369118x.2026.2696929",
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2696929",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-07-08",
+      "citation_count": 0,
+      "reference_count": 68,
+      "venue": "Information, Communication &amp; Society",
+      "authors": [
+        "Giada Marino",
+        "Bruna Paroni",
+        "Fabio Giglietto"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "517cec44deb6fa7b": {
+    "entry_key": "Trilling2024-slc8",
+    "entry_title": "Communicative Feedback Loops in the Digital Society",
+    "cached_at": "2026-08-11T07:49:12.162275",
+    "metadata": {
+      "abstract": "Contemporary communication is often characterized using metaphors as “echo chambers” or “filter bubbles.” Despite the popularity of these terms, however, growing concerns about vague definitions are complemented by empirical evidence that contests their widespread existence. Nonetheless, today’s media environment offers ample opportunities for human and/or algorithmic selection processes with undesirable outcomes. To reconcile these two observations, I propose taking a feedback-loop perspective. Such a perspective explains how processes can reinforce themselves without producing catastrophic consequences. This can solve the paradox that while extrapolating from typical filter bubble and/or echo chamber models results in full radicalization within a short period, this outcome has not, despite the long-standing presence of the relevant technologies, become omnipresent. After mapping different types of feedback loops in communication research, I review various empirical approaches, discuss how they can improve research on feedback-loop phenomena, and consider how this can enable us to build better theories of communication in the digital society.",
+      "keywords": [],
+      "doi": "10.34669/wi.wjds/4.2.4",
+      "doi_url": "https://doi.org/10.34669/wi.wjds/4.2.4",
+      "url": "https://research.vu.nl/en/publications/f28e1b52-8691-489d-b142-066068178179",
+      "arxiv_url": null,
+      "pdf_url": "https://research.vu.nl/en/publications/f28e1b52-8691-489d-b142-066068178179",
+      "publication_date": "2024-05-27",
+      "citation_count": 3,
+      "reference_count": null,
+      "venue": "VU Research Portal",
+      "authors": [
+        "Damian Trilling"
+      ],
+      "subjects": [
+        "Perspective (graphical)",
+        "Popularity",
+        "Computer science",
+        "Selection (genetic algorithm)",
+        "Empirical research"
       ],
       "is_open_access": true,
       "source": "openalex",
