@@ -153,16 +153,21 @@ def post_slack(text: str) -> None:
     webhook = os.environ.get("SLACK_WEBHOOK_URL")
     bot_token = os.environ.get("SLACK_BOT_TOKEN")
     channel = os.environ.get("SLACK_ALERT_CHANNEL")
-    if webhook:
-        req = urllib.request.Request(
-            webhook, data=json.dumps({"text": text}).encode(),
-            headers={"Content-Type": "application/json"})
-    elif bot_token and channel:
+    # The explicit channel wins over the webhook. An incoming webhook is bound
+    # to whichever channel it was created for and cannot be redirected from
+    # here, so preferring it silently overrides OPS_SLACK_CHANNEL and puts ops
+    # alerts back in the content channel. The webhook stays as a last resort
+    # for a repo with no bot token.
+    if bot_token and channel:
         req = urllib.request.Request(
             "https://slack.com/api/chat.postMessage",
             data=json.dumps({"channel": channel, "text": text}).encode(),
             headers={"Content-Type": "application/json",
                      "Authorization": f"Bearer {bot_token}"})
+    elif webhook:
+        req = urllib.request.Request(
+            webhook, data=json.dumps({"text": text}).encode(),
+            headers={"Content-Type": "application/json"})
     else:
         print("No Slack credentials configured — printing alert instead:")
         print(text)
