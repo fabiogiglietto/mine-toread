@@ -36,15 +36,6 @@
       "first_seen": "2026-07-08T11:25:10.036339+00:00",
       "doi": null,
       "arxiv_id": null
-    },
-    "1787858551.834329": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "UR3895TML",
-      "text": "<https://www.taylorfrancis.com/chapters/edit/10.4324/9781003477570-5/privatization-public-discourse-raquel-recuero-camilla-quesada-tavares|taylorfrancis.com/chapters/…/privatization-public-discourse-raquel-recuero-camilla-quesada-tavares>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1787858551834329",
-      "first_seen": "2026-08-27T21:05:26.657482+00:00",
-      "doi": "10.4324/9781003477570-5/privatization-public-discourse-raquel-recuero-camilla-quesada-tavares",
-      "arxiv_id": null
     }
   },
   "processed": {
@@ -74,7 +65,8 @@
     "1783508184.552549": "Slack1783508184-sld3",
     "1783516940.679799": "Castells2009-sle8",
     "1783526195.619319": "Marino2026-slef",
-    "1783592991.086239": "Trilling2024-slc8"
+    "1783592991.086239": "Trilling2024-slc8",
+    "1787858551.834329": "Slack1787858551-sl4d"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -276,6 +268,14 @@
       "channel_id": "C0BDU82EBHQ",
       "ts": "1783592991.086239",
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783592991086239",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "GiadaM. / Uniurb",
+      "submitted_by_id": "UR3895TML"
+    },
+    "Slack1787858551-sl4d": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1787858551.834329",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1787858551834329",
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "GiadaM. / Uniurb",
       "submitted_by_id": "UR3895TML"
