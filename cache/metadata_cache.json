@@ -123,227 +123,6 @@
       "confidence_score": 0.8999999999999999
     }
   },
-  "36aadb63c06941ee": {
-    "entry_key": "Kim2026-br",
-    "entry_title": "Cross-national information attacks: A two-decade analysis of troll behavior in Korea",
-    "cached_at": "2026-07-31T07:23:12.572407",
-    "metadata": {
-      "abstract": "Coordinated foreign influence operations pose a growing threat to online platforms, but detecting state-linked troll activity and tracking its evolution remain challenging. This paper presents an explainable machine learning framework for theory-guided detection and longitudinal analysis of suspected trolling within Korean online news comment sections. Our hierarchical model classifies comments along three dimensions central to influence campaigns: foreign origin, moral-emotional framing, and target country. To support explainability, it also extracts brief span-level textual evidence that provides human-interpretable rationales. We apply the approach to 112M South Korean news comments authored by 4M users over nearly 20 years, identifying 23,998 accounts exhibiting behavior consistent with coordinated manipulation. Analyzing these accounts, we find that they predominantly rely on morally condemning rhetoric rather than direct promotion of foreign-aligned narratives; this rhetoric receives significantly higher user engagement. Among the highest-engagement comments, the moral condemnation most frequently targets domestic political figures (e.g., presidents or party leaders) on both the left and the right, potentially amplifying polarization. Our framework supports transparent platform governance through explainable, evidence-based moderation. These observed rhetorical and engagement patterns can inform how platforms and observatories prioritize defenses and intervene before harmful narrative-target combinations achieve widespread reach.",
-      "keywords": [],
-      "doi": null,
-      "doi_url": null,
-      "url": null,
-      "arxiv_url": "http://arxiv.org/abs/2606.22785v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.22785v1",
-      "publication_date": "2026-06-22",
-      "citation_count": null,
-      "reference_count": null,
-      "venue": null,
-      "authors": [
-        "Jaehong Kim",
-        "Hyeonseung Kim",
-        "Jiseon Kim",
-        "Alice Oh",
-        "Thorsten Holz",
-        "Wonjae Lee",
-        "Meeyoung Cha"
-      ],
-      "subjects": [
-        "cs.SI",
-        "cs.CL",
-        "cs.CR"
-      ],
-      "is_open_access": true,
-      "source": "arxiv",
-      "confidence_score": 0.7230769230769231
-    }
-  },
-  "f879e1c2edc94bd8": {
-    "entry_key": "Bergeron-Boutin2026-yh",
-    "entry_title": "Untrustworthy sources on Facebook and Instagram in 2020: Concentrated exposure but no attitudinal effects",
-    "cached_at": "2026-07-31T07:23:17.260558",
-    "metadata": {
-      "abstract": "Despite concern about exposure to content from untrustworthy sources on social media, little is known about the frequency or effects of exposure to their content. We examine 2020 data from all active US adults on Facebook and Instagram to measure exposure to content from Pages, groups, and web domains on Facebook and public accounts on Instagram that repeatedly publish misinformation. We find that average users saw relatively little content in their feeds from these untrustworthy sources; exposure was highly concentrated. A multimonth field experiment during the 2020 election among consenting users reduced feed-based exposure to content from untrustworthy sources by approximately 70% on both platforms but had no measurable effects on numerous preregistered outcomes, even among participants with high pretreatment exposure. Our results demonstrate that a feasible platform intervention can successfully reduce exposure to content from untrustworthy sources but suggest that these changes are unlikely to have immediate effects on attitudes and beliefs.",
-      "keywords": [],
-      "doi": "10.1126/sciadv.adz6502",
-      "doi_url": "https://doi.org/10.1126/sciadv.adz6502",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-07-31",
-      "citation_count": 1,
-      "reference_count": 89,
-      "venue": "Science Advances",
-      "authors": [
-        "Olivier Bergeron-Boutin",
-        "Brendan Nyhan",
-        "Jaime Settle",
-        "Emily Thorson",
-        "Magdalena Wojcieszak",
-        "Taylor Brown",
-        "Adriana Crespo-Tenorio",
-        "Carlos Velasco Rivera",
-        "Hunt Allcott",
-        "Pablo Barberá",
-        "Drew Dimmery",
-        "Deen Freelon",
-        "Matthew Gentzkow",
-        "Sandra González-Bailón",
-        "Andrew M. Guess",
-        "Edward Kennedy",
-        "Young Mie Kim",
-        "David Lazer",
-        "Neil Malhotra",
-        "Devra Moehler",
-        "Jennifer Pan",
-        "Daniel Robert Thomas",
-        "Rebekah Tromble",
-        "Arjun Wilkins",
-        "Beixian Xiong",
-        "Chad Kiewiet de Jonge",
-        "Annie Franco",
-        "Winter Mason",
-        "Natalie Jomini Stroud",
-        "Joshua A. Tucker"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.8086956521739129
-    }
-  },
-  "4aa80c342f5a3f46": {
-    "entry_key": "Katzenbach2026-sl2e",
-    "entry_title": "Fixing election interference, safeguarding election integrity? Developments and dynamics of election-related policies on social media platforms",
-    "cached_at": "2026-07-31T07:23:32.048544",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/1369118x.2026.2686320",
-      "doi_url": "https://doi.org/10.1080/1369118x.2026.2686320",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-06-14",
-      "citation_count": 0,
-      "reference_count": 63,
-      "venue": "Information, Communication &amp; Society",
-      "authors": [
-        "Christian Katzenbach",
-        "Vasilisa Kuznetsova",
-        "Elizabeth Dubois"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "768fb1a6ecdbb3da": {
-    "entry_key": "Jaidka2026-sl34",
-    "entry_title": "The Elite Effect: Blocking Political Leaders on X Decreases Misinformation Susceptibility and Low-credibility Content Sharing",
-    "cached_at": "2026-07-31T07:23:35.131835",
-    "metadata": {
-      "abstract": "Abstract We tested whether reducing the visibility of political elites in social media feeds can improve belief accuracy. In a preregistered field experiment, a custom mobile app directly manipulated participants' X (formerly Twitter) timelines, randomly assigning users to a control condition, Elite Blocking (hiding posts authored by political elites), or Elite Scrubbing (additionally removing posts mentioning elites). This design isolates elite-authored content from the broader stream of elite-referential discourse while preserving users' follow networks and ordinary scrolling experience. Both interventions decreased exposure to low-credibility and highly partisan material, with Elite Scrubbing producing larger reductions than Elite Blocking. Resharing of such content dropped substantially, indicating lower downstream diffusion. These feed-level shifts translated into significantly lower misinformation susceptibility and improved factual accuracy. Our findings illuminate how elite visibility is a consequential and actionable design lever for platform content moderation. Adjusting the prominence of elite-centered discourse can yield informational and epistemic benefits without broadly suppressing political content.",
-      "keywords": [],
-      "doi": "10.21203/rs.3.rs-9347980/v1",
-      "doi_url": "https://doi.org/10.21203/rs.3.rs-9347980/v1",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": 0,
-      "reference_count": 0,
-      "venue": null,
-      "authors": [
-        "Kokil Jaidka",
-        "Yphtach Lelkes",
-        "Subhayan Mukerjee",
-        "Harshit Aneja"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "0411950f9af06aac": {
-    "entry_key": "Unknown2026-sl3d",
-    "entry_title": "‘Us’ not ‘them’: scientists must use their skills to help stop polarization and division",
-    "cached_at": "2026-07-31T07:23:38.147781",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1038/d41586-026-01952-4",
-      "doi_url": "https://doi.org/10.1038/d41586-026-01952-4",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-06-25",
-      "citation_count": 0,
-      "reference_count": 5,
-      "venue": "Nature",
-      "authors": [],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "868cf4a3b5c015ed": {
-    "entry_key": "Dahlke2026-sl34",
-    "entry_title": "Multi-Platform Referrers of Misinformation: A Comparative Analysis of Misinformation Visits Referred by Facebook, Twitter, Instagram, Reddit, YouTube, Snapchat, and TikTok",
-    "cached_at": "2026-07-31T07:23:41.213717",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/10584609.2026.2679492",
-      "doi_url": "https://doi.org/10.1080/10584609.2026.2679492",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-06-09",
-      "citation_count": 0,
-      "reference_count": 132,
-      "venue": "Political Communication",
-      "authors": [
-        "Ross Dahlke",
-        "Ryan C. Moore",
-        "Danya Adib-Azpeitia",
-        "Johan Ugander",
-        "Jeffrey T. Hancock"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "d11390a8658f4bc8": {
-    "entry_key": "Mota2026-sl59",
-    "entry_title": "Weapon, wonder or both? Political framings of AI in global north and south media",
-    "cached_at": "2026-07-31T07:23:44.271981",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/1369118x.2026.2691775",
-      "doi_url": "https://doi.org/10.1080/1369118x.2026.2691775",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-06-26",
-      "citation_count": 0,
-      "reference_count": 69,
-      "venue": "Information, Communication &amp; Society",
-      "authors": [
-        "Bárbara Maria Farias Mota"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
   "8d6a688f7db9234c": {
     "entry_key": "Fan2026-af",
     "entry_title": "Exploring temporal dynamics in digital trace data: mining user-sequences for communication research",
@@ -7611,6 +7390,236 @@
       "subjects": [],
       "is_open_access": null,
       "source": "url",
+      "confidence_score": null
+    }
+  },
+  "36aadb63c06941ee": {
+    "entry_key": "Kim2026-br",
+    "entry_title": "Cross-national information attacks: A two-decade analysis of troll behavior in Korea",
+    "cached_at": "2026-08-31T16:18:35.338007",
+    "metadata": {
+      "abstract": "Coordinated foreign influence operations pose a growing threat to online platforms, but detecting state-linked troll activity and tracking its evolution remain challenging. This paper presents an explainable machine learning framework for theory-guided detection and longitudinal analysis of suspected trolling within Korean online news comment sections. Our hierarchical model classifies comments along three dimensions central to influence campaigns: foreign origin, moral-emotional framing, and target country. To support explainability, it also extracts brief span-level textual evidence that provides human-interpretable rationales. We apply the approach to 112M South Korean news comments authored by 4M users over nearly 20 years, identifying 23,998 accounts exhibiting behavior consistent with coordinated manipulation. Analyzing these accounts, we find that they predominantly rely on morally condemning rhetoric rather than direct promotion of foreign-aligned narratives; this rhetoric receives significantly higher user engagement. Among the highest-engagement comments, the moral condemnation most frequently targets domestic political figures (e.g., presidents or party leaders) on both the left and the right, potentially amplifying polarization. Our framework supports transparent platform governance through explainable, evidence-based moderation. These observed rhetorical and engagement patterns can inform how platforms and observatories prioritize defenses and intervene before harmful narrative-target combinations achieve widespread reach.",
+      "keywords": [],
+      "doi": null,
+      "doi_url": null,
+      "url": null,
+      "arxiv_url": "http://arxiv.org/abs/2606.22785v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.22785v1",
+      "publication_date": "2026-06-22",
+      "citation_count": null,
+      "reference_count": null,
+      "venue": null,
+      "authors": [
+        "Jaehong Kim",
+        "Hyeonseung Kim",
+        "Jiseon Kim",
+        "Alice Oh",
+        "Thorsten Holz",
+        "Wonjae Lee",
+        "Meeyoung Cha"
+      ],
+      "subjects": [
+        "cs.SI",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "is_open_access": true,
+      "source": "arxiv",
+      "confidence_score": 0.7230769230769231
+    }
+  },
+  "f879e1c2edc94bd8": {
+    "entry_key": "Bergeron-Boutin2026-yh",
+    "entry_title": "Untrustworthy sources on Facebook and Instagram in 2020: Concentrated exposure but no attitudinal effects",
+    "cached_at": "2026-08-31T16:18:35.665213",
+    "metadata": {
+      "abstract": "Despite concern about exposure to content from untrustworthy sources on social media, little is known about the frequency or effects of exposure to their content. We examine 2020 data from all active US adults on Facebook and Instagram to measure exposure to content from Pages, groups, and web domains on Facebook and public accounts on Instagram that repeatedly publish misinformation. We find that average users saw relatively little content in their feeds from these untrustworthy sources; exposure was highly concentrated. A multimonth field experiment during the 2020 election among consenting users reduced feed-based exposure to content from untrustworthy sources by approximately 70% on both platforms but had no measurable effects on numerous preregistered outcomes, even among participants with high pretreatment exposure. Our results demonstrate that a feasible platform intervention can successfully reduce exposure to content from untrustworthy sources but suggest that these changes are unlikely to have immediate effects on attitudes and beliefs.",
+      "keywords": [],
+      "doi": "10.1126/sciadv.adz6502",
+      "doi_url": "https://doi.org/10.1126/sciadv.adz6502",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-07-31",
+      "citation_count": 1,
+      "reference_count": 89,
+      "venue": "Science Advances",
+      "authors": [
+        "Olivier Bergeron-Boutin",
+        "Brendan Nyhan",
+        "Jaime Settle",
+        "Emily Thorson",
+        "Magdalena Wojcieszak",
+        "Taylor Brown",
+        "Adriana Crespo-Tenorio",
+        "Carlos Velasco Rivera",
+        "Hunt Allcott",
+        "Pablo Barberá",
+        "Drew Dimmery",
+        "Deen Freelon",
+        "Matthew Gentzkow",
+        "Sandra González-Bailón",
+        "Andrew M. Guess",
+        "Edward Kennedy",
+        "Young Mie Kim",
+        "David Lazer",
+        "Neil Malhotra",
+        "Devra Moehler",
+        "Jennifer Pan",
+        "Daniel Robert Thomas",
+        "Rebekah Tromble",
+        "Arjun Wilkins",
+        "Beixian Xiong",
+        "Chad Kiewiet de Jonge",
+        "Annie Franco",
+        "Winter Mason",
+        "Natalie Jomini Stroud",
+        "Joshua A. Tucker"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8086956521739129
+    }
+  },
+  "640f98da7b713bc8": {
+    "entry_key": "Park2026-tr",
+    "entry_title": "\"Sticking their heads out above the parapets\": Lived Experiences of Legal Risks in Research",
+    "cached_at": "2026-08-31T16:18:39.472762",
+    "metadata": null,
+    "failed": true,
+    "failure_reason": "Could not enrich entry: Park2026-tr | No DOI available | Title length: 91 chars | Authors: Park, Sunoo, Thomas, Daniel R | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
+    "last_failure_at": "2026-08-31T16:18:39.472770"
+  },
+  "4aa80c342f5a3f46": {
+    "entry_key": "Katzenbach2026-sl2e",
+    "entry_title": "Fixing election interference, safeguarding election integrity? Developments and dynamics of election-related policies on social media platforms",
+    "cached_at": "2026-08-31T16:18:41.538555",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1369118x.2026.2686320",
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2686320",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-14",
+      "citation_count": 1,
+      "reference_count": 63,
+      "venue": "Information, Communication &amp; Society",
+      "authors": [
+        "Christian Katzenbach",
+        "Vasilisa Kuznetsova",
+        "Elizabeth Dubois"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "768fb1a6ecdbb3da": {
+    "entry_key": "Jaidka2026-sl34",
+    "entry_title": "The Elite Effect: Blocking Political Leaders on X Decreases Misinformation Susceptibility and Low-credibility Content Sharing",
+    "cached_at": "2026-08-31T16:18:44.614511",
+    "metadata": {
+      "abstract": "Abstract We tested whether reducing the visibility of political elites in social media feeds can improve belief accuracy. In a preregistered field experiment, a custom mobile app directly manipulated participants' X (formerly Twitter) timelines, randomly assigning users to a control condition, Elite Blocking (hiding posts authored by political elites), or Elite Scrubbing (additionally removing posts mentioning elites). This design isolates elite-authored content from the broader stream of elite-referential discourse while preserving users' follow networks and ordinary scrolling experience. Both interventions decreased exposure to low-credibility and highly partisan material, with Elite Scrubbing producing larger reductions than Elite Blocking. Resharing of such content dropped substantially, indicating lower downstream diffusion. These feed-level shifts translated into significantly lower misinformation susceptibility and improved factual accuracy. Our findings illuminate how elite visibility is a consequential and actionable design lever for platform content moderation. Adjusting the prominence of elite-centered discourse can yield informational and epistemic benefits without broadly suppressing political content.",
+      "keywords": [],
+      "doi": "10.21203/rs.3.rs-9347980/v1",
+      "doi_url": "https://doi.org/10.21203/rs.3.rs-9347980/v1",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": null,
+      "citation_count": 0,
+      "reference_count": 0,
+      "venue": null,
+      "authors": [
+        "Kokil Jaidka",
+        "Yphtach Lelkes",
+        "Subhayan Mukerjee",
+        "Harshit Aneja"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "0411950f9af06aac": {
+    "entry_key": "Unknown2026-sl3d",
+    "entry_title": "‘Us’ not ‘them’: scientists must use their skills to help stop polarization and division",
+    "cached_at": "2026-08-31T16:18:47.635135",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1038/d41586-026-01952-4",
+      "doi_url": "https://doi.org/10.1038/d41586-026-01952-4",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-25",
+      "citation_count": 0,
+      "reference_count": 5,
+      "venue": "Nature",
+      "authors": [],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "868cf4a3b5c015ed": {
+    "entry_key": "Dahlke2026-sl34",
+    "entry_title": "Multi-Platform Referrers of Misinformation: A Comparative Analysis of Misinformation Visits Referred by Facebook, Twitter, Instagram, Reddit, YouTube, Snapchat, and TikTok",
+    "cached_at": "2026-08-31T16:18:50.694584",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/10584609.2026.2679492",
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2679492",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-09",
+      "citation_count": 0,
+      "reference_count": 132,
+      "venue": "Political Communication",
+      "authors": [
+        "Ross Dahlke",
+        "Ryan C. Moore",
+        "Danya Adib-Azpeitia",
+        "Johan Ugander",
+        "Jeffrey T. Hancock"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "d11390a8658f4bc8": {
+    "entry_key": "Mota2026-sl59",
+    "entry_title": "Weapon, wonder or both? Political framings of AI in global north and south media",
+    "cached_at": "2026-08-31T16:18:53.792503",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/1369118x.2026.2691775",
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2691775",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-06-26",
+      "citation_count": 1,
+      "reference_count": 69,
+      "venue": "Information, Communication &amp; Society",
+      "authors": [
+        "Bárbara Maria Farias Mota"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
       "confidence_score": null
     }
   }
