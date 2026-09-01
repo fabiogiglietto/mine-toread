@@ -3739,29 +3739,6 @@
       "confidence_score": 0.7814285714285714
     }
   },
-  "56ae271c5f1ac65f": {
-    "entry_key": "Slack1783507648-sl94",
-    "entry_title": null,
-    "cached_at": "2026-08-11T07:48:49.104200",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": null,
-      "doi_url": null,
-      "url": "https://www.rivisteweb.it/doi/10.3270/101610",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": null,
-      "reference_count": null,
-      "venue": null,
-      "authors": [],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "url",
-      "confidence_score": null
-    }
-  },
   "605a8841a6e7dc74": {
     "entry_key": "Gillespie2010-sla2",
     "entry_title": "The politics of ‘platforms’",
@@ -7370,29 +7347,6 @@
       "confidence_score": 0.8428571428571427
     }
   },
-  "6c96006db6e1dca9": {
-    "entry_key": "Slack1787858551-sl4d",
-    "entry_title": null,
-    "cached_at": "2026-08-28T18:21:50.469896",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": null,
-      "doi_url": null,
-      "url": "https://www.taylorfrancis.com/chapters/edit/10.4324/9781003477570-5/privatization-public-discourse-raquel-recuero-camilla-quesada-tavares",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": null,
-      "reference_count": null,
-      "venue": null,
-      "authors": [],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "url",
-      "confidence_score": null
-    }
-  },
   "36aadb63c06941ee": {
     "entry_key": "Kim2026-br",
     "entry_title": "Cross-national information attacks: A two-decade analysis of troll behavior in Korea",
@@ -7623,29 +7577,6 @@
       "confidence_score": null
     }
   },
-  "67b8d374f91e39ac": {
-    "entry_key": "Slack1783507648-sl94",
-    "entry_title": "The Anti-Gender Debate on Social Media. A Computational Communication Science Analysis of Networks, Activism, and Misinformation",
-    "cached_at": "2026-09-01T10:39:33.178150",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": null,
-      "doi_url": null,
-      "url": "https://www.rivisteweb.it/doi/10.3270/101610",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": null,
-      "citation_count": null,
-      "reference_count": null,
-      "venue": null,
-      "authors": [],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "url",
-      "confidence_score": null
-    }
-  },
   "c197f2bb092b868b": {
     "entry_key": "Slack1783507719-slc1",
     "entry_title": "COORNET: AN INTEGRATED APPROACH TO SURFACE PROBLEMATIC CONTENT, MALICIOUS ACTORS, AND COORDINATED NETWORKS",
@@ -7667,32 +7598,6 @@
         "Nicola Righetti",
         "Luca Rossi",
         "Giada Marino"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": null
-    }
-  },
-  "12dbb26f612768b9": {
-    "entry_key": "Slack1787858551-sl4d",
-    "entry_title": "The Privatization of Public Discourse",
-    "cached_at": "2026-09-01T10:39:36.289085",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.4324/9781003477570-5",
-      "doi_url": "https://doi.org/10.4324/9781003477570-5",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2025-12-22",
-      "citation_count": 0,
-      "reference_count": 0,
-      "venue": "The Routledge Companion to Digital Media and Democracy",
-      "authors": [
-        "Raquel Recuero",
-        "Camilla Quesada Tavares"
       ],
       "subjects": [],
       "is_open_access": null,
