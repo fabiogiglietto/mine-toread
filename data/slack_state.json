@@ -1,5 +1,5 @@
 {
-  "last_ts": "1787858551.834329",
+  "last_ts": "1789631457.058929",
   "pending": {
     "1782739206.289299": {
       "channel_id": "C0BDU82EBHQ",
@@ -35,6 +35,15 @@
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1783507539154889",
       "first_seen": "2026-07-08T11:25:10.036339+00:00",
       "doi": null,
+      "arxiv_id": null
+    },
+    "1789631457.058929": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "U05UK3SRMD4",
+      "text": "<https://doi.org/10.1080/10584609.2026.2733316|doi.org/10.1080/10584609.2026.2733316>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1789631457058929",
+      "first_seen": "2026-09-17T08:57:34.767862+00:00",
+      "doi": "10.1080/10584609.2026.2733316",
       "arxiv_id": null
     }
   },
