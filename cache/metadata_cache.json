@@ -2,92 +2,92 @@
   "c5a7d0326e1f61c6": {
     "entry_key": "Kristensen2025-ni",
     "entry_title": "Platform polarization. Do alternative platforms drive discursive polarization?",
-    "cached_at": "2026-09-10T08:56:30.601587",
+    "cached_at": "2026-09-17T09:36:11.932857",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Kristensen2025-ni | No DOI available | Title length: 78 chars | Authors: Kristensen, Jakob Bæk, Kristensen, Jakob Bæk | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:56:30.601595"
+    "last_failure_at": "2026-09-17T09:36:11.932865"
   },
   "65d46046ae1c898f": {
     "entry_key": "Gaw2025-ru",
     "entry_title": "Influence operations as brokerage: Political-economic infrastructures of manipulation in the 2022 Philippine elections",
-    "cached_at": "2026-09-10T08:56:33.689259",
+    "cached_at": "2026-09-17T09:36:15.016499",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Gaw2025-ru | No DOI available | Title length: 118 chars | Authors: Gaw, Fatima, Agonos, Mariam Jayne... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:56:33.689267"
+    "last_failure_at": "2026-09-17T09:36:15.016508"
   },
   "b41f425da41887a0": {
     "entry_key": "Marwick2025-vx",
     "entry_title": "True costs of misinformation| mountains of evidence: Processual “redpilling” as a Socio-technical effect of disinformation",
-    "cached_at": "2026-09-10T08:56:36.756176",
+    "cached_at": "2026-09-17T09:36:17.998254",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Marwick2025-vx | No DOI available | Title length: 122 chars | Authors: Marwick, Alice E, Furl, Katherine | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:56:36.756184"
+    "last_failure_at": "2026-09-17T09:36:17.998261"
   },
   "e3b0c44298fc1c14": {
     "entry_key": "noauthor_undated-ue",
     "entry_title": null,
-    "cached_at": "2026-09-10T08:56:36.756262",
+    "cached_at": "2026-09-17T09:36:17.998330",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: noauthor_undated-ue | No DOI available | No title available | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:56:36.756265"
+    "last_failure_at": "2026-09-17T09:36:17.998333"
   },
   "657c6670d7b624b8": {
     "entry_key": "noauthor_undated-fm",
     "entry_title": "Volume 7 issue 2 article 4",
-    "cached_at": "2026-09-10T08:55:21.310615",
+    "cached_at": "2026-09-17T09:36:08.873901",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: noauthor_undated-fm | No DOI available | Title length: 26 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:55:21.310622"
+    "last_failure_at": "2026-09-17T09:36:08.873909"
   },
   "b909c3af063ea494": {
     "entry_key": "noauthor_undated-bm",
     "entry_title": "cib.pdf",
-    "cached_at": "2026-09-10T08:47:38.930995",
+    "cached_at": "2026-09-17T09:35:53.677418",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: noauthor_undated-bm | No DOI available | Title length: 7 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:47:38.931000"
+    "last_failure_at": "2026-09-17T09:35:53.677421"
   },
   "9195fcc80574052b": {
     "entry_key": "Vincent_undated-re",
     "entry_title": "What our second measurement says about misinformation on major platforms in Europe",
-    "cached_at": "2026-09-10T08:48:58.732066",
+    "cached_at": "2026-09-17T09:35:56.238986",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Vincent_undated-re | No DOI available | Title length: 82 chars | Authors: Vincent, Emmanuel, Crisan, Daiana | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:48:58.732075"
+    "last_failure_at": "2026-09-17T09:35:56.238993"
   },
   "fac502d9bb5bbba8": {
     "entry_key": "UnknownUnknown-db",
     "entry_title": "What 81,000 people told us about the economics of AI",
-    "cached_at": "2026-09-10T08:51:54.109109",
+    "cached_at": "2026-09-17T09:35:59.160230",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: UnknownUnknown-db | No DOI available | Title length: 52 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:51:54.109118"
+    "last_failure_at": "2026-09-17T09:35:59.160238"
   },
   "fc9373f3342e79d3": {
     "entry_key": "Gottfried2026-ww",
     "entry_title": "Americans and AI 2026: Chatbots, Smart Devices and Views on Impact",
-    "cached_at": "2026-09-10T08:52:30.217634",
+    "cached_at": "2026-09-17T09:36:02.231925",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Gottfried2026-ww | No DOI available | Title length: 66 chars | Authors: Gottfried, Jeffrey, Bishop, William... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:52:30.217642"
+    "last_failure_at": "2026-09-17T09:36:02.231933"
   },
   "06e15083ae69cfa5": {
     "entry_key": "Hinck2026-yj",
     "entry_title": "Where's the Evidence that Respondents Understand Your Survey Questions?",
-    "cached_at": "2026-09-10T08:53:11.345564",
+    "cached_at": "2026-09-17T09:36:05.739410",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Hinck2026-yj | No DOI available | Title length: 71 chars | Authors: Hinck, Musashi, King, Gary... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-09-10T08:53:11.345573"
+    "last_failure_at": "2026-09-17T09:36:05.739418"
   },
   "63bf89009a078bb1": {
     "entry_key": "Falkenberg2026-ka",
@@ -7912,6 +7912,36 @@
       "is_open_access": null,
       "source": "crossref",
       "confidence_score": 0.8428571428571427
+    }
+  },
+  "08cf3f2397898e9d": {
+    "entry_key": "Rodarte2026-sl16",
+    "entry_title": "The Democratic Cost of Pursuing Virality: A Study into Parliamentary Communications",
+    "cached_at": "2026-09-17T09:36:20.763691",
+    "metadata": {
+      "abstract": "The transformation of parliamentarians into media producers has heightened concerns about emerging forms of political communication. This mixed-methods paper examines the strategies they employ to enhance their digital presence. Based on in-depth interviews, it shows that Brazilian parliamentarians believe that social media penalize them for posting about congressional matters, reporting that content about legislative work and constituency services receives little engagement online. Conversely, they view the production of antagonistic content and alignment with news cycles as essential to maintaining an engaging social media presence. A computational analysis of 4,5 million posts on Facebook, Instagram, and Twitter supports these evaluations: posts about congressional matters are associated with lower engagement metrics, while the use of antagonistic language increases them. The analysis further discusses pathways through which visibility is sustained at the intersection of platform incentives and communicative practices. In sum, this mixed-methods study demonstrates that the mediatization of politics has created perverse incentives for parliamentarians to downplay congressional activity and prioritize confrontations on social media, weakening accountability in ways that may resonate far beyond Brazil.",
+      "keywords": [],
+      "doi": "10.1080/10584609.2026.2733316",
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2733316",
+      "url": "https://doi.org/10.1080/10584609.2026.2733316",
+      "arxiv_url": null,
+      "pdf_url": "https://doi.org/10.1080/10584609.2026.2733316",
+      "publication_date": "2026-09-16",
+      "citation_count": 0,
+      "reference_count": 46,
+      "venue": "Political Communication",
+      "authors": [
+        "André K. Rodarte"
+      ],
+      "subjects": [
+        "Political science",
+        "Democracy",
+        "Public administration",
+        "Political economy"
+      ],
+      "is_open_access": true,
+      "source": "crossref+openalex",
+      "confidence_score": null
     }
   }
 }
