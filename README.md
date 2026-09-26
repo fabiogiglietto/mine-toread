@@ -327,6 +327,8 @@ This repository includes a production-ready GitHub Actions workflow with advance
 2. **The workflow runs automatically**:
    - Every 30 minutes via cron schedule
    - On manual trigger via workflow_dispatch
+   - On `repository_dispatch` type `slack-message` (optional; see
+     *Instant replies* under the Slack setup)
    - On code changes to src/, data/, or config.yml
 
 3. **Monitor workflow runs**:
@@ -504,6 +506,26 @@ ToRead includes several security measures:
 - Preprint papers often have limited metadata
 - Check logs for API response details
 
+## Classics
+
+Foundational works added in bulk (e.g. the works the archive cites most but
+does not hold) go in a **top-level Paperpile folder named `Classics`**, not
+inside To Read. CI downloads that folder's BibTeX export as a second source
+(`data/paperpile_classics.bib`, tag `classic`). Each classic becomes an
+ordinary feed item plus `"_classic": true` (see `SCHEMA.md`), so downstream
+can skip announcing it. fg-zettelkasten, for example, builds the note and the
+podcast as usual but posts no `#toread` digest. A work filed in both folders
+appears once and stays flagged.
+
+One-time setup:
+
+1. In Paperpile, create the `Classics` folder, then *Export → BibTeX → Get
+   link* on it (same as the To Read export).
+2. Add the link as the repo secret `PAPERPILE_CLASSICS_EXPORT_URL`.
+
+While the secret is unset, the step is a no-op. A failed download keeps the
+previous file, so classics never drop out of the feed.
+
 ## Slack ingestion
 
 A second input path lets team members suggest papers directly from Slack.
@@ -547,6 +569,30 @@ the trigger hashtag (default `#zettelkasten`).
    - `UNPAYWALL_EMAIL` (optional but recommended)
 7. Optional repo variable: `SLACK_TRIGGER_HASHTAG` (defaults to
    `#zettelkasten`).
+8. Optional — **instant replies** (paid Slack plans). The bot replies from
+   inside the feed workflow, and GitHub throttles the `*/30` cron to one run
+   every few hours on quiet repos, so a submission can wait half a day for
+   its reply. To start a run the moment a link is posted, relay the message
+   to the workflow's `repository_dispatch` trigger with Slack's Workflow
+   Builder:
+   - **GitHub PAT** (fine-grained): repository access limited to *this*
+     repo; permission `Contents` → Read and write. It lives in the Slack
+     workflow, not in a repo secret — note its expiry and rotate it there.
+   - **Workflow Builder** → new workflow → trigger *When a message is posted
+     to a channel* (your `#toread` channel) → step *Send a webhook*:
+     - URL: `https://api.github.com/repos/<owner>/<repo>/dispatches` (POST)
+     - Headers: `Authorization: Bearer <PAT>`,
+       `Accept: application/vnd.github+json`,
+       `X-GitHub-Api-Version: 2022-11-28`
+     - Body: `{"event_type": "slack-message"}`
+   - GitHub answers `204 No Content`; the run starts within seconds and the
+     reply lands in roughly 1–3 minutes.
+
+   The trigger fires on top-level messages only, so a PDF attached later
+   *in a thread* still waits for the next cron run; the cron stays as the
+   fallback for that and for any dropped webhook. Messages from the bot
+   itself also fire a run — a ~30 s no-op, collapsed by the workflow's
+   concurrency group.
 
 ### Behaviour notes
 
