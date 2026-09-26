@@ -1,16 +1,6 @@
 {
   "last_ts": "1790414429.024169",
-  "pending": {
-    "1790414429.024169": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "U05UK3SRMD4",
-      "text": " <https://doi.org/10.1080/21670811.2026.2729391|https://doi.org/10.1080/21670811.2026.2729391> ",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1790414429024169",
-      "first_seen": "2026-09-26T12:22:01.807352+00:00",
-      "doi": "10.1080/21670811.2026.2729391",
-      "arxiv_id": null
-    }
-  },
+  "pending": {},
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
@@ -40,7 +30,8 @@
     "1783526195.619319": "Marino2026-slef",
     "1783592991.086239": "Trilling2024-slc8",
     "1787858551.834329": "Slack1787858551-sl4d",
-    "1789631457.058929": "Rodarte2026-sl16"
+    "1789631457.058929": "Rodarte2026-sl16",
+    "1790414429.024169": "Aharoni2026-sl6f"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -258,6 +249,14 @@
       "channel_id": "C0BDU82EBHQ",
       "ts": "1789631457.058929",
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1789631457058929",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "Bruna Paroni",
+      "submitted_by_id": "U05UK3SRMD4"
+    },
+    "Aharoni2026-sl6f": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1790414429.024169",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1790414429024169",
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "Bruna Paroni",
       "submitted_by_id": "U05UK3SRMD4"

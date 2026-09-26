@@ -9303,5 +9303,42 @@
       "source": "crossref",
       "confidence_score": 0.83
     }
+  },
+  "510744f83624485b": {
+    "entry_key": "Aharoni2026-sl6f",
+    "entry_title": "“Having Fun and Learning Something”: How Users in Four Countries Define What News Is – and Is Not",
+    "cached_at": "2026-09-26T19:36:30.492112",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/21670811.2026.2729391",
+      "doi_url": "https://doi.org/10.1080/21670811.2026.2729391",
+      "url": "https://doi.org/10.1080/21670811.2026.2729391",
+      "arxiv_url": null,
+      "pdf_url": "https://doi.org/10.1080/21670811.2026.2729391",
+      "publication_date": "2026-09-23",
+      "citation_count": 0,
+      "reference_count": 36,
+      "venue": "Digital Journalism",
+      "authors": [
+        "Tali Aharoni",
+        "Amy Ross Arguedas",
+        "Sayan Banerjee",
+        "Camila Mont’Alverne",
+        "Benjamin Toff",
+        "Rasmus Kleis Nielsen",
+        "Richard Fletcher"
+      ],
+      "subjects": [
+        "Public relations",
+        "Computer science",
+        "Internet privacy",
+        "Business",
+        "Work (physics)"
+      ],
+      "is_open_access": true,
+      "source": "crossref+openalex",
+      "confidence_score": null
+    }
   }
 }
