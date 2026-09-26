@@ -173,6 +173,5 @@ temp/
 !output/feed.xml
 !output/feed.json
 .venv/
-
 # pipeline-health cross-run state (restored from the Actions cache)
 .health-state/
