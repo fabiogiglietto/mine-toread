@@ -166,101 +166,6 @@
       "confidence_score": 0.75
     }
   },
-  "67b8d374f91e39ac": {
-    "entry_key": "Slack1783507648-sl94",
-    "entry_title": "The Anti-Gender Debate on Social Media. A Computational Communication Science Analysis of Networks, Activism, and Misinformation",
-    "cached_at": "2026-09-01T15:25:07.906750",
-    "metadata": {
-      "abstract": "The anti-gender movement, a religious-based mobilization countering sexual minority demands for civil rights with a traditionalist vision of gender identities and roles, has attracted scholarly attention in the last few years as an emblematic example of the post-secular resurgence of religion in the public arena. The literature on this movement has pointed out the importance of social media communication, yet observations on this matter have mostly been anecdotal so far. This research aims to fill this gap by elucidating the structure and functions of social media through a systematic and extensive social media analysis conducted with rigorous computational communication science methods. Relying on the analysis of over 20,000 posts published on Facebook over about a decade, the research combines automated content analysis and time series analysis to shed light on the main actors and networks involved in the debate, the relation between social media communication, offline events and news media coverage, the uses of social media between traditional and digital-savvy activism practices, and the spread of gender-related mis/disinformation online. The study represents one of the first attempts to focus on the social media communication of the anti-gender movement from a computational communication science perspective.",
-      "keywords": [],
-      "doi": "10.3270/101610",
-      "doi_url": "https://doi.org/10.3270/101610",
-      "url": "https://hdl.handle.net/11576/2734012",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2021-01-01",
-      "citation_count": 13,
-      "reference_count": null,
-      "venue": "CINECA IRIS Institutional Research information system (University of Urbino)",
-      "authors": [
-        "Nicola Righetti"
-      ],
-      "subjects": [
-        "Misinformation",
-        "Social media",
-        "Social psychology",
-        "Political science",
-        "Psychology"
-      ],
-      "is_open_access": false,
-      "source": "openalex",
-      "confidence_score": null
-    }
-  },
-  "12dbb26f612768b9": {
-    "entry_key": "Slack1787858551-sl4d",
-    "entry_title": "The Privatization of Public Discourse",
-    "cached_at": "2026-09-01T15:25:09.592472",
-    "metadata": {
-      "abstract": "This chapter proposal explores the intersections of discourse, political participation, and social media platforms, focusing on the systemic risks these platforms create for contemporary democracies due to the privatization of the public discourse realm. We acknowledge that discourse plays a crucial role in shaping public opinion, political deliberation, and the functioning of democratic processes. However, social media platforms have created an imbalance in the public sphere by privatizing and organizing public discourse and its spaces through algorithmic governance. This new relationship, in which public discourse is now owned and subjected to supranational rules, has introduced new challenges for democracies. These challenges are particularly important in the Global South, where the lack of regulatory infrastructure amplifies asymmetries of power and control. We further divide and analyze these challenges by examining how the platformization of public discourse intersects with issues of digital sovereignty, drawing on case studies from the literature and the Brazilian context to assess their impact on key pillars of democratic governance.",
-      "keywords": [],
-      "doi": "10.4324/9781003477570-5",
-      "doi_url": "https://doi.org/10.4324/9781003477570-5",
-      "url": "https://doi.org/10.4324/9781003477570-5",
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2025-12-22",
-      "citation_count": 0,
-      "reference_count": 0,
-      "venue": "The Routledge Companion to Digital Media and Democracy",
-      "authors": [
-        "Raquel Recuero",
-        "Camilla Quesada Tavares"
-      ],
-      "subjects": [
-        "Public sphere",
-        "Politics",
-        "Public discourse",
-        "Context (archaeology)",
-        "Democracy"
-      ],
-      "is_open_access": false,
-      "source": "crossref+openalex",
-      "confidence_score": null
-    }
-  },
-  "09f22309ff6d8e37": {
-    "entry_key": "Pierri2026-ib",
-    "entry_title": "Research opportunities and challenges of the EU’s Digital Services Act",
-    "cached_at": "2026-09-01T19:46:45.252505",
-    "metadata": {
-      "abstract": "Proposing practical measures to ensure the Digital Services Act fulfills its transparency and accountability goals.",
-      "keywords": [],
-      "doi": "10.1145/3779412",
-      "doi_url": "https://doi.org/10.1145/3779412",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-08-31",
-      "citation_count": 0,
-      "reference_count": 10,
-      "venue": "Communications of the ACM",
-      "authors": [
-        "Francesco Pierri",
-        "Theo Araujo",
-        "Sanne Kruikemeier",
-        "Philipp Lorenz-Spreen",
-        "Mariek M.P. Vanden Abeele",
-        "Laura Vandenbosch",
-        "Joana Gonçalves-Sa",
-        "Przemyslaw Grabowicz"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.8285714285714285
-    }
-  },
   "49b2cb70274be0d4": {
     "entry_key": "Kasianenko2026-tn",
     "entry_title": "Searching for the truth? search engines and their AI affordances’ responses to conspiratorial search practices",
@@ -9502,6 +9407,127 @@
       "subjects": [],
       "is_open_access": null,
       "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "3f55cfea60dd3093": {
+    "entry_key": "Crichton2026-kn",
+    "entry_title": "Re-generating hate",
+    "cached_at": "2026-10-02T06:01:17.147818",
+    "metadata": {
+      "abstract": "This short piece examines how generative AI is becoming embedded in far-right propaganda ecosystems, drawing on examples from the 2023 Dublin riots and the 2024 Southport unrest. Using a media experiment, it traces a re-generative pipeline in which extremist images collected from Telegram and X are first converted into text prompts and then re-created through commercial image models. The results suggest that AI systems do not simply neutralize hateful content: they often sanitize its most explicit markers while preserving, displacing or rearticulating underlying ideological bias. The article argues that this affinity between far-right visual culture and generative AI is not accidental, but rooted in the biases and aesthetic logics built into contemporary commercial models.",
+      "keywords": [],
+      "doi": "10.1177/29768624261449726",
+      "doi_url": "https://doi.org/10.1177/29768624261449726",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026",
+      "citation_count": 1,
+      "reference_count": 12,
+      "venue": "Platforms &amp; Society",
+      "authors": [
+        "Fraser Crichton",
+        "Guillen Torres"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.86
+    }
+  },
+  "09f22309ff6d8e37": {
+    "entry_key": "Pierri2026-ib",
+    "entry_title": "Research opportunities and challenges of the EU’s Digital Services Act",
+    "cached_at": "2026-10-02T06:01:19.975489",
+    "metadata": {
+      "abstract": "Proposing practical measures to ensure the Digital Services Act fulfills its transparency and accountability goals.",
+      "keywords": [],
+      "doi": "10.1145/3779412",
+      "doi_url": "https://doi.org/10.1145/3779412",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-09-01",
+      "citation_count": 0,
+      "reference_count": 10,
+      "venue": "Communications of the ACM",
+      "authors": [
+        "Francesco Pierri",
+        "Theo Araujo",
+        "Sanne Kruikemeier",
+        "Philipp Lorenz-Spreen",
+        "Mariek M.P. Vanden Abeele",
+        "Laura Vandenbosch",
+        "Joana Gonçalves-Sa",
+        "Przemyslaw Grabowicz"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8285714285714285
+    }
+  },
+  "67b8d374f91e39ac": {
+    "entry_key": "Slack1783507648-sl94",
+    "entry_title": "The Anti-Gender Debate on Social Media. A Computational Communication Science Analysis of Networks, Activism, and Misinformation",
+    "cached_at": "2026-10-02T06:01:23.260279",
+    "metadata": {
+      "abstract": "The anti-gender movement, a religious-based mobilization countering sexual minority demands for civil rights with a traditionalist vision of gender identities and roles, has attracted scholarly attention in the last few years as an emblematic example of the post-secular resurgence of religion in the public arena. The literature on this movement has pointed out the importance of social media communication, yet observations on this matter have mostly been anecdotal so far. This research aims to fill this gap by elucidating the structure and functions of social media through a systematic and extensive social media analysis conducted with rigorous computational communication science methods. Relying on the analysis of over 20,000 posts published on Facebook over about a decade, the research combines automated content analysis and time series analysis to shed light on the main actors and networks involved in the debate, the relation between social media communication, offline events and news media coverage, the uses of social media between traditional and digital-savvy activism practices, and the spread of gender-related mis/disinformation online. The study represents one of the first attempts to focus on the social media communication of the anti-gender movement from a computational communication science perspective.",
+      "keywords": [],
+      "doi": "10.3270/101610",
+      "doi_url": "https://doi.org/10.3270/101610",
+      "url": "https://hdl.handle.net/11576/2734012",
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2021-01-01",
+      "citation_count": 14,
+      "reference_count": null,
+      "venue": "CINECA IRIS Institutional Research information system (University of Urbino)",
+      "authors": [
+        "Nicola Righetti"
+      ],
+      "subjects": [
+        "Misinformation",
+        "Social media",
+        "Social psychology",
+        "Political science",
+        "Psychology"
+      ],
+      "is_open_access": false,
+      "source": "openalex",
+      "confidence_score": null
+    }
+  },
+  "12dbb26f612768b9": {
+    "entry_key": "Slack1787858551-sl4d",
+    "entry_title": "The Privatization of Public Discourse",
+    "cached_at": "2026-10-02T06:01:25.993984",
+    "metadata": {
+      "abstract": "This chapter proposal explores the intersections of discourse, political participation, and social media platforms, focusing on the systemic risks these platforms create for contemporary democracies due to the privatization of the public discourse realm. We acknowledge that discourse plays a crucial role in shaping public opinion, political deliberation, and the functioning of democratic processes. However, social media platforms have created an imbalance in the public sphere by privatizing and organizing public discourse and its spaces through algorithmic governance. This new relationship, in which public discourse is now owned and subjected to supranational rules, has introduced new challenges for democracies. These challenges are particularly important in the Global South, where the lack of regulatory infrastructure amplifies asymmetries of power and control. We further divide and analyze these challenges by examining how the platformization of public discourse intersects with issues of digital sovereignty, drawing on case studies from the literature and the Brazilian context to assess their impact on key pillars of democratic governance.",
+      "keywords": [],
+      "doi": "10.4324/9781003477570-5",
+      "doi_url": "https://doi.org/10.4324/9781003477570-5",
+      "url": "https://doi.org/10.4324/9781003477570-5",
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2025-12-22",
+      "citation_count": 0,
+      "reference_count": 0,
+      "venue": "The Routledge Companion to Digital Media and Democracy",
+      "authors": [
+        "Raquel Recuero",
+        "Camilla Quesada Tavares"
+      ],
+      "subjects": [
+        "Public sphere",
+        "Politics",
+        "Public discourse",
+        "Context (archaeology)",
+        "Democracy"
+      ],
+      "is_open_access": false,
+      "source": "crossref+openalex",
       "confidence_score": null
     }
   }
