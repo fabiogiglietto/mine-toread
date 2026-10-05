@@ -1,6 +1,16 @@
 {
-  "last_ts": "1790414429.024169",
-  "pending": {},
+  "last_ts": "1791219292.270769",
+  "pending": {
+    "1791219292.270769": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "UR3895TML",
+      "text": "<https://policyreview.info/articles/analysis/platform-lobbying-digital-services-act|policyreview.info/articles/analysis/platform-lobbying-digital-services-act>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791219292270769",
+      "first_seen": "2026-10-05T16:56:10.674847+00:00",
+      "doi": null,
+      "arxiv_id": null
+    }
+  },
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
