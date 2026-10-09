@@ -1,5 +1,5 @@
 {
-  "last_ts": "1791219292.270769",
+  "last_ts": "1791529563.092019",
   "pending": {
     "1791219292.270769": {
       "channel_id": "C0BDU82EBHQ",
@@ -41,7 +41,8 @@
     "1783592991.086239": "Trilling2024-slc8",
     "1787858551.834329": "Slack1787858551-sl4d",
     "1789631457.058929": "Rodarte2026-sl16",
-    "1790414429.024169": "Aharoni2026-sl6f"
+    "1790414429.024169": "Aharoni2026-sl6f",
+    "1791529563.092019": "Carammia2024-sl90"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -270,6 +271,14 @@
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "Bruna Paroni",
       "submitted_by_id": "U05UK3SRMD4"
+    },
+    "Carammia2024-sl90": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1791529563.092019",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791529563092019",
+      "pdf_source": "arxiv",
+      "submitted_by": "Nicola Righetti",
+      "submitted_by_id": "U01DXTA595Z"
     }
   }
 }
