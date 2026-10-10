@@ -1,5 +1,5 @@
 {
-  "last_ts": "1791529563.092019",
+  "last_ts": "1791633206.348869",
   "pending": {
     "1791219292.270769": {
       "channel_id": "C0BDU82EBHQ",
@@ -8,6 +8,15 @@
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791219292270769",
       "first_seen": "2026-10-05T16:56:10.674847+00:00",
       "doi": null,
+      "arxiv_id": null
+    },
+    "1791633206.348869": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "U01ETGW2ZS9",
+      "text": "<https://www.tandfonline.com/doi/full/10.1080/10584609.2026.2733320|tandfonline.com/doi/full/10.1080/10584609.2026.2733320>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791633206348869",
+      "first_seen": "2026-10-10T12:54:53.784722+00:00",
+      "doi": "10.1080/10584609.2026.2733320",
       "arxiv_id": null
     }
   },
