@@ -9,15 +9,6 @@
       "first_seen": "2026-10-05T16:56:10.674847+00:00",
       "doi": null,
       "arxiv_id": null
-    },
-    "1791633206.348869": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "U01ETGW2ZS9",
-      "text": "<https://www.tandfonline.com/doi/full/10.1080/10584609.2026.2733320|tandfonline.com/doi/full/10.1080/10584609.2026.2733320>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791633206348869",
-      "first_seen": "2026-10-10T12:54:53.784722+00:00",
-      "doi": "10.1080/10584609.2026.2733320",
-      "arxiv_id": null
     }
   },
   "processed": {
@@ -51,7 +42,8 @@
     "1787858551.834329": "Slack1787858551-sl4d",
     "1789631457.058929": "Rodarte2026-sl16",
     "1790414429.024169": "Aharoni2026-sl6f",
-    "1791529563.092019": "Carammia2024-sl90"
+    "1791529563.092019": "Carammia2024-sl90",
+    "1791633206.348869": "Tjaden2026-sl8e"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -288,6 +280,14 @@
       "pdf_source": "arxiv",
       "submitted_by": "Nicola Righetti",
       "submitted_by_id": "U01DXTA595Z"
+    },
+    "Tjaden2026-sl8e": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1791633206.348869",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791633206348869",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "Massimo Terenzi",
+      "submitted_by_id": "U01ETGW2ZS9"
     }
   }
 }
