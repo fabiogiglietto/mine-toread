@@ -9674,5 +9674,37 @@
       "source": "crossref+openalex",
       "confidence_score": null
     }
+  },
+  "91db71c281fd94b9": {
+    "entry_key": "Hove2026-sl49",
+    "entry_title": "Seeing Is Believing? Most People Struggle to Detect AI-Generated Images",
+    "cached_at": "2026-10-11T18:20:18.429713",
+    "metadata": {
+      "abstract": "Generative artificial intelligence (AI) dramatically lowers the costs of creating high-quality, realistic images, allowing a wider range of actors to create and distribute such content on, for instance, social media. A core concern is that easy-to-use generative AI tools can be misused for manipulation through misinformation and microtargeted persuasive material. However, we still need more contextual nuance to a fundamental question: To what degree can people discern photorealistic AI-generated images from authentic images? In a preregistered survey experiment, we find that, on average, people are not substantially better than chance at discerning AI-generated images from authentic images, regardless of the context of the image. While younger people, highly analytical-thinking individuals, and experienced users of generative AI have better discernment abilities, no demographic group other than young individuals (&lt;25) performs substantially better than chance. Contrary to our expectation, we do not find that people’s confidence in their discernment abilities varies depending on the context of the image. As generative AI technology likely advances and the realism of AI-generated images continues to improve, these findings are concerning, as people already struggle to discern between AI-generated and authentic images, even in an experiment where they have been primed and are assessing images of relatively low quality.",
+      "keywords": [],
+      "doi": "10.1177/20563051261483376",
+      "doi_url": "https://doi.org/10.1177/20563051261483376",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026",
+      "citation_count": 0,
+      "reference_count": 83,
+      "venue": "Social Media + Society",
+      "authors": [
+        "Mads Fuglsang Hove",
+        "Frederik Hjorth",
+        "Yevgeniy Golovchenko",
+        "Rebecca Adler-Nissen",
+        "Anja Bechmann",
+        "Arjen van Dalen",
+        "Sara B. Hobolt",
+        "Claes de Vreese"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
   }
 }
