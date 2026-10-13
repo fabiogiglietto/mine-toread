@@ -1,16 +1,6 @@
 {
   "last_ts": "1791713727.316219",
-  "pending": {
-    "1791219292.270769": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "UR3895TML",
-      "text": "<https://policyreview.info/articles/analysis/platform-lobbying-digital-services-act|policyreview.info/articles/analysis/platform-lobbying-digital-services-act>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791219292270769",
-      "first_seen": "2026-10-05T16:56:10.674847+00:00",
-      "doi": null,
-      "arxiv_id": null
-    }
-  },
+  "pending": {},
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
@@ -44,7 +34,8 @@
     "1790414429.024169": "Aharoni2026-sl6f",
     "1791529563.092019": "Carammia2024-sl90",
     "1791633206.348869": "Tjaden2026-sl8e",
-    "1791713727.316219": "Hove2026-sl49"
+    "1791713727.316219": "Hove2026-sl49",
+    "1791219292.270769": "Slack1791219292-sl4b"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -297,6 +288,14 @@
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "Massimo Terenzi",
       "submitted_by_id": "U01ETGW2ZS9"
+    },
+    "Slack1791219292-sl4b": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1791219292.270769",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1791219292270769",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "GiadaM. / Uniurb",
+      "submitted_by_id": "UR3895TML"
     }
   }
 }
