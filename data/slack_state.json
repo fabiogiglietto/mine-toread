@@ -1,16 +1,6 @@
 {
   "last_ts": "1793698742.991809",
-  "pending": {
-    "1793698742.991809": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "U01DXTA595Z",
-      "text": "<https://pure.uva.nl/ws/files/339242833/384896eng.pdf|pure.uva.nl/ws/files/339242833/384896eng.pdf>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1793698742991809",
-      "first_seen": "2026-11-03T14:54:20.705339+00:00",
-      "doi": null,
-      "arxiv_id": null
-    }
-  },
+  "pending": {},
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
@@ -46,7 +36,8 @@
     "1791633206.348869": "Tjaden2026-sl8e",
     "1791713727.316219": "Hove2026-sl49",
     "1791219292.270769": "Slack1791219292-sl4b",
-    "1793698626.151509": "(duplicate)"
+    "1793698626.151509": "(duplicate)",
+    "1793698742.991809": "Slack1793698742-slae"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -307,6 +298,14 @@
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "GiadaM. / Uniurb",
       "submitted_by_id": "UR3895TML"
+    },
+    "Slack1793698742-slae": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1793698742.991809",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1793698742991809",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "Nicola Righetti",
+      "submitted_by_id": "U01DXTA595Z"
     }
   }
 }
