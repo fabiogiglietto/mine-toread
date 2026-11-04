@@ -9972,5 +9972,31 @@
       "source": "crossref",
       "confidence_score": 0.86
     }
+  },
+  "5aabf98c7e542430": {
+    "entry_key": "Tiggemann2020-sl44",
+    "entry_title": "Social media is not real: The effect of ‘Instagram vs reality’ images on women’s social comparison and body image",
+    "cached_at": "2026-11-04T22:04:25.056505",
+    "metadata": {
+      "abstract": "One recent trend on Instagram consists of posting ‘Instagram vs reality’ images containing side-by-side photographs of the same woman, one an idealized depiction and the other a more natural depiction. This study aimed to experimentally investigate the effect of such images on body image. Participants were 305 women aged 18–30 years who were randomly assigned to view one of three sets of Instagram images: ‘Instagram vs reality’ images, the ‘ideal’ side alone or the ‘real’ side alone. As predicted, viewing the ‘Instagram vs reality’ and real images resulted in decreased body dissatisfaction relative to the ideal images. Furthermore, the detrimental effects of appearance comparison were much less marked for the ‘Instagram vs reality’ and real images than for the ideal images. It was concluded that ‘Instagram vs reality’ and real posts have the potential to bolster women’s body satisfaction, but more research is needed to assess their longer-term impact.",
+      "keywords": [],
+      "doi": "10.1177/1461444819888720",
+      "doi_url": "https://doi.org/10.1177/1461444819888720",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2020",
+      "citation_count": 283,
+      "reference_count": 50,
+      "venue": "New Media &amp; Society",
+      "authors": [
+        "Marika Tiggemann",
+        "Isabella Anderberg"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": null
+    }
   }
 }

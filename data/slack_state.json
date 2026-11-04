@@ -1,16 +1,6 @@
 {
   "last_ts": "1793804130.339669",
-  "pending": {
-    "1793804130.339669": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "U09BVRBH4BZ",
-      "text": "<https://journals.sagepub.com/doi/full/10.1177/1461444819888720|journals.sagepub.com/doi/full/10.1177/1461444819888720>",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1793804130339669",
-      "first_seen": "2026-11-04T16:02:01.576578+00:00",
-      "doi": "10.1177/1461444819888720",
-      "arxiv_id": null
-    }
-  },
+  "pending": {},
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
@@ -47,7 +37,8 @@
     "1791713727.316219": "Hove2026-sl49",
     "1791219292.270769": "Slack1791219292-sl4b",
     "1793698626.151509": "(duplicate)",
-    "1793698742.991809": "Slack1793698742-slae"
+    "1793698742.991809": "Slack1793698742-slae",
+    "1793804130.339669": "Tiggemann2020-sl44"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -316,6 +307,14 @@
       "pdf_source": "slack_attachment_followup",
       "submitted_by": "Nicola Righetti",
       "submitted_by_id": "U01DXTA595Z"
+    },
+    "Tiggemann2020-sl44": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1793804130.339669",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1793804130339669",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "María José",
+      "submitted_by_id": "U09BVRBH4BZ"
     }
   }
 }
