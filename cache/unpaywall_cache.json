@@ -218,5 +218,15 @@
       "license": "cc-by-nc",
       "host_type": "publisher"
     }
+  },
+  "10.1177/1461444819888720": {
+    "cached_at": "2026-11-04T16:02:01.533515",
+    "result": {
+      "doi": "10.1177/1461444819888720",
+      "is_oa": false,
+      "best_oa_pdf_url": null,
+      "license": null,
+      "host_type": null
+    }
   }
 }

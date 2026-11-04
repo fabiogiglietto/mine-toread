@@ -1,6 +1,16 @@
 {
-  "last_ts": "1793698742.991809",
-  "pending": {},
+  "last_ts": "1793804130.339669",
+  "pending": {
+    "1793804130.339669": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "U09BVRBH4BZ",
+      "text": "<https://journals.sagepub.com/doi/full/10.1177/1461444819888720|journals.sagepub.com/doi/full/10.1177/1461444819888720>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1793804130339669",
+      "first_seen": "2026-11-04T16:02:01.576578+00:00",
+      "doi": "10.1177/1461444819888720",
+      "arxiv_id": null
+    }
+  },
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
