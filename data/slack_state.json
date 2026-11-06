@@ -1,6 +1,16 @@
 {
-  "last_ts": "1793804130.339669",
-  "pending": {},
+  "last_ts": "1793975202.912549",
+  "pending": {
+    "1793975202.912549": {
+      "channel_id": "C0BDU82EBHQ",
+      "user": "U01DXTA595Z",
+      "text": "<https://dl.acm.org/doi/pdf/10.1145/3816991|dl.acm.org/doi/pdf/10.1145/3816991>",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1793975202912549?thread_ts=1793975202.912549&cid=C0BDU82EBHQ",
+      "first_seen": "2026-11-06T14:30:29.642043+00:00",
+      "doi": "10.1145/3816991",
+      "arxiv_id": null
+    }
+  },
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",

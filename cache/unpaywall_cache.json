@@ -228,5 +228,15 @@
       "license": null,
       "host_type": null
     }
+  },
+  "10.1145/3816991": {
+    "cached_at": "2026-11-06T14:30:29.448057",
+    "result": {
+      "doi": "10.1145/3816991",
+      "is_oa": true,
+      "best_oa_pdf_url": null,
+      "license": "cc-by",
+      "host_type": "publisher"
+    }
   }
 }
