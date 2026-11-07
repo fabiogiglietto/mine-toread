@@ -1,5 +1,5 @@
 {
-  "last_ts": "1793975202.912549",
+  "last_ts": "1794038915.472379",
   "pending": {},
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
@@ -39,7 +39,8 @@
     "1793698626.151509": "(duplicate)",
     "1793698742.991809": "Slack1793698742-slae",
     "1793804130.339669": "Tiggemann2020-sl44",
-    "1793975202.912549": "Chancellor2026-sld9"
+    "1793975202.912549": "Chancellor2026-sld9",
+    "1794038915.472379": "Rieder2020-sl35"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -322,6 +323,14 @@
       "ts": "1793975202.912549",
       "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1793975202912549?thread_ts=1793975202.912549&cid=C0BDU82EBHQ",
       "pdf_source": "slack_attachment_followup",
+      "submitted_by": "Nicola Righetti",
+      "submitted_by_id": "U01DXTA595Z"
+    },
+    "Rieder2020-sl35": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1794038915.472379",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1794038915472379",
+      "pdf_source": "unpaywall",
       "submitted_by": "Nicola Righetti",
       "submitted_by_id": "U01DXTA595Z"
     }

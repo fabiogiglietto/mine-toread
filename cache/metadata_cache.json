@@ -2,145 +2,119 @@
   "c5a7d0326e1f61c6": {
     "entry_key": "Kristensen2025-ni",
     "entry_title": "Platform polarization. Do alternative platforms drive discursive polarization?",
-    "cached_at": "2026-10-31T10:46:54.890012",
+    "cached_at": "2026-11-07T13:47:53.417671",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Kristensen2025-ni | No DOI available | Title length: 78 chars | Authors: Kristensen, Jakob Bæk, Kristensen, Jakob Bæk | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:46:54.890019"
+    "last_failure_at": "2026-11-07T13:47:53.417681"
   },
   "65d46046ae1c898f": {
     "entry_key": "Gaw2025-ru",
     "entry_title": "Influence operations as brokerage: Political-economic infrastructures of manipulation in the 2022 Philippine elections",
-    "cached_at": "2026-10-31T10:46:57.958531",
+    "cached_at": "2026-11-07T13:47:56.532835",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Gaw2025-ru | No DOI available | Title length: 118 chars | Authors: Gaw, Fatima, Agonos, Mariam Jayne... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:46:57.958540"
+    "last_failure_at": "2026-11-07T13:47:56.532844"
   },
   "b41f425da41887a0": {
     "entry_key": "Marwick2025-vx",
     "entry_title": "True costs of misinformation| mountains of evidence: Processual “redpilling” as a Socio-technical effect of disinformation",
-    "cached_at": "2026-10-31T10:47:01.052576",
+    "cached_at": "2026-11-07T13:47:59.581132",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Marwick2025-vx | No DOI available | Title length: 122 chars | Authors: Marwick, Alice E, Furl, Katherine | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:47:01.052592"
+    "last_failure_at": "2026-11-07T13:47:59.581141"
   },
   "657c6670d7b624b8": {
     "entry_key": "noauthor_undated-fm",
     "entry_title": "Volume 7 issue 2 article 4",
-    "cached_at": "2026-10-31T10:46:28.382877",
+    "cached_at": "2026-11-07T13:47:50.396075",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: noauthor_undated-fm | No DOI available | Title length: 26 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:46:28.382886"
+    "last_failure_at": "2026-11-07T13:47:50.396083"
   },
   "9195fcc80574052b": {
     "entry_key": "Vincent_undated-re",
     "entry_title": "What our second measurement says about misinformation on major platforms in Europe",
-    "cached_at": "2026-10-31T10:47:06.768792",
+    "cached_at": "2026-11-07T13:47:35.285784",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Vincent_undated-re | No DOI available | Title length: 82 chars | Authors: Vincent, Emmanuel, Crisan, Daiana | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:47:06.768800"
+    "last_failure_at": "2026-11-07T13:47:35.285795"
   },
   "fac502d9bb5bbba8": {
     "entry_key": "UnknownUnknown-db",
     "entry_title": "What 81,000 people told us about the economics of AI",
-    "cached_at": "2026-10-31T10:48:31.501779",
+    "cached_at": "2026-11-07T13:47:38.223605",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: UnknownUnknown-db | No DOI available | Title length: 52 chars | No authors available | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:48:31.501788"
+    "last_failure_at": "2026-11-07T13:47:38.223614"
   },
   "fc9373f3342e79d3": {
     "entry_key": "Gottfried2026-ww",
     "entry_title": "Americans and AI 2026: Chatbots, Smart Devices and Views on Impact",
-    "cached_at": "2026-10-31T10:48:41.177860",
+    "cached_at": "2026-11-07T13:47:41.272145",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Gottfried2026-ww | No DOI available | Title length: 66 chars | Authors: Gottfried, Jeffrey, Bishop, William... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:48:41.177868"
+    "last_failure_at": "2026-11-07T13:47:41.272154"
   },
   "06e15083ae69cfa5": {
     "entry_key": "Hinck2026-yj",
     "entry_title": "Where's the Evidence that Respondents Understand Your Survey Questions?",
-    "cached_at": "2026-10-31T10:48:44.267019",
+    "cached_at": "2026-11-07T13:47:44.270385",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Hinck2026-yj | No DOI available | Title length: 71 chars | Authors: Hinck, Musashi, King, Gary... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:48:44.267028"
+    "last_failure_at": "2026-11-07T13:47:44.270395"
   },
   "667a9bec772d1fb6": {
     "entry_key": "Elfes2026-jb",
     "entry_title": "On narrative: The rhetorical mechanisms of online polarisation",
-    "cached_at": "2026-10-31T10:47:26.999248",
+    "cached_at": "2026-11-07T13:48:05.093599",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Elfes2026-jb | No DOI available | Title length: 62 chars | Authors: Elfes, Jan, Bastos, Marco... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:47:26.999256"
+    "last_failure_at": "2026-11-07T13:48:05.093621"
   },
   "5665a7d9ebaadc6f": {
     "entry_key": "Messing2014-jc",
     "entry_title": "Selective Exposure in the Age of Social Media: Endorsements Trump Partisan Source Affiliation When Selecting News Online",
-    "cached_at": "2026-10-31T10:49:44.553816",
+    "cached_at": "2026-11-07T13:48:14.310102",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Messing2014-jc | No DOI available | Title length: 120 chars | Authors: Messing, Solomon, Westwood, Sean J | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:49:44.553824"
+    "last_failure_at": "2026-11-07T13:48:14.310109"
   },
   "cd312f9baf9a8a9b": {
     "entry_key": "Lewandowsky2012-vn",
     "entry_title": "Misinformation and its correction: Continued influence and successful debiasing: Continued influence and successful debiasing",
-    "cached_at": "2026-10-31T10:49:32.386183",
+    "cached_at": "2026-11-07T13:48:11.297913",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Lewandowsky2012-vn | No DOI available | Title length: 125 chars | Authors: Lewandowsky, Stephan, Ecker, Ullrich K H... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:49:32.386190"
+    "last_failure_at": "2026-11-07T13:48:11.297922"
   },
   "2ba95106ff0bb503": {
     "entry_key": "Hallin2004-kg",
     "entry_title": "Comparing Media Systems: Three Models of Media and Politics",
-    "cached_at": "2026-10-31T10:50:11.788306",
+    "cached_at": "2026-11-07T13:48:20.499355",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Hallin2004-kg | No DOI available | Title length: 59 chars | Authors: Hallin, Daniel C, Mancini, Paolo | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:50:11.788312"
+    "last_failure_at": "2026-11-07T13:48:20.499364"
   },
   "d5d9f456650b11bf": {
     "entry_key": "Starbird2019-qv",
     "entry_title": "Disinformation as Collaborative Work: Surfacing the Participatory Nature of Strategic Information Operations",
-    "cached_at": "2026-10-31T10:50:04.446945",
+    "cached_at": "2026-11-07T13:48:17.376919",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: Starbird2019-qv | No DOI available | Title length: 108 chars | Authors: Starbird, Kate, Arif, Ahmer... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:50:04.446953"
-  },
-  "5fc6c794c27aa49c": {
-    "entry_key": "Tornberg2026-im",
-    "entry_title": "From the platform society to the AI society",
-    "cached_at": "2026-10-08T07:07:01.082001",
-    "metadata": {
-      "abstract": "Generative AI is becoming embedded in infrastructures of knowledge, culture, and political authority, giving rise to an emerging AI society . This transformation did not arise ex nihilo : it is rooted in the platform society whose infrastructures, data, and political economies it reorganizes. The article traces this transition across three domains. Economically , platform-era monopoly mechanisms based on network effects are giving way to cognitive lock-in, enabling rent extraction through dependence on personalized systems. Epistemically , the predictive logic of platforms is being displaced by a generative one, in which theory is embedded in technological infrastructures and populations are simulated rather than sampled. Politically , platform-era struggles over visibility are shifting toward alignment politics: contests over what models can say, do, and refuse. Together, these shifts mark a qualitative change in mediation. We ask which insights from platform society scholarship should be carried forward, and which reconsidered, in ongoing critical research on generative AI.",
-      "keywords": [],
-      "doi": "10.1177/29768640261487931",
-      "doi_url": "https://doi.org/10.1177/29768640261487931",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-09-28",
-      "citation_count": 0,
-      "reference_count": 140,
-      "venue": "Dialogues on Digital Society",
-      "authors": [
-        "Petter Törnberg",
-        "Justus Uitermark"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.86
-    }
+    "last_failure_at": "2026-11-07T13:48:17.376927"
   },
   "8d6a688f7db9234c": {
     "entry_key": "Fan2026-af",
@@ -6064,11 +6038,11 @@
   "3cddee86d2b1320d": {
     "entry_key": "King2026-av",
     "entry_title": "AI article reviews dominate human peer reviews at their best: Evidence and policy choices",
-    "cached_at": "2026-10-31T10:49:26.262504",
+    "cached_at": "2026-11-07T13:47:47.333957",
     "metadata": null,
     "failed": true,
     "failure_reason": "Could not enrich entry: King2026-av | No DOI available | Title length: 89 chars | Authors: King, Gary, Worthington, Steven | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
-    "last_failure_at": "2026-10-31T10:49:26.262513"
+    "last_failure_at": "2026-11-07T13:47:47.333964"
   },
   "08cf3f2397898e9d": {
     "entry_key": "Rodarte2026-sl16",
@@ -10078,6 +10052,61 @@
       "subjects": [],
       "is_open_access": null,
       "source": "crossref",
+      "confidence_score": null
+    }
+  },
+  "5fc6c794c27aa49c": {
+    "entry_key": "Tornberg2026-im",
+    "entry_title": "From the platform society to the AI society",
+    "cached_at": "2026-11-07T13:47:31.468364",
+    "metadata": {
+      "abstract": "Generative AI is becoming embedded in infrastructures of knowledge, culture, and political authority, giving rise to an emerging AI society . This transformation did not arise ex nihilo : it is rooted in the platform society whose infrastructures, data, and political economies it reorganizes. The article traces this transition across three domains. Economically , platform-era monopoly mechanisms based on network effects are giving way to cognitive lock-in, enabling rent extraction through dependence on personalized systems. Epistemically , the predictive logic of platforms is being displaced by a generative one, in which theory is embedded in technological infrastructures and populations are simulated rather than sampled. Politically , platform-era struggles over visibility are shifting toward alignment politics: contests over what models can say, do, and refuse. Together, these shifts mark a qualitative change in mediation. We ask which insights from platform society scholarship should be carried forward, and which reconsidered, in ongoing critical research on generative AI.",
+      "keywords": [],
+      "doi": "10.1177/29768640261487931",
+      "doi_url": "https://doi.org/10.1177/29768640261487931",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-09-28",
+      "citation_count": 0,
+      "reference_count": 140,
+      "venue": "Dialogues on Digital Society",
+      "authors": [
+        "Petter Törnberg",
+        "Justus Uitermark"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.86
+    }
+  },
+  "ef7f6af4dcd9f2dd": {
+    "entry_key": "Rieder2020-sl35",
+    "entry_title": "Towards platform observability",
+    "cached_at": "2026-11-07T13:48:08.086298",
+    "metadata": {
+      "abstract": "This article proposes the concept of platform observability to help systematically study complex algorithmic systems. It sets out three broad principles as guidelines for making platforms more accountable.",
+      "keywords": [],
+      "doi": "10.14763/2020.4.1535",
+      "doi_url": "https://doi.org/10.14763/2020.4.1535",
+      "url": "https://doi.org/10.14763/2020.4.1535",
+      "arxiv_url": null,
+      "pdf_url": "https://policyreview.info/pdf/policyreview-2020-4-1535.pdf",
+      "publication_date": "2020-12-18",
+      "citation_count": 111,
+      "reference_count": 64,
+      "venue": "Internet Policy Review",
+      "authors": [
+        "Bernhard Rieder",
+        "Jeanette Hofmann"
+      ],
+      "subjects": [
+        "Observability",
+        "Computer science"
+      ],
+      "is_open_access": true,
+      "source": "crossref+openalex",
       "confidence_score": null
     }
   }
