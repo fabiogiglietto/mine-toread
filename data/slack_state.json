@@ -1,16 +1,6 @@
 {
   "last_ts": "1795083659.339679",
-  "pending": {
-    "1795082973.979639": {
-      "channel_id": "C0BDU82EBHQ",
-      "user": "UR3895TML",
-      "text": "<https://www.aup-online.com/content/journals/10.5117/CCR2026.4.4.HU|https://www.aup-online.com/content/journals/10.5117/CCR2026.4.4.HU> ",
-      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1795082973979639",
-      "first_seen": "2026-11-19T10:39:02.562983+00:00",
-      "doi": "10.5117/CCR2026.4.4.HU",
-      "arxiv_id": null
-    }
-  },
+  "pending": {},
   "processed": {
     "1782728446.616189": "Katzenbach2026-sl2e",
     "1782736288.665349": "Slack1782736288-sl09",
@@ -51,7 +41,8 @@
     "1793804130.339669": "Tiggemann2020-sl44",
     "1793975202.912549": "Chancellor2026-sld9",
     "1794038915.472379": "Rieder2020-sl35",
-    "1795083659.339679": "Messing2026-sl63"
+    "1795083659.339679": "Messing2026-sl63",
+    "1795082973.979639": "Hu2026-sl26"
   },
   "processed_meta": {
     "Katzenbach2026-sl2e": {
@@ -352,6 +343,14 @@
       "pdf_source": "arxiv",
       "submitted_by": "Nicola Righetti",
       "submitted_by_id": "U01DXTA595Z"
+    },
+    "Hu2026-sl26": {
+      "channel_id": "C0BDU82EBHQ",
+      "ts": "1795082973.979639",
+      "permalink": "https://minesmd.slack.com/archives/C0BDU82EBHQ/p1795082973979639",
+      "pdf_source": "slack_attachment_followup",
+      "submitted_by": "GiadaM. / Uniurb",
+      "submitted_by_id": "UR3895TML"
     }
   }
 }

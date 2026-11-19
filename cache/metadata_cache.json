@@ -10449,5 +10449,36 @@
       "source": "arxiv",
       "confidence_score": 1.0
     }
+  },
+  "fce22d68bee0d0eb": {
+    "entry_key": "Hu2026-sl26",
+    "entry_title": "Seeing, Reading, Hearing, Interpreting: Computational Multimodal Framing Analysis in Short-Form News Videos",
+    "cached_at": "2026-11-19T19:24:15.486360",
+    "metadata": {
+      "abstract": "Short-form news videos convey meaning through intertwined visual, auditory, and textual cues, yet most computational approaches analyze them primarily through textual features (e.g., transcripts) or isolated visual elements. Audio elements (e.g., music, speech, ambient sound), video-length visual dynamics, and their interactions remain largely underexamined. This study evaluates how effectively single-modality (visual, audio, text) and multimodal large language model (LLM)-assisted approaches identify frames in short-form news videos. Using 2,957 TikTok videos about the Russia-Ukraine war from three mainstream outlets (CNN, CGTN Europe, The Kyiv Independent), we compare LLM-assisted automated frame detection against manually coded ground truth across six frame categories: Conflict, Human Interest, Responsibility, Morality, Economic Consequence, and Diplomatic/Political Leader. Building on prior semiotic frameworks of image-text relations, we examine how modality interactions (complementary, reinforcing, or independent) shape overall multimodal framing outcome. We further implement a human-in-the-loop validation protocol to clarify the practical limits of automated inference. Benchmark results show that multimodal frameworks outperform single-modality approaches, though the modest improvement over text-only detection raises questions about cost-benefit tradeoffs for large-scale applications. Human judgment remains essential for disambiguating abstract frames, underscoring that methodological choices must account for both the multimodal nature of video and the practical limits of computational inference.",
+      "keywords": [],
+      "doi": "10.5117/ccr2026.4.4.hu",
+      "doi_url": "https://doi.org/10.5117/ccr2026.4.4.hu",
+      "url": "https://doi.org/10.5117/ccr2026.4.4.hu",
+      "arxiv_url": null,
+      "pdf_url": "https://doi.org/10.5117/ccr2026.4.4.hu",
+      "publication_date": "2026-10-06",
+      "citation_count": 0,
+      "reference_count": 0,
+      "venue": "Computational Communication Research",
+      "authors": [
+        "Haohan Lily Hu",
+        "King-wa Fu"
+      ],
+      "subjects": [
+        "Computer science",
+        "Framing (construction)",
+        "Artificial intelligence",
+        "Multimedia"
+      ],
+      "is_open_access": true,
+      "source": "crossref+openalex",
+      "confidence_score": null
+    }
   }
 }
