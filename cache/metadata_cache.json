@@ -212,91 +212,6 @@
       "confidence_score": 0.7428571428571428
     }
   },
-  "34bdd3a5da8c985a": {
-    "entry_key": "Rossini2026-mj",
-    "entry_title": "Disrupting democracy: how informational pathways and misinformation shape trust in election results",
-    "cached_at": "2026-10-23T17:47:04.813453",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/17457289.2026.2701896",
-      "doi_url": "https://doi.org/10.1080/17457289.2026.2701896",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-07-13",
-      "citation_count": 1,
-      "reference_count": 85,
-      "venue": "Journal of Elections, Public Opinion and Parties",
-      "authors": [
-        "Patrícia Rossini",
-        "Camila Mont'Alverne",
-        "Antonis Kalogeropoulos"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.8428571428571427
-    }
-  },
-  "d3d05b896660e6d4": {
-    "entry_key": "Mannocci2026-kc",
-    "entry_title": "Detection and characterization of coordinated online behavior: A survey",
-    "cached_at": "2026-10-23T17:47:08.035486",
-    "metadata": {
-      "abstract": "Coordination is a fundamental aspect of life. The advent of social media has made it integral also to online human interactions, such as those that characterize thriving online communities and social movements. At the same time, coordination is also core to effective disinformation, manipulation, and hate campaigns. This survey collects, categorizes, and critically discusses the body of work produced as a result of the growing interest on coordinated online behavior. We reconcile industry and academic definitions, propose a comprehensive framework to study coordinated online behavior, and review and critically discuss the existing detection and characterization methods. Our analysis identifies open challenges and promising directions of research, serving as a guide for scholars, practitioners, and policymakers in understanding and addressing the complexities inherent to online coordination. We also provide an interactive companion website for exploring the surveyed literature.",
-      "keywords": [],
-      "doi": "10.1145/3839225",
-      "doi_url": "https://doi.org/10.1145/3839225",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-12-31",
-      "citation_count": 1,
-      "reference_count": 150,
-      "venue": "ACM Computing Surveys",
-      "authors": [
-        "Lorenzo Mannocci",
-        "Michele Mazza",
-        "Anna Monreale",
-        "Maurizio Tesconi",
-        "Stefano Cresci"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.8272727272727272
-    }
-  },
-  "eafd803cddaf8506": {
-    "entry_key": "Gomez-Zara2026-as",
-    "entry_title": "Revisiting framing codebooks with AI: Employing large language models as analytical collaborators in deductive content analysis",
-    "cached_at": "2026-10-23T17:47:10.822537",
-    "metadata": {
-      "abstract": null,
-      "keywords": [],
-      "doi": "10.1080/21670811.2026.2730327",
-      "doi_url": "https://doi.org/10.1080/21670811.2026.2730327",
-      "url": null,
-      "arxiv_url": null,
-      "pdf_url": null,
-      "publication_date": "2026-09-15",
-      "citation_count": 0,
-      "reference_count": 54,
-      "venue": "Digital Journalism",
-      "authors": [
-        "Diego Gómez-Zará",
-        "Hernán Valdivieso",
-        "Jorge Pérez",
-        "Denis Parra",
-        "Sebastián Valenzuela"
-      ],
-      "subjects": [],
-      "is_open_access": null,
-      "source": "crossref",
-      "confidence_score": 0.8272727272727272
-    }
-  },
   "3cddee86d2b1320d": {
     "entry_key": "King2026-av",
     "entry_title": "AI article reviews dominate human peer reviews at their best: Evidence and policy choices",
@@ -305,36 +220,6 @@
     "failed": true,
     "failure_reason": "Could not enrich entry: King2026-av | No DOI available | Title length: 89 chars | Authors: King, Gary, Worthington, Steven | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
     "last_failure_at": "2026-11-17T21:17:13.604058"
-  },
-  "08cf3f2397898e9d": {
-    "entry_key": "Rodarte2026-sl16",
-    "entry_title": "The Democratic Cost of Pursuing Virality: A Study into Parliamentary Communications",
-    "cached_at": "2026-10-23T17:47:33.179212",
-    "metadata": {
-      "abstract": "The transformation of parliamentarians into media producers has heightened concerns about emerging forms of political communication. This mixed-methods paper examines the strategies they employ to enhance their digital presence. Based on in-depth interviews, it shows that Brazilian parliamentarians believe that social media penalize them for posting about congressional matters, reporting that content about legislative work and constituency services receives little engagement online. Conversely, they view the production of antagonistic content and alignment with news cycles as essential to maintaining an engaging social media presence. A computational analysis of 4,5 million posts on Facebook, Instagram, and Twitter supports these evaluations: posts about congressional matters are associated with lower engagement metrics, while the use of antagonistic language increases them. The analysis further discusses pathways through which visibility is sustained at the intersection of platform incentives and communicative practices. In sum, this mixed-methods study demonstrates that the mediatization of politics has created perverse incentives for parliamentarians to downplay congressional activity and prioritize confrontations on social media, weakening accountability in ways that may resonate far beyond Brazil.",
-      "keywords": [],
-      "doi": "10.1080/10584609.2026.2733316",
-      "doi_url": "https://doi.org/10.1080/10584609.2026.2733316",
-      "url": "https://doi.org/10.1080/10584609.2026.2733316",
-      "arxiv_url": null,
-      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/10584609.2026.2733316?needAccess=true",
-      "publication_date": "2026-09-16",
-      "citation_count": 0,
-      "reference_count": 46,
-      "venue": "Political Communication",
-      "authors": [
-        "André K. Rodarte"
-      ],
-      "subjects": [
-        "Political science",
-        "Democracy",
-        "Public administration",
-        "Political economy"
-      ],
-      "is_open_access": true,
-      "source": "crossref+openalex",
-      "confidence_score": null
-    }
   },
   "6192e24080f96240": {
     "entry_key": "Kuznetsova2026-hw",
@@ -10475,6 +10360,146 @@
         "Framing (construction)",
         "Artificial intelligence",
         "Multimedia"
+      ],
+      "is_open_access": true,
+      "source": "crossref+openalex",
+      "confidence_score": null
+    }
+  },
+  "34bdd3a5da8c985a": {
+    "entry_key": "Rossini2026-mj",
+    "entry_title": "Disrupting democracy: how informational pathways and misinformation shape trust in election results",
+    "cached_at": "2026-11-23T12:12:37.808237",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/17457289.2026.2701896",
+      "doi_url": "https://doi.org/10.1080/17457289.2026.2701896",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-07-13",
+      "citation_count": 1,
+      "reference_count": 85,
+      "venue": "Journal of Elections, Public Opinion and Parties",
+      "authors": [
+        "Patrícia Rossini",
+        "Camila Mont'Alverne",
+        "Antonis Kalogeropoulos"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8428571428571427
+    }
+  },
+  "d3d05b896660e6d4": {
+    "entry_key": "Mannocci2026-kc",
+    "entry_title": "Detection and characterization of coordinated online behavior: A survey",
+    "cached_at": "2026-11-23T12:12:40.731151",
+    "metadata": {
+      "abstract": "Coordination is a fundamental aspect of life. The advent of social media has made it integral also to online human interactions, such as those that characterize thriving online communities and social movements. At the same time, coordination is also core to effective disinformation, manipulation, and hate campaigns. This survey collects, categorizes, and critically discusses the body of work produced as a result of the growing interest on coordinated online behavior. We reconcile industry and academic definitions, propose a comprehensive framework to study coordinated online behavior, and review and critically discuss the existing detection and characterization methods. Our analysis identifies open challenges and promising directions of research, serving as a guide for scholars, practitioners, and policymakers in understanding and addressing the complexities inherent to online coordination. We also provide an interactive companion website for exploring the surveyed literature.",
+      "keywords": [],
+      "doi": "10.1145/3839225",
+      "doi_url": "https://doi.org/10.1145/3839225",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-12-31",
+      "citation_count": 3,
+      "reference_count": 150,
+      "venue": "ACM Computing Surveys",
+      "authors": [
+        "Lorenzo Mannocci",
+        "Michele Mazza",
+        "Anna Monreale",
+        "Maurizio Tesconi",
+        "Stefano Cresci"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8272727272727272
+    }
+  },
+  "eafd803cddaf8506": {
+    "entry_key": "Gomez-Zara2026-as",
+    "entry_title": "Revisiting framing codebooks with AI: Employing large language models as analytical collaborators in deductive content analysis",
+    "cached_at": "2026-11-23T12:12:43.815625",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1080/21670811.2026.2730327",
+      "doi_url": "https://doi.org/10.1080/21670811.2026.2730327",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026-09-15",
+      "citation_count": 0,
+      "reference_count": 54,
+      "venue": "Digital Journalism",
+      "authors": [
+        "Diego Gómez-Zará",
+        "Hernán Valdivieso",
+        "Jorge Pérez",
+        "Denis Parra",
+        "Sebastián Valenzuela"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8272727272727272
+    }
+  },
+  "de0e3b181ca2c306": {
+    "entry_key": "Lompe2026-vm",
+    "entry_title": "The link has died; Long live the link! Cross-platform controversy mapping with the use of URLs",
+    "cached_at": "2026-11-23T12:12:46.764387",
+    "metadata": {
+      "abstract": null,
+      "keywords": [],
+      "doi": "10.1007/s10606-026-09557-1",
+      "doi_url": "https://doi.org/10.1007/s10606-026-09557-1",
+      "url": null,
+      "arxiv_url": null,
+      "pdf_url": null,
+      "publication_date": "2026",
+      "citation_count": 0,
+      "reference_count": 74,
+      "venue": "Computer Supported Cooperative Work (CSCW)",
+      "authors": [
+        "Maria Lompe"
+      ],
+      "subjects": [],
+      "is_open_access": null,
+      "source": "crossref",
+      "confidence_score": 0.8999999999999999
+    }
+  },
+  "08cf3f2397898e9d": {
+    "entry_key": "Rodarte2026-sl16",
+    "entry_title": "The Democratic Cost of Pursuing Virality: A Study into Parliamentary Communications",
+    "cached_at": "2026-11-23T12:12:50.123120",
+    "metadata": {
+      "abstract": "The transformation of parliamentarians into media producers has heightened concerns about emerging forms of political communication. This mixed-methods paper examines the strategies they employ to enhance their digital presence. Based on in-depth interviews, it shows that Brazilian parliamentarians believe that social media penalize them for posting about congressional matters, reporting that content about legislative work and constituency services receives little engagement online. Conversely, they view the production of antagonistic content and alignment with news cycles as essential to maintaining an engaging social media presence. A computational analysis of 4,5 million posts on Facebook, Instagram, and Twitter supports these evaluations: posts about congressional matters are associated with lower engagement metrics, while the use of antagonistic language increases them. The analysis further discusses pathways through which visibility is sustained at the intersection of platform incentives and communicative practices. In sum, this mixed-methods study demonstrates that the mediatization of politics has created perverse incentives for parliamentarians to downplay congressional activity and prioritize confrontations on social media, weakening accountability in ways that may resonate far beyond Brazil.",
+      "keywords": [],
+      "doi": "10.1080/10584609.2026.2733316",
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2733316",
+      "url": "https://doi.org/10.1080/10584609.2026.2733316",
+      "arxiv_url": null,
+      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/10584609.2026.2733316?needAccess=true",
+      "publication_date": "2026-09-16",
+      "citation_count": 0,
+      "reference_count": 46,
+      "venue": "Political Communication",
+      "authors": [
+        "André K. Rodarte"
+      ],
+      "subjects": [
+        "Political science",
+        "Democracy",
+        "Public administration",
+        "Political economy"
       ],
       "is_open_access": true,
       "source": "crossref+openalex",
