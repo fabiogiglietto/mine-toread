@@ -10505,5 +10505,14 @@
       "source": "crossref+openalex",
       "confidence_score": null
     }
+  },
+  "27b58beffba2e773": {
+    "entry_key": "Simon2012-pe",
+    "entry_title": "Generative AI and News Report 2026: From standalone tools to information infrastructure",
+    "cached_at": "2026-11-24T00:13:00.090340",
+    "metadata": null,
+    "failed": true,
+    "failure_reason": "Could not enrich entry: Simon2012-pe | No DOI available | Title length: 87 chars | Authors: Simon, Felix, Nielsen, Rasmus Kleis... | APIs: Crossref enabled, Semantic Scholar enabled, ArXiv enabled",
+    "last_failure_at": "2026-11-24T00:13:00.090349"
   }
 }
